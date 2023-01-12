@@ -15,8 +15,22 @@ class API extends JsonResource
      * @param Request $request
      * @return array|Arrayable|JsonSerializable
      */
-    public function toArray($request)
+    public function toArray($request): array|JsonSerializable|Arrayable
     {
         return parent::toArray($request);
+    }
+
+    /**
+     * show return with something
+     * @param $request
+     * @return array
+     */
+    public function with($request): array
+    {
+        return [
+            'api-version' => '1.0.0',
+            'author' => 'SHIFTECH AFRICA',
+            'author-url' => url('https://shiftechafrica.com/'),
+        ];
     }
 }
