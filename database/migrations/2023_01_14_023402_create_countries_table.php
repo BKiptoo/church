@@ -12,10 +12,10 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('coverages', function (Blueprint $table) {
+        Schema::create('countries', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('country_id');
-            $table->string('description');
+            $table->string('name');
+            $table->string('slug')->unique();
             $table->jsonb('data')->default([]);
             $table->softDeletes();
             $table->timestamps();
@@ -29,6 +29,6 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('coverages');
+        Schema::dropIfExists('countries');
     }
 };

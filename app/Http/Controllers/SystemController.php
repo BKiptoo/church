@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Monolog\Formatter\JsonFormatter;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
+use Exception;
+use Propaganistas\LaravelPhone\PhoneNumber;
 
 class SystemController extends Controller
 {
@@ -92,7 +95,7 @@ class SystemController extends Controller
 
         return [
             $newFileName, // this will be the new file name i.e. shiftechafrica.png
-            Storage::disk('do_space')->url($path . '/' . $newFileName) // set the path for
+            Storage::disk('do_space_cdn')->url($path . '/' . $newFileName) // set the path for
             // loading the image i.e. http:IP/storage/shiftechafrica.png
         ];
     }
@@ -115,6 +118,33 @@ class SystemController extends Controller
         if (Storage::disk('do_space')->exists($path . '/' . $fileName)) {
             // unlink the media here after upload
             Storage::disk('do_space')->delete($path . '/' . $fileName);
+        }
+    }
+
+    /**
+     * format phone number
+     * @param string $phoneNumber
+     * @param string $short2Code
+     * @return string
+     */
+    public static function format_phone_number(string $phoneNumber, string $short2Code): string
+    {
+        return PhoneNumber::make($phoneNumber)->ofCountry($short2Code);
+    }
+
+    /**
+     * validate the phone number with country
+     * @param string $phoneNumber
+     * @param string $short2Code
+     * @return bool
+     */
+    public static function validate_phone_number(string $phoneNumber, string $short2Code): bool
+    {
+        try {
+            return PhoneNumber::make($phoneNumber, $short2Code)->isOfCountry($short2Code);
+        } catch (Exception $exception) {
+            Log::error($exception->getMessage());
+            return false;
         }
     }
 }

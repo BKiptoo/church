@@ -1,0 +1,4502 @@
+[
+    {
+        "id": "78abd170-85ad-11eb-96d6-9dad94b792f6",
+        "name": "Afghanistan",
+        "slug": "afghanistan",
+        "data": {
+            "name": "Afghanistan",
+            "capital": "Kabul",
+            "flag": "https://restcountries.eu/data/afg.svg",
+            "short2Code": "AF",
+            "short3Code": "AFG",
+            "currencyCode": "AFN",
+            "currencyName": "Afghan afghani",
+            "callingCode": "93"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ad18d0-85ad-11eb-ac43-971171f10881",
+        "name": "Åland Islands",
+        "slug": "aland-islands",
+        "data": {
+            "name": "Åland Islands",
+            "capital": "Mariehamn",
+            "flag": "https://restcountries.eu/data/ala.svg",
+            "short2Code": "AX",
+            "short3Code": "ALA",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "358"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ad4ac0-85ad-11eb-a657-559594239ba6",
+        "name": "Albania",
+        "slug": "albania",
+        "data": {
+            "name": "Albania",
+            "capital": "Tirana",
+            "flag": "https://restcountries.eu/data/alb.svg",
+            "short2Code": "AL",
+            "short3Code": "ALB",
+            "currencyCode": "ALL",
+            "currencyName": "Albanian lek",
+            "callingCode": "355"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ad6a30-85ad-11eb-9df0-5bccae89e3b5",
+        "name": "Algeria",
+        "slug": "algeria",
+        "data": {
+            "name": "Algeria",
+            "capital": "Algiers",
+            "flag": "https://restcountries.eu/data/dza.svg",
+            "short2Code": "DZ",
+            "short3Code": "DZA",
+            "currencyCode": "DZD",
+            "currencyName": "Algerian dinar",
+            "callingCode": "213"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ad80e0-85ad-11eb-bf26-ab9272d951a2",
+        "name": "American Samoa",
+        "slug": "american-samoa",
+        "data": {
+            "name": "American Samoa",
+            "capital": "Pago Pago",
+            "flag": "https://restcountries.eu/data/asm.svg",
+            "short2Code": "AS",
+            "short3Code": "ASM",
+            "currencyCode": "USD",
+            "currencyName": "United State Dollar",
+            "callingCode": "1684"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ad9750-85ad-11eb-ad9f-2127deb078d6",
+        "name": "Andorra",
+        "slug": "andorra",
+        "data": {
+            "name": "Andorra",
+            "capital": "Andorra la Vella",
+            "flag": "https://restcountries.eu/data/and.svg",
+            "short2Code": "AD",
+            "short3Code": "AND",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "376"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78adb080-85ad-11eb-bf1e-ff540e375ed0",
+        "name": "Angola",
+        "slug": "angola",
+        "data": {
+            "name": "Angola",
+            "capital": "Luanda",
+            "flag": "https://restcountries.eu/data/ago.svg",
+            "short2Code": "AO",
+            "short3Code": "AGO",
+            "currencyCode": "AOA",
+            "currencyName": "Angolan kwanza",
+            "callingCode": "244"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78adcb30-85ad-11eb-8fdb-1b29b3475c5f",
+        "name": "Anguilla",
+        "slug": "anguilla",
+        "data": {
+            "name": "Anguilla",
+            "capital": "The Valley",
+            "flag": "https://restcountries.eu/data/aia.svg",
+            "short2Code": "AI",
+            "short3Code": "AIA",
+            "currencyCode": "XCD",
+            "currencyName": "East Caribbean dollar",
+            "callingCode": "1264"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ade2a0-85ad-11eb-9bde-7da191c62729",
+        "name": "Antarctica",
+        "slug": "antarctica",
+        "data": {
+            "name": "Antarctica",
+            "capital": "",
+            "flag": "https://restcountries.eu/data/ata.svg",
+            "short2Code": "AQ",
+            "short3Code": "ATA",
+            "currencyCode": "GBP",
+            "currencyName": "British pound",
+            "callingCode": "672"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78adfa40-85ad-11eb-be4a-8336e9b50fbe",
+        "name": "Antigua and Barbuda",
+        "slug": "antigua-and-barbuda",
+        "data": {
+            "name": "Antigua and Barbuda",
+            "capital": "Saint John's",
+            "flag": "https://restcountries.eu/data/atg.svg",
+            "short2Code": "AG",
+            "short3Code": "ATG",
+            "currencyCode": "XCD",
+            "currencyName": "East Caribbean dollar",
+            "callingCode": "1268"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ae1000-85ad-11eb-b809-176d4692b2e8",
+        "name": "Argentina",
+        "slug": "argentina",
+        "data": {
+            "name": "Argentina",
+            "capital": "Buenos Aires",
+            "flag": "https://restcountries.eu/data/arg.svg",
+            "short2Code": "AR",
+            "short3Code": "ARG",
+            "currencyCode": "ARS",
+            "currencyName": "Argentine peso",
+            "callingCode": "54"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ae2580-85ad-11eb-891a-0580b16a5a36",
+        "name": "Armenia",
+        "slug": "armenia",
+        "data": {
+            "name": "Armenia",
+            "capital": "Yerevan",
+            "flag": "https://restcountries.eu/data/arm.svg",
+            "short2Code": "AM",
+            "short3Code": "ARM",
+            "currencyCode": "AMD",
+            "currencyName": "Armenian dram",
+            "callingCode": "374"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ae3b80-85ad-11eb-8a9a-49aff64840b4",
+        "name": "Aruba",
+        "slug": "aruba",
+        "data": {
+            "name": "Aruba",
+            "capital": "Oranjestad",
+            "flag": "https://restcountries.eu/data/abw.svg",
+            "short2Code": "AW",
+            "short3Code": "ABW",
+            "currencyCode": "AWG",
+            "currencyName": "Aruban florin",
+            "callingCode": "297"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ae8500-85ad-11eb-b883-7521d3c14fce",
+        "name": "Australia",
+        "slug": "australia",
+        "data": {
+            "name": "Australia",
+            "capital": "Canberra",
+            "flag": "https://restcountries.eu/data/aus.svg",
+            "short2Code": "AU",
+            "short3Code": "AUS",
+            "currencyCode": "AUD",
+            "currencyName": "Australian dollar",
+            "callingCode": "61"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ae9cf0-85ad-11eb-bc71-3f59bec7ace9",
+        "name": "Austria",
+        "slug": "austria",
+        "data": {
+            "name": "Austria",
+            "capital": "Vienna",
+            "flag": "https://restcountries.eu/data/aut.svg",
+            "short2Code": "AT",
+            "short3Code": "AUT",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "43"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78aeb270-85ad-11eb-9196-1176ea9e3219",
+        "name": "Azerbaijan",
+        "slug": "azerbaijan",
+        "data": {
+            "name": "Azerbaijan",
+            "capital": "Baku",
+            "flag": "https://restcountries.eu/data/aze.svg",
+            "short2Code": "AZ",
+            "short3Code": "AZE",
+            "currencyCode": "AZN",
+            "currencyName": "Azerbaijani manat",
+            "callingCode": "994"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78aec760-85ad-11eb-b856-b1714fa9b5a0",
+        "name": "Bahamas",
+        "slug": "bahamas",
+        "data": {
+            "name": "Bahamas",
+            "capital": "Nassau",
+            "flag": "https://restcountries.eu/data/bhs.svg",
+            "short2Code": "BS",
+            "short3Code": "BHS",
+            "currencyCode": "BSD",
+            "currencyName": "Bahamian dollar",
+            "callingCode": "1242"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78aee3a0-85ad-11eb-9b7d-83efeaf90206",
+        "name": "Bahrain",
+        "slug": "bahrain",
+        "data": {
+            "name": "Bahrain",
+            "capital": "Manama",
+            "flag": "https://restcountries.eu/data/bhr.svg",
+            "short2Code": "BH",
+            "short3Code": "BHR",
+            "currencyCode": "BHD",
+            "currencyName": "Bahraini dinar",
+            "callingCode": "973"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78aef970-85ad-11eb-8115-adeef4d109e1",
+        "name": "Bangladesh",
+        "slug": "bangladesh",
+        "data": {
+            "name": "Bangladesh",
+            "capital": "Dhaka",
+            "flag": "https://restcountries.eu/data/bgd.svg",
+            "short2Code": "BD",
+            "short3Code": "BGD",
+            "currencyCode": "BDT",
+            "currencyName": "Bangladeshi taka",
+            "callingCode": "880"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78af0e90-85ad-11eb-a3b7-8392c7ca55ae",
+        "name": "Barbados",
+        "slug": "barbados",
+        "data": {
+            "name": "Barbados",
+            "capital": "Bridgetown",
+            "flag": "https://restcountries.eu/data/brb.svg",
+            "short2Code": "BB",
+            "short3Code": "BRB",
+            "currencyCode": "BBD",
+            "currencyName": "Barbadian dollar",
+            "callingCode": "1246"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78af2540-85ad-11eb-b42a-9349dc135d11",
+        "name": "Belarus",
+        "slug": "belarus",
+        "data": {
+            "name": "Belarus",
+            "capital": "Minsk",
+            "flag": "https://restcountries.eu/data/blr.svg",
+            "short2Code": "BY",
+            "short3Code": "BLR",
+            "currencyCode": "BYR",
+            "currencyName": "Old Belarusian ruble",
+            "callingCode": "375"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78af3ae0-85ad-11eb-bf51-2f656d8dfcbf",
+        "name": "Belgium",
+        "slug": "belgium",
+        "data": {
+            "name": "Belgium",
+            "capital": "Brussels",
+            "flag": "https://restcountries.eu/data/bel.svg",
+            "short2Code": "BE",
+            "short3Code": "BEL",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "32"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78af5040-85ad-11eb-8d06-1769cb858810",
+        "name": "Belize",
+        "slug": "belize",
+        "data": {
+            "name": "Belize",
+            "capital": "Belmopan",
+            "flag": "https://restcountries.eu/data/blz.svg",
+            "short2Code": "BZ",
+            "short3Code": "BLZ",
+            "currencyCode": "BZD",
+            "currencyName": "Belize dollar",
+            "callingCode": "501"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78af65c0-85ad-11eb-be72-81415f6fc8bd",
+        "name": "Benin",
+        "slug": "benin",
+        "data": {
+            "name": "Benin",
+            "capital": "Porto-Novo",
+            "flag": "https://restcountries.eu/data/ben.svg",
+            "short2Code": "BJ",
+            "short3Code": "BEN",
+            "currencyCode": "XOF",
+            "currencyName": "West African CFA franc",
+            "callingCode": "229"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78afbc60-85ad-11eb-a906-1b6727769c6c",
+        "name": "Bermuda",
+        "slug": "bermuda",
+        "data": {
+            "name": "Bermuda",
+            "capital": "Hamilton",
+            "flag": "https://restcountries.eu/data/bmu.svg",
+            "short2Code": "BM",
+            "short3Code": "BMU",
+            "currencyCode": "BMD",
+            "currencyName": "Bermudian dollar",
+            "callingCode": "1441"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78afd300-85ad-11eb-9eb4-fd9faf6c0e7f",
+        "name": "Bhutan",
+        "slug": "bhutan",
+        "data": {
+            "name": "Bhutan",
+            "capital": "Thimphu",
+            "flag": "https://restcountries.eu/data/btn.svg",
+            "short2Code": "BT",
+            "short3Code": "BTN",
+            "currencyCode": "INR",
+            "currencyName": "Indian rupee",
+            "callingCode": "975"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78afe8b0-85ad-11eb-974b-0d203952ec40",
+        "name": "Bolivia (Plurinational State of)",
+        "slug": "bolivia-plurinational-state-of",
+        "data": {
+            "name": "Bolivia (Plurinational State of)",
+            "capital": "Sucre",
+            "flag": "https://restcountries.eu/data/bol.svg",
+            "short2Code": "BO",
+            "short3Code": "BOL",
+            "currencyCode": "BOB",
+            "currencyName": "Bolivian boliviano",
+            "callingCode": "591"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78affe30-85ad-11eb-acf8-cf5934547848",
+        "name": "Bonaire, Sint Eustatius and Saba",
+        "slug": "bonaire-sint-eustatius-and-saba",
+        "data": {
+            "name": "Bonaire, Sint Eustatius and Saba",
+            "capital": "Kralendijk",
+            "flag": "https://restcountries.eu/data/bes.svg",
+            "short2Code": "BQ",
+            "short3Code": "BES",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "5997"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b01ae0-85ad-11eb-9eb2-b75be1d54fe7",
+        "name": "Bosnia and Herzegovina",
+        "slug": "bosnia-and-herzegovina",
+        "data": {
+            "name": "Bosnia and Herzegovina",
+            "capital": "Sarajevo",
+            "flag": "https://restcountries.eu/data/bih.svg",
+            "short2Code": "BA",
+            "short3Code": "BIH",
+            "currencyCode": "BAM",
+            "currencyName": "Bosnia and Herzegovina convertible mark",
+            "callingCode": "387"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b030f0-85ad-11eb-a32d-d173de9ece9c",
+        "name": "Botswana",
+        "slug": "botswana",
+        "data": {
+            "name": "Botswana",
+            "capital": "Gaborone",
+            "flag": "https://restcountries.eu/data/bwa.svg",
+            "short2Code": "BW",
+            "short3Code": "BWA",
+            "currencyCode": "BWP",
+            "currencyName": "Botswana pula",
+            "callingCode": "267"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b04630-85ad-11eb-ad62-33e740f06d82",
+        "name": "Bouvet Island",
+        "slug": "bouvet-island",
+        "data": {
+            "name": "Bouvet Island",
+            "capital": "",
+            "flag": "https://restcountries.eu/data/bvt.svg",
+            "short2Code": "BV",
+            "short3Code": "BVT",
+            "currencyCode": "NOK",
+            "currencyName": "Norwegian krone",
+            "callingCode": ""
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b06370-85ad-11eb-9abd-1d9de222e973",
+        "name": "Brazil",
+        "slug": "brazil",
+        "data": {
+            "name": "Brazil",
+            "capital": "Brasília",
+            "flag": "https://restcountries.eu/data/bra.svg",
+            "short2Code": "BR",
+            "short3Code": "BRA",
+            "currencyCode": "BRL",
+            "currencyName": "Brazilian real",
+            "callingCode": "55"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b078f0-85ad-11eb-b913-230931869d62",
+        "name": "British Indian Ocean Territory",
+        "slug": "british-indian-ocean-territory",
+        "data": {
+            "name": "British Indian Ocean Territory",
+            "capital": "Diego Garcia",
+            "flag": "https://restcountries.eu/data/iot.svg",
+            "short2Code": "IO",
+            "short3Code": "IOT",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "246"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b11200-85ad-11eb-8d72-ffb8abd94fb3",
+        "name": "Brunei Darussalam",
+        "slug": "brunei-darussalam",
+        "data": {
+            "name": "Brunei Darussalam",
+            "capital": "Bandar Seri Begawan",
+            "flag": "https://restcountries.eu/data/brn.svg",
+            "short2Code": "BN",
+            "short3Code": "BRN",
+            "currencyCode": "SGD",
+            "currencyName": "Singapore dollar",
+            "callingCode": "673"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b127a0-85ad-11eb-81ff-b12f0b37e7d6",
+        "name": "Bulgaria",
+        "slug": "bulgaria",
+        "data": {
+            "name": "Bulgaria",
+            "capital": "Sofia",
+            "flag": "https://restcountries.eu/data/bgr.svg",
+            "short2Code": "BG",
+            "short3Code": "BGR",
+            "currencyCode": "BGN",
+            "currencyName": "Bulgarian lev",
+            "callingCode": "359"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b13ce0-85ad-11eb-9fde-6f605ee259ae",
+        "name": "Burkina Faso",
+        "slug": "burkina-faso",
+        "data": {
+            "name": "Burkina Faso",
+            "capital": "Ouagadougou",
+            "flag": "https://restcountries.eu/data/bfa.svg",
+            "short2Code": "BF",
+            "short3Code": "BFA",
+            "currencyCode": "XOF",
+            "currencyName": "West African CFA franc",
+            "callingCode": "226"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b15420-85ad-11eb-8e8b-c76dd11af9e7",
+        "name": "Burundi",
+        "slug": "burundi",
+        "data": {
+            "name": "Burundi",
+            "capital": "Bujumbura",
+            "flag": "https://restcountries.eu/data/bdi.svg",
+            "short2Code": "BI",
+            "short3Code": "BDI",
+            "currencyCode": "BIF",
+            "currencyName": "Burundian franc",
+            "callingCode": "257"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b1b300-85ad-11eb-8090-0b6ed96bfe06",
+        "name": "Cabo Verde",
+        "slug": "cabo-verde",
+        "data": {
+            "name": "Cabo Verde",
+            "capital": "Praia",
+            "flag": "https://restcountries.eu/data/cpv.svg",
+            "short2Code": "CV",
+            "short3Code": "CPV",
+            "currencyCode": "CVE",
+            "currencyName": "Cape Verdean escudo",
+            "callingCode": "238"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b16ab0-85ad-11eb-a8d8-43ac21e7a8c9",
+        "name": "Cambodia",
+        "slug": "cambodia",
+        "data": {
+            "name": "Cambodia",
+            "capital": "Phnom Penh",
+            "flag": "https://restcountries.eu/data/khm.svg",
+            "short2Code": "KH",
+            "short3Code": "KHM",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "855"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b18220-85ad-11eb-94bf-6df1b7016b7e",
+        "name": "Cameroon",
+        "slug": "cameroon",
+        "data": {
+            "name": "Cameroon",
+            "capital": "Yaoundé",
+            "flag": "https://restcountries.eu/data/cmr.svg",
+            "short2Code": "CM",
+            "short3Code": "CMR",
+            "currencyCode": "XAF",
+            "currencyName": "Central African CFA franc",
+            "callingCode": "237"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b19ab0-85ad-11eb-a12f-7996175afb98",
+        "name": "Canada",
+        "slug": "canada",
+        "data": {
+            "name": "Canada",
+            "capital": "Ottawa",
+            "flag": "https://restcountries.eu/data/can.svg",
+            "short2Code": "CA",
+            "short3Code": "CAN",
+            "currencyCode": "CAD",
+            "currencyName": "Canadian dollar",
+            "callingCode": "1"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b1c980-85ad-11eb-877a-c1831ddc03d7",
+        "name": "Cayman Islands",
+        "slug": "cayman-islands",
+        "data": {
+            "name": "Cayman Islands",
+            "capital": "George Town",
+            "flag": "https://restcountries.eu/data/cym.svg",
+            "short2Code": "KY",
+            "short3Code": "CYM",
+            "currencyCode": "KYD",
+            "currencyName": "Cayman Islands dollar",
+            "callingCode": "1345"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b1e870-85ad-11eb-8169-4919be2a2d55",
+        "name": "Central African Republic",
+        "slug": "central-african-republic",
+        "data": {
+            "name": "Central African Republic",
+            "capital": "Bangui",
+            "flag": "https://restcountries.eu/data/caf.svg",
+            "short2Code": "CF",
+            "short3Code": "CAF",
+            "currencyCode": "XAF",
+            "currencyName": "Central African CFA franc",
+            "callingCode": "236"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b1fee0-85ad-11eb-ae62-0ba5c7d33bbc",
+        "name": "Chad",
+        "slug": "chad",
+        "data": {
+            "name": "Chad",
+            "capital": "N'Djamena",
+            "flag": "https://restcountries.eu/data/tcd.svg",
+            "short2Code": "TD",
+            "short3Code": "TCD",
+            "currencyCode": "XAF",
+            "currencyName": "Central African CFA franc",
+            "callingCode": "235"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b21500-85ad-11eb-acd9-a1e5edea8aff",
+        "name": "Chile",
+        "slug": "chile",
+        "data": {
+            "name": "Chile",
+            "capital": "Santiago",
+            "flag": "https://restcountries.eu/data/chl.svg",
+            "short2Code": "CL",
+            "short3Code": "CHL",
+            "currencyCode": "CLP",
+            "currencyName": "Chilean peso",
+            "callingCode": "56"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b22b30-85ad-11eb-8ed4-856908af3915",
+        "name": "China",
+        "slug": "china",
+        "data": {
+            "name": "China",
+            "capital": "Beijing",
+            "flag": "https://restcountries.eu/data/chn.svg",
+            "short2Code": "CN",
+            "short3Code": "CHN",
+            "currencyCode": "CNY",
+            "currencyName": "Chinese yuan",
+            "callingCode": "86"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b24100-85ad-11eb-b2af-e9b0eac8ffe2",
+        "name": "Christmas Island",
+        "slug": "christmas-island",
+        "data": {
+            "name": "Christmas Island",
+            "capital": "Flying Fish Cove",
+            "flag": "https://restcountries.eu/data/cxr.svg",
+            "short2Code": "CX",
+            "short3Code": "CXR",
+            "currencyCode": "AUD",
+            "currencyName": "Australian dollar",
+            "callingCode": "61"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b2cb80-85ad-11eb-a5d0-a33a284445a7",
+        "name": "Cocos (Keeling) Islands",
+        "slug": "cocos-keeling-islands",
+        "data": {
+            "name": "Cocos (Keeling) Islands",
+            "capital": "West Island",
+            "flag": "https://restcountries.eu/data/cck.svg",
+            "short2Code": "CC",
+            "short3Code": "CCK",
+            "currencyCode": "AUD",
+            "currencyName": "Australian dollar",
+            "callingCode": "61"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b2e4b0-85ad-11eb-934c-d7e8359f4425",
+        "name": "Colombia",
+        "slug": "colombia",
+        "data": {
+            "name": "Colombia",
+            "capital": "Bogotá",
+            "flag": "https://restcountries.eu/data/col.svg",
+            "short2Code": "CO",
+            "short3Code": "COL",
+            "currencyCode": "COP",
+            "currencyName": "Colombian peso",
+            "callingCode": "57"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b2fb30-85ad-11eb-b0a3-b1f110062b3c",
+        "name": "Comoros",
+        "slug": "comoros",
+        "data": {
+            "name": "Comoros",
+            "capital": "Moroni",
+            "flag": "https://restcountries.eu/data/com.svg",
+            "short2Code": "KM",
+            "short3Code": "COM",
+            "currencyCode": "KMF",
+            "currencyName": "Comorian franc",
+            "callingCode": "269"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b31170-85ad-11eb-9fd6-e5daaa87bb25",
+        "name": "Congo",
+        "slug": "congo",
+        "data": {
+            "name": "Congo",
+            "capital": "Brazzaville",
+            "flag": "https://restcountries.eu/data/cog.svg",
+            "short2Code": "CG",
+            "short3Code": "COG",
+            "currencyCode": "XAF",
+            "currencyName": "Central African CFA franc",
+            "callingCode": "242"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b32a20-85ad-11eb-8ef6-a9906fd1e035",
+        "name": "Congo (Democratic Republic of the)",
+        "slug": "congo-democratic-republic-of-the",
+        "data": {
+            "name": "Congo (Democratic Republic of the)",
+            "capital": "Kinshasa",
+            "flag": "https://restcountries.eu/data/cod.svg",
+            "short2Code": "CD",
+            "short3Code": "COD",
+            "currencyCode": "CDF",
+            "currencyName": "Congolese franc",
+            "callingCode": "243"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b34120-85ad-11eb-8978-7575f523619a",
+        "name": "Cook Islands",
+        "slug": "cook-islands",
+        "data": {
+            "name": "Cook Islands",
+            "capital": "Avarua",
+            "flag": "https://restcountries.eu/data/cok.svg",
+            "short2Code": "CK",
+            "short3Code": "COK",
+            "currencyCode": "CKD",
+            "currencyName": "Cook Islands dollar",
+            "callingCode": "682"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b357f0-85ad-11eb-a33a-2508d56967fe",
+        "name": "Costa Rica",
+        "slug": "costa-rica",
+        "data": {
+            "name": "Costa Rica",
+            "capital": "San José",
+            "flag": "https://restcountries.eu/data/cri.svg",
+            "short2Code": "CR",
+            "short3Code": "CRI",
+            "currencyCode": "CRC",
+            "currencyName": "Costa Rican colón",
+            "callingCode": "506"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b8eea0-85ad-11eb-ae70-61e89311db68",
+        "name": "Côte d'Ivoire",
+        "slug": "cote-divoire",
+        "data": {
+            "name": "Côte d'Ivoire",
+            "capital": "Yamoussoukro",
+            "flag": "https://restcountries.eu/data/civ.svg",
+            "short2Code": "CI",
+            "short3Code": "CIV",
+            "currencyCode": "XOF",
+            "currencyName": "West African CFA franc",
+            "callingCode": "225"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b36ea0-85ad-11eb-8e61-b3d58817991c",
+        "name": "Croatia",
+        "slug": "croatia",
+        "data": {
+            "name": "Croatia",
+            "capital": "Zagreb",
+            "flag": "https://restcountries.eu/data/hrv.svg",
+            "short2Code": "HR",
+            "short3Code": "HRV",
+            "currencyCode": "HRK",
+            "currencyName": "Croatian kuna",
+            "callingCode": "385"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b389f0-85ad-11eb-8578-7f18dab5e35b",
+        "name": "Cuba",
+        "slug": "cuba",
+        "data": {
+            "name": "Cuba",
+            "capital": "Havana",
+            "flag": "https://restcountries.eu/data/cub.svg",
+            "short2Code": "CU",
+            "short3Code": "CUB",
+            "currencyCode": "CUP",
+            "currencyName": "Cuban peso",
+            "callingCode": "53"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b3a030-85ad-11eb-9038-cb570cb95311",
+        "name": "Curaçao",
+        "slug": "curacao",
+        "data": {
+            "name": "Curaçao",
+            "capital": "Willemstad",
+            "flag": "https://restcountries.eu/data/cuw.svg",
+            "short2Code": "CW",
+            "short3Code": "CUW",
+            "currencyCode": "ANG",
+            "currencyName": "Netherlands Antillean guilder",
+            "callingCode": "599"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b3b8e0-85ad-11eb-925c-67d84f6f961c",
+        "name": "Cyprus",
+        "slug": "cyprus",
+        "data": {
+            "name": "Cyprus",
+            "capital": "Nicosia",
+            "flag": "https://restcountries.eu/data/cyp.svg",
+            "short2Code": "CY",
+            "short3Code": "CYP",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "357"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b3cf90-85ad-11eb-b1d8-3bcf4957b6f7",
+        "name": "Czech Republic",
+        "slug": "czech-republic",
+        "data": {
+            "name": "Czech Republic",
+            "capital": "Prague",
+            "flag": "https://restcountries.eu/data/cze.svg",
+            "short2Code": "CZ",
+            "short3Code": "CZE",
+            "currencyCode": "CZK",
+            "currencyName": "Czech koruna",
+            "callingCode": "420"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b3e630-85ad-11eb-869f-05e7e7caaf31",
+        "name": "Denmark",
+        "slug": "denmark",
+        "data": {
+            "name": "Denmark",
+            "capital": "Copenhagen",
+            "flag": "https://restcountries.eu/data/dnk.svg",
+            "short2Code": "DK",
+            "short3Code": "DNK",
+            "currencyCode": "DKK",
+            "currencyName": "Danish krone",
+            "callingCode": "45"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b3fdf0-85ad-11eb-9fa2-7f277e550397",
+        "name": "Djibouti",
+        "slug": "djibouti",
+        "data": {
+            "name": "Djibouti",
+            "capital": "Djibouti",
+            "flag": "https://restcountries.eu/data/dji.svg",
+            "short2Code": "DJ",
+            "short3Code": "DJI",
+            "currencyCode": "DJF",
+            "currencyName": "Djiboutian franc",
+            "callingCode": "253"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b41560-85ad-11eb-a5e2-bfc198657c6e",
+        "name": "Dominica",
+        "slug": "dominica",
+        "data": {
+            "name": "Dominica",
+            "capital": "Roseau",
+            "flag": "https://restcountries.eu/data/dma.svg",
+            "short2Code": "DM",
+            "short3Code": "DMA",
+            "currencyCode": "XCD",
+            "currencyName": "East Caribbean dollar",
+            "callingCode": "1767"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b42b60-85ad-11eb-ab04-93e8620d39b0",
+        "name": "Dominican Republic",
+        "slug": "dominican-republic",
+        "data": {
+            "name": "Dominican Republic",
+            "capital": "Santo Domingo",
+            "flag": "https://restcountries.eu/data/dom.svg",
+            "short2Code": "DO",
+            "short3Code": "DOM",
+            "currencyCode": "DOP",
+            "currencyName": "Dominican peso",
+            "callingCode": "1809"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b44150-85ad-11eb-ae85-c5bcc25ba337",
+        "name": "Ecuador",
+        "slug": "ecuador",
+        "data": {
+            "name": "Ecuador",
+            "capital": "Quito",
+            "flag": "https://restcountries.eu/data/ecu.svg",
+            "short2Code": "EC",
+            "short3Code": "ECU",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "593"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b49ec0-85ad-11eb-8fbc-2d52efc2e0d5",
+        "name": "Egypt",
+        "slug": "egypt",
+        "data": {
+            "name": "Egypt",
+            "capital": "Cairo",
+            "flag": "https://restcountries.eu/data/egy.svg",
+            "short2Code": "EG",
+            "short3Code": "EGY",
+            "currencyCode": "EGP",
+            "currencyName": "Egyptian pound",
+            "callingCode": "20"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b4b6a0-85ad-11eb-a881-1df03b053fef",
+        "name": "El Salvador",
+        "slug": "el-salvador",
+        "data": {
+            "name": "El Salvador",
+            "capital": "San Salvador",
+            "flag": "https://restcountries.eu/data/slv.svg",
+            "short2Code": "SV",
+            "short3Code": "SLV",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "503"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b4cc80-85ad-11eb-b189-ab1abdf36b77",
+        "name": "Equatorial Guinea",
+        "slug": "equatorial-guinea",
+        "data": {
+            "name": "Equatorial Guinea",
+            "capital": "Malabo",
+            "flag": "https://restcountries.eu/data/gnq.svg",
+            "short2Code": "GQ",
+            "short3Code": "GNQ",
+            "currencyCode": "XAF",
+            "currencyName": "Central African CFA franc",
+            "callingCode": "240"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b4e210-85ad-11eb-a0fe-459800397347",
+        "name": "Eritrea",
+        "slug": "eritrea",
+        "data": {
+            "name": "Eritrea",
+            "capital": "Asmara",
+            "flag": "https://restcountries.eu/data/eri.svg",
+            "short2Code": "ER",
+            "short3Code": "ERI",
+            "currencyCode": "ERN",
+            "currencyName": "Eritrean nakfa",
+            "callingCode": "291"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b4f9e0-85ad-11eb-9eee-fbff7606b6b5",
+        "name": "Estonia",
+        "slug": "estonia",
+        "data": {
+            "name": "Estonia",
+            "capital": "Tallinn",
+            "flag": "https://restcountries.eu/data/est.svg",
+            "short2Code": "EE",
+            "short3Code": "EST",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "372"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b50fe0-85ad-11eb-a197-b3cba12873a6",
+        "name": "Ethiopia",
+        "slug": "ethiopia",
+        "data": {
+            "name": "Ethiopia",
+            "capital": "Addis Ababa",
+            "flag": "https://restcountries.eu/data/eth.svg",
+            "short2Code": "ET",
+            "short3Code": "ETH",
+            "currencyCode": "ETB",
+            "currencyName": "Ethiopian birr",
+            "callingCode": "251"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b52c00-85ad-11eb-b6ba-a7595bff976b",
+        "name": "Falkland Islands (Malvinas)",
+        "slug": "falkland-islands-malvinas",
+        "data": {
+            "name": "Falkland Islands (Malvinas)",
+            "capital": "Stanley",
+            "flag": "https://restcountries.eu/data/flk.svg",
+            "short2Code": "FK",
+            "short3Code": "FLK",
+            "currencyCode": "FKP",
+            "currencyName": "Falkland Islands pound",
+            "callingCode": "500"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b54310-85ad-11eb-9f5c-89e23976cd39",
+        "name": "Faroe Islands",
+        "slug": "faroe-islands",
+        "data": {
+            "name": "Faroe Islands",
+            "capital": "Tórshavn",
+            "flag": "https://restcountries.eu/data/fro.svg",
+            "short2Code": "FO",
+            "short3Code": "FRO",
+            "currencyCode": "(none)",
+            "currencyName": "Faroese króna",
+            "callingCode": "298"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b558f0-85ad-11eb-9ff3-f5653d73d96d",
+        "name": "Fiji",
+        "slug": "fiji",
+        "data": {
+            "name": "Fiji",
+            "capital": "Suva",
+            "flag": "https://restcountries.eu/data/fji.svg",
+            "short2Code": "FJ",
+            "short3Code": "FJI",
+            "currencyCode": "FJD",
+            "currencyName": "Fijian dollar",
+            "callingCode": "679"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b56f90-85ad-11eb-863d-4d27a7e77e90",
+        "name": "Finland",
+        "slug": "finland",
+        "data": {
+            "name": "Finland",
+            "capital": "Helsinki",
+            "flag": "https://restcountries.eu/data/fin.svg",
+            "short2Code": "FI",
+            "short3Code": "FIN",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "358"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b58760-85ad-11eb-9d2c-b125e91836fc",
+        "name": "France",
+        "slug": "france",
+        "data": {
+            "name": "France",
+            "capital": "Paris",
+            "flag": "https://restcountries.eu/data/fra.svg",
+            "short2Code": "FR",
+            "short3Code": "FRA",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "33"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b59e70-85ad-11eb-b4f1-a36a89e5006d",
+        "name": "French Guiana",
+        "slug": "french-guiana",
+        "data": {
+            "name": "French Guiana",
+            "capital": "Cayenne",
+            "flag": "https://restcountries.eu/data/guf.svg",
+            "short2Code": "GF",
+            "short3Code": "GUF",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "594"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b5b4a0-85ad-11eb-b0cc-f7608436f2ed",
+        "name": "French Polynesia",
+        "slug": "french-polynesia",
+        "data": {
+            "name": "French Polynesia",
+            "capital": "Papeetē",
+            "flag": "https://restcountries.eu/data/pyf.svg",
+            "short2Code": "PF",
+            "short3Code": "PYF",
+            "currencyCode": "XPF",
+            "currencyName": "CFP franc",
+            "callingCode": "689"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b5ca50-85ad-11eb-9c6b-730912483426",
+        "name": "French Southern Territories",
+        "slug": "french-southern-territories",
+        "data": {
+            "name": "French Southern Territories",
+            "capital": "Port-aux-Français",
+            "flag": "https://restcountries.eu/data/atf.svg",
+            "short2Code": "TF",
+            "short3Code": "ATF",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": ""
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b5e1e0-85ad-11eb-a373-f9d6a1c7d37f",
+        "name": "Gabon",
+        "slug": "gabon",
+        "data": {
+            "name": "Gabon",
+            "capital": "Libreville",
+            "flag": "https://restcountries.eu/data/gab.svg",
+            "short2Code": "GA",
+            "short3Code": "GAB",
+            "currencyCode": "XAF",
+            "currencyName": "Central African CFA franc",
+            "callingCode": "241"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b67380-85ad-11eb-96a2-c34625b408da",
+        "name": "Gambia",
+        "slug": "gambia",
+        "data": {
+            "name": "Gambia",
+            "capital": "Banjul",
+            "flag": "https://restcountries.eu/data/gmb.svg",
+            "short2Code": "GM",
+            "short3Code": "GMB",
+            "currencyCode": "GMD",
+            "currencyName": "Gambian dalasi",
+            "callingCode": "220"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b68af0-85ad-11eb-8b48-6b10589085f4",
+        "name": "Georgia",
+        "slug": "georgia",
+        "data": {
+            "name": "Georgia",
+            "capital": "Tbilisi",
+            "flag": "https://restcountries.eu/data/geo.svg",
+            "short2Code": "GE",
+            "short3Code": "GEO",
+            "currencyCode": "GEL",
+            "currencyName": "Georgian Lari",
+            "callingCode": "995"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b6a200-85ad-11eb-a683-b14afe9cbd59",
+        "name": "Germany",
+        "slug": "germany",
+        "data": {
+            "name": "Germany",
+            "capital": "Berlin",
+            "flag": "https://restcountries.eu/data/deu.svg",
+            "short2Code": "DE",
+            "short3Code": "DEU",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "49"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b6b910-85ad-11eb-8c83-cd8b9be0f4f1",
+        "name": "Ghana",
+        "slug": "ghana",
+        "data": {
+            "name": "Ghana",
+            "capital": "Accra",
+            "flag": "https://restcountries.eu/data/gha.svg",
+            "short2Code": "GH",
+            "short3Code": "GHA",
+            "currencyCode": "GHS",
+            "currencyName": "Ghanaian cedi",
+            "callingCode": "233"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b6cfc0-85ad-11eb-a4b2-35e0e280f093",
+        "name": "Gibraltar",
+        "slug": "gibraltar",
+        "data": {
+            "name": "Gibraltar",
+            "capital": "Gibraltar",
+            "flag": "https://restcountries.eu/data/gib.svg",
+            "short2Code": "GI",
+            "short3Code": "GIB",
+            "currencyCode": "GIP",
+            "currencyName": "Gibraltar pound",
+            "callingCode": "350"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b6eb40-85ad-11eb-ba3c-a972e096a1e4",
+        "name": "Greece",
+        "slug": "greece",
+        "data": {
+            "name": "Greece",
+            "capital": "Athens",
+            "flag": "https://restcountries.eu/data/grc.svg",
+            "short2Code": "GR",
+            "short3Code": "GRC",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "30"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b70090-85ad-11eb-a3c4-5d9ff5c8dda5",
+        "name": "Greenland",
+        "slug": "greenland",
+        "data": {
+            "name": "Greenland",
+            "capital": "Nuuk",
+            "flag": "https://restcountries.eu/data/grl.svg",
+            "short2Code": "GL",
+            "short3Code": "GRL",
+            "currencyCode": "DKK",
+            "currencyName": "Danish krone",
+            "callingCode": "299"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b71760-85ad-11eb-84d8-69b0ac780787",
+        "name": "Grenada",
+        "slug": "grenada",
+        "data": {
+            "name": "Grenada",
+            "capital": "St. George's",
+            "flag": "https://restcountries.eu/data/grd.svg",
+            "short2Code": "GD",
+            "short3Code": "GRD",
+            "currencyCode": "XCD",
+            "currencyName": "East Caribbean dollar",
+            "callingCode": "1473"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b72d10-85ad-11eb-900d-bfaf23ffe36f",
+        "name": "Guadeloupe",
+        "slug": "guadeloupe",
+        "data": {
+            "name": "Guadeloupe",
+            "capital": "Basse-Terre",
+            "flag": "https://restcountries.eu/data/glp.svg",
+            "short2Code": "GP",
+            "short3Code": "GLP",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "590"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b74270-85ad-11eb-ade1-81c0707ba8e4",
+        "name": "Guam",
+        "slug": "guam",
+        "data": {
+            "name": "Guam",
+            "capital": "Hagåtña",
+            "flag": "https://restcountries.eu/data/gum.svg",
+            "short2Code": "GU",
+            "short3Code": "GUM",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "1671"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b75820-85ad-11eb-9547-d7e1aa2c0548",
+        "name": "Guatemala",
+        "slug": "guatemala",
+        "data": {
+            "name": "Guatemala",
+            "capital": "Guatemala City",
+            "flag": "https://restcountries.eu/data/gtm.svg",
+            "short2Code": "GT",
+            "short3Code": "GTM",
+            "currencyCode": "GTQ",
+            "currencyName": "Guatemalan quetzal",
+            "callingCode": "502"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b76eb0-85ad-11eb-9e3c-27136b3e8f5f",
+        "name": "Guernsey",
+        "slug": "guernsey",
+        "data": {
+            "name": "Guernsey",
+            "capital": "St. Peter Port",
+            "flag": "https://restcountries.eu/data/ggy.svg",
+            "short2Code": "GG",
+            "short3Code": "GGY",
+            "currencyCode": "(none)",
+            "currencyName": "Guernsey pound",
+            "callingCode": "44"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b78430-85ad-11eb-ba34-650cd457151b",
+        "name": "Guinea",
+        "slug": "guinea",
+        "data": {
+            "name": "Guinea",
+            "capital": "Conakry",
+            "flag": "https://restcountries.eu/data/gin.svg",
+            "short2Code": "GN",
+            "short3Code": "GIN",
+            "currencyCode": "GNF",
+            "currencyName": "Guinean franc",
+            "callingCode": "224"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b79a60-85ad-11eb-a71e-552791c07696",
+        "name": "Guinea-Bissau",
+        "slug": "guinea-bissau",
+        "data": {
+            "name": "Guinea-Bissau",
+            "capital": "Bissau",
+            "flag": "https://restcountries.eu/data/gnb.svg",
+            "short2Code": "GW",
+            "short3Code": "GNB",
+            "currencyCode": "XOF",
+            "currencyName": "West African CFA franc",
+            "callingCode": "245"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b7b310-85ad-11eb-a7a5-8314dcf0e58c",
+        "name": "Guyana",
+        "slug": "guyana",
+        "data": {
+            "name": "Guyana",
+            "capital": "Georgetown",
+            "flag": "https://restcountries.eu/data/guy.svg",
+            "short2Code": "GY",
+            "short3Code": "GUY",
+            "currencyCode": "GYD",
+            "currencyName": "Guyanese dollar",
+            "callingCode": "592"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b7c9c0-85ad-11eb-86b2-ffd8b70094a1",
+        "name": "Haiti",
+        "slug": "haiti",
+        "data": {
+            "name": "Haiti",
+            "capital": "Port-au-Prince",
+            "flag": "https://restcountries.eu/data/hti.svg",
+            "short2Code": "HT",
+            "short3Code": "HTI",
+            "currencyCode": "HTG",
+            "currencyName": "Haitian gourde",
+            "callingCode": "509"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b7e070-85ad-11eb-8198-73328e655284",
+        "name": "Heard Island and McDonald Islands",
+        "slug": "heard-island-and-mcdonald-islands",
+        "data": {
+            "name": "Heard Island and McDonald Islands",
+            "capital": "",
+            "flag": "https://restcountries.eu/data/hmd.svg",
+            "short2Code": "HM",
+            "short3Code": "HMD",
+            "currencyCode": "AUD",
+            "currencyName": "Australian dollar",
+            "callingCode": ""
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b84850-85ad-11eb-88be-73749a0a07e3",
+        "name": "Holy See",
+        "slug": "holy-see",
+        "data": {
+            "name": "Holy See",
+            "capital": "Rome",
+            "flag": "https://restcountries.eu/data/vat.svg",
+            "short2Code": "VA",
+            "short3Code": "VAT",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "379"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b86020-85ad-11eb-a6b1-eb576fd5f660",
+        "name": "Honduras",
+        "slug": "honduras",
+        "data": {
+            "name": "Honduras",
+            "capital": "Tegucigalpa",
+            "flag": "https://restcountries.eu/data/hnd.svg",
+            "short2Code": "HN",
+            "short3Code": "HND",
+            "currencyCode": "HNL",
+            "currencyName": "Honduran lempira",
+            "callingCode": "504"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b87c90-85ad-11eb-b278-6124c18a7302",
+        "name": "Hong Kong",
+        "slug": "hong-kong",
+        "data": {
+            "name": "Hong Kong",
+            "capital": "City of Victoria",
+            "flag": "https://restcountries.eu/data/hkg.svg",
+            "short2Code": "HK",
+            "short3Code": "HKG",
+            "currencyCode": "HKD",
+            "currencyName": "Hong Kong dollar",
+            "callingCode": "852"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b892a0-85ad-11eb-9719-bb652c28bfe0",
+        "name": "Hungary",
+        "slug": "hungary",
+        "data": {
+            "name": "Hungary",
+            "capital": "Budapest",
+            "flag": "https://restcountries.eu/data/hun.svg",
+            "short2Code": "HU",
+            "short3Code": "HUN",
+            "currencyCode": "HUF",
+            "currencyName": "Hungarian forint",
+            "callingCode": "36"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b8a9e0-85ad-11eb-bc10-51564334e482",
+        "name": "Iceland",
+        "slug": "iceland",
+        "data": {
+            "name": "Iceland",
+            "capital": "Reykjavík",
+            "flag": "https://restcountries.eu/data/isl.svg",
+            "short2Code": "IS",
+            "short3Code": "ISL",
+            "currencyCode": "ISK",
+            "currencyName": "Icelandic króna",
+            "callingCode": "354"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b8bff0-85ad-11eb-b595-31f942436da1",
+        "name": "India",
+        "slug": "india",
+        "data": {
+            "name": "India",
+            "capital": "New Delhi",
+            "flag": "https://restcountries.eu/data/ind.svg",
+            "short2Code": "IN",
+            "short3Code": "IND",
+            "currencyCode": "INR",
+            "currencyName": "Indian rupee",
+            "callingCode": "91"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b8d620-85ad-11eb-8b1c-51d2edb27c4e",
+        "name": "Indonesia",
+        "slug": "indonesia",
+        "data": {
+            "name": "Indonesia",
+            "capital": "Jakarta",
+            "flag": "https://restcountries.eu/data/idn.svg",
+            "short2Code": "ID",
+            "short3Code": "IDN",
+            "currencyCode": "IDR",
+            "currencyName": "Indonesian rupiah",
+            "callingCode": "62"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b90640-85ad-11eb-afca-378e5c1a4576",
+        "name": "Iran (Islamic Republic of)",
+        "slug": "iran-islamic-republic-of",
+        "data": {
+            "name": "Iran (Islamic Republic of)",
+            "capital": "Tehran",
+            "flag": "https://restcountries.eu/data/irn.svg",
+            "short2Code": "IR",
+            "short3Code": "IRN",
+            "currencyCode": "IRR",
+            "currencyName": "Iranian rial",
+            "callingCode": "98"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b91c60-85ad-11eb-87f8-d3614dba922f",
+        "name": "Iraq",
+        "slug": "iraq",
+        "data": {
+            "name": "Iraq",
+            "capital": "Baghdad",
+            "flag": "https://restcountries.eu/data/irq.svg",
+            "short2Code": "IQ",
+            "short3Code": "IRQ",
+            "currencyCode": "IQD",
+            "currencyName": "Iraqi dinar",
+            "callingCode": "964"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b93330-85ad-11eb-82b3-2783327ed28c",
+        "name": "Ireland",
+        "slug": "ireland",
+        "data": {
+            "name": "Ireland",
+            "capital": "Dublin",
+            "flag": "https://restcountries.eu/data/irl.svg",
+            "short2Code": "IE",
+            "short3Code": "IRL",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "353"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b94ad0-85ad-11eb-9172-756d44237270",
+        "name": "Isle of Man",
+        "slug": "isle-of-man",
+        "data": {
+            "name": "Isle of Man",
+            "capital": "Douglas",
+            "flag": "https://restcountries.eu/data/imn.svg",
+            "short2Code": "IM",
+            "short3Code": "IMN",
+            "currencyCode": "IMP[G]",
+            "currencyName": "Manx pound",
+            "callingCode": "44"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b96280-85ad-11eb-9bbf-71f57565414d",
+        "name": "Israel",
+        "slug": "israel",
+        "data": {
+            "name": "Israel",
+            "capital": "Jerusalem",
+            "flag": "https://restcountries.eu/data/isr.svg",
+            "short2Code": "IL",
+            "short3Code": "ISR",
+            "currencyCode": "ILS",
+            "currencyName": "Israeli new shekel",
+            "callingCode": "972"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b979a0-85ad-11eb-a658-0384bf9f032b",
+        "name": "Italy",
+        "slug": "italy",
+        "data": {
+            "name": "Italy",
+            "capital": "Rome",
+            "flag": "https://restcountries.eu/data/ita.svg",
+            "short2Code": "IT",
+            "short3Code": "ITA",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "39"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b99030-85ad-11eb-87eb-e34ba4946331",
+        "name": "Jamaica",
+        "slug": "jamaica",
+        "data": {
+            "name": "Jamaica",
+            "capital": "Kingston",
+            "flag": "https://restcountries.eu/data/jam.svg",
+            "short2Code": "JM",
+            "short3Code": "JAM",
+            "currencyCode": "JMD",
+            "currencyName": "Jamaican dollar",
+            "callingCode": "1876"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b9a600-85ad-11eb-830c-23e41368fce2",
+        "name": "Japan",
+        "slug": "japan",
+        "data": {
+            "name": "Japan",
+            "capital": "Tokyo",
+            "flag": "https://restcountries.eu/data/jpn.svg",
+            "short2Code": "JP",
+            "short3Code": "JPN",
+            "currencyCode": "JPY",
+            "currencyName": "Japanese yen",
+            "callingCode": "81"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ba1e00-85ad-11eb-b632-bdaf76f91d23",
+        "name": "Jersey",
+        "slug": "jersey",
+        "data": {
+            "name": "Jersey",
+            "capital": "Saint Helier",
+            "flag": "https://restcountries.eu/data/jey.svg",
+            "short2Code": "JE",
+            "short3Code": "JEY",
+            "currencyCode": "JEP[G]",
+            "currencyName": "Jersey pound",
+            "callingCode": "44"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ba4200-85ad-11eb-988d-6985cacee433",
+        "name": "Jordan",
+        "slug": "jordan",
+        "data": {
+            "name": "Jordan",
+            "capital": "Amman",
+            "flag": "https://restcountries.eu/data/jor.svg",
+            "short2Code": "JO",
+            "short3Code": "JOR",
+            "currencyCode": "JOD",
+            "currencyName": "Jordanian dinar",
+            "callingCode": "962"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ba57b0-85ad-11eb-9574-413e55374c11",
+        "name": "Kazakhstan",
+        "slug": "kazakhstan",
+        "data": {
+            "name": "Kazakhstan",
+            "capital": "Astana",
+            "flag": "https://restcountries.eu/data/kaz.svg",
+            "short2Code": "KZ",
+            "short3Code": "KAZ",
+            "currencyCode": "KZT",
+            "currencyName": "Kazakhstani tenge",
+            "callingCode": "76"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ba6f60-85ad-11eb-88f1-39b4763e914c",
+        "name": "Kenya",
+        "slug": "kenya",
+        "data": {
+            "name": "Kenya",
+            "capital": "Nairobi",
+            "flag": "https://restcountries.eu/data/ken.svg",
+            "short2Code": "KE",
+            "short3Code": "KEN",
+            "currencyCode": "KES",
+            "currencyName": "Kenyan shilling",
+            "callingCode": "254"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ba85d0-85ad-11eb-853d-77dd489a5912",
+        "name": "Kiribati",
+        "slug": "kiribati",
+        "data": {
+            "name": "Kiribati",
+            "capital": "South Tarawa",
+            "flag": "https://restcountries.eu/data/kir.svg",
+            "short2Code": "KI",
+            "short3Code": "KIR",
+            "currencyCode": "(none)",
+            "currencyName": "Kiribati dollar",
+            "callingCode": "686"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bf4f40-85ad-11eb-bd6c-f744324be453",
+        "name": "Korea (Democratic People's Republic of)",
+        "slug": "korea-democratic-peoples-republic-of",
+        "data": {
+            "name": "Korea (Democratic People's Republic of)",
+            "capital": "Pyongyang",
+            "flag": "https://restcountries.eu/data/prk.svg",
+            "short2Code": "KP",
+            "short3Code": "PRK",
+            "currencyCode": "KPW",
+            "currencyName": "North Korean won",
+            "callingCode": "850"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c46b30-85ad-11eb-a2e5-370ed83bcea6",
+        "name": "Korea (Republic of)",
+        "slug": "korea-republic-of",
+        "data": {
+            "name": "Korea (Republic of)",
+            "capital": "Seoul",
+            "flag": "https://restcountries.eu/data/kor.svg",
+            "short2Code": "KR",
+            "short3Code": "KOR",
+            "currencyCode": "KRW",
+            "currencyName": "South Korean won",
+            "callingCode": "82"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ba9ba0-85ad-11eb-89f4-b74d5f698c6b",
+        "name": "Kuwait",
+        "slug": "kuwait",
+        "data": {
+            "name": "Kuwait",
+            "capital": "Kuwait City",
+            "flag": "https://restcountries.eu/data/kwt.svg",
+            "short2Code": "KW",
+            "short3Code": "KWT",
+            "currencyCode": "KWD",
+            "currencyName": "Kuwaiti dinar",
+            "callingCode": "965"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bab1d0-85ad-11eb-be8f-918f8c48e3a0",
+        "name": "Kyrgyzstan",
+        "slug": "kyrgyzstan",
+        "data": {
+            "name": "Kyrgyzstan",
+            "capital": "Bishkek",
+            "flag": "https://restcountries.eu/data/kgz.svg",
+            "short2Code": "KG",
+            "short3Code": "KGZ",
+            "currencyCode": "KGS",
+            "currencyName": "Kyrgyzstani som",
+            "callingCode": "996"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bac7e0-85ad-11eb-9ccf-07bd987d1d1d",
+        "name": "Lao People's Democratic Republic",
+        "slug": "lao-peoples-democratic-republic",
+        "data": {
+            "name": "Lao People's Democratic Republic",
+            "capital": "Vientiane",
+            "flag": "https://restcountries.eu/data/lao.svg",
+            "short2Code": "LA",
+            "short3Code": "LAO",
+            "currencyCode": "LAK",
+            "currencyName": "Lao kip",
+            "callingCode": "856"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78baddb0-85ad-11eb-addf-4b1dd0ec081e",
+        "name": "Latvia",
+        "slug": "latvia",
+        "data": {
+            "name": "Latvia",
+            "capital": "Riga",
+            "flag": "https://restcountries.eu/data/lva.svg",
+            "short2Code": "LV",
+            "short3Code": "LVA",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "371"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78baf320-85ad-11eb-b1d9-5da85a87086b",
+        "name": "Lebanon",
+        "slug": "lebanon",
+        "data": {
+            "name": "Lebanon",
+            "capital": "Beirut",
+            "flag": "https://restcountries.eu/data/lbn.svg",
+            "short2Code": "LB",
+            "short3Code": "LBN",
+            "currencyCode": "LBP",
+            "currencyName": "Lebanese pound",
+            "callingCode": "961"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bb0930-85ad-11eb-bf52-43cc27104c80",
+        "name": "Lesotho",
+        "slug": "lesotho",
+        "data": {
+            "name": "Lesotho",
+            "capital": "Maseru",
+            "flag": "https://restcountries.eu/data/lso.svg",
+            "short2Code": "LS",
+            "short3Code": "LSO",
+            "currencyCode": "ZAR",
+            "currencyName": "South African rand",
+            "callingCode": "266"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bb1f20-85ad-11eb-9ca4-dfa9c20bb376",
+        "name": "Liberia",
+        "slug": "liberia",
+        "data": {
+            "name": "Liberia",
+            "capital": "Monrovia",
+            "flag": "https://restcountries.eu/data/lbr.svg",
+            "short2Code": "LR",
+            "short3Code": "LBR",
+            "currencyCode": "LRD",
+            "currencyName": "Liberian dollar",
+            "callingCode": "231"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bb35c0-85ad-11eb-87f9-e37d4c453de4",
+        "name": "Libya",
+        "slug": "libya",
+        "data": {
+            "name": "Libya",
+            "capital": "Tripoli",
+            "flag": "https://restcountries.eu/data/lby.svg",
+            "short2Code": "LY",
+            "short3Code": "LBY",
+            "currencyCode": "LYD",
+            "currencyName": "Libyan dinar",
+            "callingCode": "218"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bb4bc0-85ad-11eb-ae76-b11ac2cfa089",
+        "name": "Liechtenstein",
+        "slug": "liechtenstein",
+        "data": {
+            "name": "Liechtenstein",
+            "capital": "Vaduz",
+            "flag": "https://restcountries.eu/data/lie.svg",
+            "short2Code": "LI",
+            "short3Code": "LIE",
+            "currencyCode": "CHF",
+            "currencyName": "Swiss franc",
+            "callingCode": "423"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bb6240-85ad-11eb-b8f6-1bdba493a4bf",
+        "name": "Lithuania",
+        "slug": "lithuania",
+        "data": {
+            "name": "Lithuania",
+            "capital": "Vilnius",
+            "flag": "https://restcountries.eu/data/ltu.svg",
+            "short2Code": "LT",
+            "short3Code": "LTU",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "370"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bb7e60-85ad-11eb-96b8-811412545756",
+        "name": "Luxembourg",
+        "slug": "luxembourg",
+        "data": {
+            "name": "Luxembourg",
+            "capital": "Luxembourg",
+            "flag": "https://restcountries.eu/data/lux.svg",
+            "short2Code": "LU",
+            "short3Code": "LUX",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "352"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bb9470-85ad-11eb-a927-b798da0feede",
+        "name": "Macao",
+        "slug": "macao",
+        "data": {
+            "name": "Macao",
+            "capital": "",
+            "flag": "https://restcountries.eu/data/mac.svg",
+            "short2Code": "MO",
+            "short3Code": "MAC",
+            "currencyCode": "MOP",
+            "currencyName": "Macanese pataca",
+            "callingCode": "853"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bbebf0-85ad-11eb-87fa-a3e96383584a",
+        "name": "Macedonia (the former Yugoslav Republic of)",
+        "slug": "macedonia-the-former-yugoslav-republic-of",
+        "data": {
+            "name": "Macedonia (the former Yugoslav Republic of)",
+            "capital": "Skopje",
+            "flag": "https://restcountries.eu/data/mkd.svg",
+            "short2Code": "MK",
+            "short3Code": "MKD",
+            "currencyCode": "MKD",
+            "currencyName": "Macedonian denar",
+            "callingCode": "389"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bc03c0-85ad-11eb-ae91-33f42f534661",
+        "name": "Madagascar",
+        "slug": "madagascar",
+        "data": {
+            "name": "Madagascar",
+            "capital": "Antananarivo",
+            "flag": "https://restcountries.eu/data/mdg.svg",
+            "short2Code": "MG",
+            "short3Code": "MDG",
+            "currencyCode": "MGA",
+            "currencyName": "Malagasy ariary",
+            "callingCode": "261"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bc1cb0-85ad-11eb-94ea-11ca96027fa9",
+        "name": "Malawi",
+        "slug": "malawi",
+        "data": {
+            "name": "Malawi",
+            "capital": "Lilongwe",
+            "flag": "https://restcountries.eu/data/mwi.svg",
+            "short2Code": "MW",
+            "short3Code": "MWI",
+            "currencyCode": "MWK",
+            "currencyName": "Malawian kwacha",
+            "callingCode": "265"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bc31d0-85ad-11eb-8d34-a7db1e9789da",
+        "name": "Malaysia",
+        "slug": "malaysia",
+        "data": {
+            "name": "Malaysia",
+            "capital": "Kuala Lumpur",
+            "flag": "https://restcountries.eu/data/mys.svg",
+            "short2Code": "MY",
+            "short3Code": "MYS",
+            "currencyCode": "MYR",
+            "currencyName": "Malaysian ringgit",
+            "callingCode": "60"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bc48a0-85ad-11eb-a119-d7b1d94492fe",
+        "name": "Maldives",
+        "slug": "maldives",
+        "data": {
+            "name": "Maldives",
+            "capital": "Malé",
+            "flag": "https://restcountries.eu/data/mdv.svg",
+            "short2Code": "MV",
+            "short3Code": "MDV",
+            "currencyCode": "MVR",
+            "currencyName": "Maldivian rufiyaa",
+            "callingCode": "960"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bc5dc0-85ad-11eb-9b8e-ffbc50260557",
+        "name": "Mali",
+        "slug": "mali",
+        "data": {
+            "name": "Mali",
+            "capital": "Bamako",
+            "flag": "https://restcountries.eu/data/mli.svg",
+            "short2Code": "ML",
+            "short3Code": "MLI",
+            "currencyCode": "XOF",
+            "currencyName": "West African CFA franc",
+            "callingCode": "223"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bc7400-85ad-11eb-b5b6-910431610dea",
+        "name": "Malta",
+        "slug": "malta",
+        "data": {
+            "name": "Malta",
+            "capital": "Valletta",
+            "flag": "https://restcountries.eu/data/mlt.svg",
+            "short2Code": "MT",
+            "short3Code": "MLT",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "356"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bc8a00-85ad-11eb-94c0-8f685f7f494c",
+        "name": "Marshall Islands",
+        "slug": "marshall-islands",
+        "data": {
+            "name": "Marshall Islands",
+            "capital": "Majuro",
+            "flag": "https://restcountries.eu/data/mhl.svg",
+            "short2Code": "MH",
+            "short3Code": "MHL",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "692"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bc9fc0-85ad-11eb-81fd-0bd4a4a77611",
+        "name": "Martinique",
+        "slug": "martinique",
+        "data": {
+            "name": "Martinique",
+            "capital": "Fort-de-France",
+            "flag": "https://restcountries.eu/data/mtq.svg",
+            "short2Code": "MQ",
+            "short3Code": "MTQ",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "596"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bcb480-85ad-11eb-a54a-59ed907c7911",
+        "name": "Mauritania",
+        "slug": "mauritania",
+        "data": {
+            "name": "Mauritania",
+            "capital": "Nouakchott",
+            "flag": "https://restcountries.eu/data/mrt.svg",
+            "short2Code": "MR",
+            "short3Code": "MRT",
+            "currencyCode": "MRO",
+            "currencyName": "Mauritanian ouguiya",
+            "callingCode": "222"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bcc950-85ad-11eb-ad96-3f9569dbf147",
+        "name": "Mauritius",
+        "slug": "mauritius",
+        "data": {
+            "name": "Mauritius",
+            "capital": "Port Louis",
+            "flag": "https://restcountries.eu/data/mus.svg",
+            "short2Code": "MU",
+            "short3Code": "MUS",
+            "currencyCode": "MUR",
+            "currencyName": "Mauritian rupee",
+            "callingCode": "230"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bce000-85ad-11eb-af00-2b75dfcd8fc4",
+        "name": "Mayotte",
+        "slug": "mayotte",
+        "data": {
+            "name": "Mayotte",
+            "capital": "Mamoudzou",
+            "flag": "https://restcountries.eu/data/myt.svg",
+            "short2Code": "YT",
+            "short3Code": "MYT",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "262"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bcfbd0-85ad-11eb-ad5f-8be8dce72ec4",
+        "name": "Mexico",
+        "slug": "mexico",
+        "data": {
+            "name": "Mexico",
+            "capital": "Mexico City",
+            "flag": "https://restcountries.eu/data/mex.svg",
+            "short2Code": "MX",
+            "short3Code": "MEX",
+            "currencyCode": "MXN",
+            "currencyName": "Mexican peso",
+            "callingCode": "52"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bd27b0-85ad-11eb-aaf5-b3a5b5ca8f87",
+        "name": "Micronesia (Federated States of)",
+        "slug": "micronesia-federated-states-of",
+        "data": {
+            "name": "Micronesia (Federated States of)",
+            "capital": "Palikir",
+            "flag": "https://restcountries.eu/data/fsm.svg",
+            "short2Code": "FM",
+            "short3Code": "FSM",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "691"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bd3e60-85ad-11eb-b14d-392bc6ebeff4",
+        "name": "Moldova (Republic of)",
+        "slug": "moldova-republic-of",
+        "data": {
+            "name": "Moldova (Republic of)",
+            "capital": "Chișinău",
+            "flag": "https://restcountries.eu/data/mda.svg",
+            "short2Code": "MD",
+            "short3Code": "MDA",
+            "currencyCode": "MDL",
+            "currencyName": "Moldovan leu",
+            "callingCode": "373"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bd5480-85ad-11eb-bec1-c11a3551602a",
+        "name": "Monaco",
+        "slug": "monaco",
+        "data": {
+            "name": "Monaco",
+            "capital": "Monaco",
+            "flag": "https://restcountries.eu/data/mco.svg",
+            "short2Code": "MC",
+            "short3Code": "MCO",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "377"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bd6a10-85ad-11eb-b12d-8f4b933cebcf",
+        "name": "Mongolia",
+        "slug": "mongolia",
+        "data": {
+            "name": "Mongolia",
+            "capital": "Ulan Bator",
+            "flag": "https://restcountries.eu/data/mng.svg",
+            "short2Code": "MN",
+            "short3Code": "MNG",
+            "currencyCode": "MNT",
+            "currencyName": "Mongolian tögrög",
+            "callingCode": "976"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bd9b00-85ad-11eb-be43-a1a3c3f6c2a4",
+        "name": "Montenegro",
+        "slug": "montenegro",
+        "data": {
+            "name": "Montenegro",
+            "capital": "Podgorica",
+            "flag": "https://restcountries.eu/data/mne.svg",
+            "short2Code": "ME",
+            "short3Code": "MNE",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "382"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bdb1d0-85ad-11eb-a9e8-05791ae41ec9",
+        "name": "Montserrat",
+        "slug": "montserrat",
+        "data": {
+            "name": "Montserrat",
+            "capital": "Plymouth",
+            "flag": "https://restcountries.eu/data/msr.svg",
+            "short2Code": "MS",
+            "short3Code": "MSR",
+            "currencyCode": "XCD",
+            "currencyName": "East Caribbean dollar",
+            "callingCode": "1664"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bdc8c0-85ad-11eb-af5c-95b1bac863fd",
+        "name": "Morocco",
+        "slug": "morocco",
+        "data": {
+            "name": "Morocco",
+            "capital": "Rabat",
+            "flag": "https://restcountries.eu/data/mar.svg",
+            "short2Code": "MA",
+            "short3Code": "MAR",
+            "currencyCode": "MAD",
+            "currencyName": "Moroccan dirham",
+            "callingCode": "212"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bdde20-85ad-11eb-be78-9d0358420adb",
+        "name": "Mozambique",
+        "slug": "mozambique",
+        "data": {
+            "name": "Mozambique",
+            "capital": "Maputo",
+            "flag": "https://restcountries.eu/data/moz.svg",
+            "short2Code": "MZ",
+            "short3Code": "MOZ",
+            "currencyCode": "MZN",
+            "currencyName": "Mozambican metical",
+            "callingCode": "258"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bdf340-85ad-11eb-a609-0d3b9647b0e1",
+        "name": "Myanmar",
+        "slug": "myanmar",
+        "data": {
+            "name": "Myanmar",
+            "capital": "Naypyidaw",
+            "flag": "https://restcountries.eu/data/mmr.svg",
+            "short2Code": "MM",
+            "short3Code": "MMR",
+            "currencyCode": "MMK",
+            "currencyName": "Burmese kyat",
+            "callingCode": "95"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78be1bc0-85ad-11eb-95da-edc9f5645962",
+        "name": "Namibia",
+        "slug": "namibia",
+        "data": {
+            "name": "Namibia",
+            "capital": "Windhoek",
+            "flag": "https://restcountries.eu/data/nam.svg",
+            "short2Code": "NA",
+            "short3Code": "NAM",
+            "currencyCode": "ZAR",
+            "currencyName": "South African rand",
+            "callingCode": "264"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78be3270-85ad-11eb-84a4-4551840e1d3d",
+        "name": "Nauru",
+        "slug": "nauru",
+        "data": {
+            "name": "Nauru",
+            "capital": "Yaren",
+            "flag": "https://restcountries.eu/data/nru.svg",
+            "short2Code": "NR",
+            "short3Code": "NRU",
+            "currencyCode": "(none)",
+            "currencyName": null,
+            "callingCode": "674"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78be4880-85ad-11eb-96f4-6d060c3bd5e3",
+        "name": "Nepal",
+        "slug": "nepal",
+        "data": {
+            "name": "Nepal",
+            "capital": "Kathmandu",
+            "flag": "https://restcountries.eu/data/npl.svg",
+            "short2Code": "NP",
+            "short3Code": "NPL",
+            "currencyCode": "NPR",
+            "currencyName": "Nepalese rupee",
+            "callingCode": "977"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78be6170-85ad-11eb-ab05-97e44c1825d5",
+        "name": "Netherlands",
+        "slug": "netherlands",
+        "data": {
+            "name": "Netherlands",
+            "capital": "Amsterdam",
+            "flag": "https://restcountries.eu/data/nld.svg",
+            "short2Code": "NL",
+            "short3Code": "NLD",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "31"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78be8f70-85ad-11eb-8f48-9f730e91108b",
+        "name": "New Caledonia",
+        "slug": "new-caledonia",
+        "data": {
+            "name": "New Caledonia",
+            "capital": "Nouméa",
+            "flag": "https://restcountries.eu/data/ncl.svg",
+            "short2Code": "NC",
+            "short3Code": "NCL",
+            "currencyCode": "XPF",
+            "currencyName": "CFP franc",
+            "callingCode": "687"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78beab00-85ad-11eb-aa71-27bf5ab6134d",
+        "name": "New Zealand",
+        "slug": "new-zealand",
+        "data": {
+            "name": "New Zealand",
+            "capital": "Wellington",
+            "flag": "https://restcountries.eu/data/nzl.svg",
+            "short2Code": "NZ",
+            "short3Code": "NZL",
+            "currencyCode": "NZD",
+            "currencyName": "New Zealand dollar",
+            "callingCode": "64"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bec140-85ad-11eb-aff3-4712844ac06f",
+        "name": "Nicaragua",
+        "slug": "nicaragua",
+        "data": {
+            "name": "Nicaragua",
+            "capital": "Managua",
+            "flag": "https://restcountries.eu/data/nic.svg",
+            "short2Code": "NI",
+            "short3Code": "NIC",
+            "currencyCode": "NIO",
+            "currencyName": "Nicaraguan córdoba",
+            "callingCode": "505"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bed6c0-85ad-11eb-9799-2120f4b36aab",
+        "name": "Niger",
+        "slug": "niger",
+        "data": {
+            "name": "Niger",
+            "capital": "Niamey",
+            "flag": "https://restcountries.eu/data/ner.svg",
+            "short2Code": "NE",
+            "short3Code": "NER",
+            "currencyCode": "XOF",
+            "currencyName": "West African CFA franc",
+            "callingCode": "227"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78beed00-85ad-11eb-850c-1d9010cc4d4b",
+        "name": "Nigeria",
+        "slug": "nigeria",
+        "data": {
+            "name": "Nigeria",
+            "capital": "Abuja",
+            "flag": "https://restcountries.eu/data/nga.svg",
+            "short2Code": "NG",
+            "short3Code": "NGA",
+            "currencyCode": "NGN",
+            "currencyName": "Nigerian naira",
+            "callingCode": "234"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bf1ff0-85ad-11eb-bf77-830db88d8dff",
+        "name": "Niue",
+        "slug": "niue",
+        "data": {
+            "name": "Niue",
+            "capital": "Alofi",
+            "flag": "https://restcountries.eu/data/niu.svg",
+            "short2Code": "NU",
+            "short3Code": "NIU",
+            "currencyCode": "(none)",
+            "currencyName": "Niue dollar",
+            "callingCode": "683"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bf3670-85ad-11eb-a867-cbe9762d683f",
+        "name": "Norfolk Island",
+        "slug": "norfolk-island",
+        "data": {
+            "name": "Norfolk Island",
+            "capital": "Kingston",
+            "flag": "https://restcountries.eu/data/nfk.svg",
+            "short2Code": "NF",
+            "short3Code": "NFK",
+            "currencyCode": "AUD",
+            "currencyName": "Australian dollar",
+            "callingCode": "672"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bf65f0-85ad-11eb-8251-a1e837f4f1b8",
+        "name": "Northern Mariana Islands",
+        "slug": "northern-mariana-islands",
+        "data": {
+            "name": "Northern Mariana Islands",
+            "capital": "Saipan",
+            "flag": "https://restcountries.eu/data/mnp.svg",
+            "short2Code": "MP",
+            "short3Code": "MNP",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "1670"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bf7bc0-85ad-11eb-8042-c53a1b2b7ee2",
+        "name": "Norway",
+        "slug": "norway",
+        "data": {
+            "name": "Norway",
+            "capital": "Oslo",
+            "flag": "https://restcountries.eu/data/nor.svg",
+            "short2Code": "NO",
+            "short3Code": "NOR",
+            "currencyCode": "NOK",
+            "currencyName": "Norwegian krone",
+            "callingCode": "47"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bf9ad0-85ad-11eb-9df1-6d14b1e9f948",
+        "name": "Oman",
+        "slug": "oman",
+        "data": {
+            "name": "Oman",
+            "capital": "Muscat",
+            "flag": "https://restcountries.eu/data/omn.svg",
+            "short2Code": "OM",
+            "short3Code": "OMN",
+            "currencyCode": "OMR",
+            "currencyName": "Omani rial",
+            "callingCode": "968"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bfcb30-85ad-11eb-9e4f-cfd7ba4e6450",
+        "name": "Pakistan",
+        "slug": "pakistan",
+        "data": {
+            "name": "Pakistan",
+            "capital": "Islamabad",
+            "flag": "https://restcountries.eu/data/pak.svg",
+            "short2Code": "PK",
+            "short3Code": "PAK",
+            "currencyCode": "PKR",
+            "currencyName": "Pakistani rupee",
+            "callingCode": "92"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bfe1b0-85ad-11eb-940d-61ddf5471f4d",
+        "name": "Palau",
+        "slug": "palau",
+        "data": {
+            "name": "Palau",
+            "capital": "Ngerulmud",
+            "flag": "https://restcountries.eu/data/plw.svg",
+            "short2Code": "PW",
+            "short3Code": "PLW",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "680"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78bff8d0-85ad-11eb-a884-45b678376be5",
+        "name": "Palestine, State of",
+        "slug": "palestine-state-of",
+        "data": {
+            "name": "Palestine, State of",
+            "capital": "Ramallah",
+            "flag": "https://restcountries.eu/data/pse.svg",
+            "short2Code": "PS",
+            "short3Code": "PSE",
+            "currencyCode": "ILS",
+            "currencyName": "Israeli new sheqel",
+            "callingCode": "970"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c01c70-85ad-11eb-8b69-5b5fc81fa031",
+        "name": "Panama",
+        "slug": "panama",
+        "data": {
+            "name": "Panama",
+            "capital": "Panama City",
+            "flag": "https://restcountries.eu/data/pan.svg",
+            "short2Code": "PA",
+            "short3Code": "PAN",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "507"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c03320-85ad-11eb-a9f5-9bdbe5be3c89",
+        "name": "Papua New Guinea",
+        "slug": "papua-new-guinea",
+        "data": {
+            "name": "Papua New Guinea",
+            "capital": "Port Moresby",
+            "flag": "https://restcountries.eu/data/png.svg",
+            "short2Code": "PG",
+            "short3Code": "PNG",
+            "currencyCode": "PGK",
+            "currencyName": "Papua New Guinean kina",
+            "callingCode": "675"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c048e0-85ad-11eb-98cd-59fd069b3959",
+        "name": "Paraguay",
+        "slug": "paraguay",
+        "data": {
+            "name": "Paraguay",
+            "capital": "Asunción",
+            "flag": "https://restcountries.eu/data/pry.svg",
+            "short2Code": "PY",
+            "short3Code": "PRY",
+            "currencyCode": "PYG",
+            "currencyName": "Paraguayan guaraní",
+            "callingCode": "595"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c05ed0-85ad-11eb-84a0-41c91ac19b05",
+        "name": "Peru",
+        "slug": "peru",
+        "data": {
+            "name": "Peru",
+            "capital": "Lima",
+            "flag": "https://restcountries.eu/data/per.svg",
+            "short2Code": "PE",
+            "short3Code": "PER",
+            "currencyCode": "PEN",
+            "currencyName": "Peruvian sol",
+            "callingCode": "51"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c073f0-85ad-11eb-903c-f9274f8736cb",
+        "name": "Philippines",
+        "slug": "philippines",
+        "data": {
+            "name": "Philippines",
+            "capital": "Manila",
+            "flag": "https://restcountries.eu/data/phl.svg",
+            "short2Code": "PH",
+            "short3Code": "PHL",
+            "currencyCode": "PHP",
+            "currencyName": "Philippine peso",
+            "callingCode": "63"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c0d510-85ad-11eb-9acd-3905b93b0fec",
+        "name": "Pitcairn",
+        "slug": "pitcairn",
+        "data": {
+            "name": "Pitcairn",
+            "capital": "Adamstown",
+            "flag": "https://restcountries.eu/data/pcn.svg",
+            "short2Code": "PN",
+            "short3Code": "PCN",
+            "currencyCode": null,
+            "currencyName": "Pitcairn Islands dollar",
+            "callingCode": "64"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c0ed10-85ad-11eb-aead-f5db370784ac",
+        "name": "Poland",
+        "slug": "poland",
+        "data": {
+            "name": "Poland",
+            "capital": "Warsaw",
+            "flag": "https://restcountries.eu/data/pol.svg",
+            "short2Code": "PL",
+            "short3Code": "POL",
+            "currencyCode": "PLN",
+            "currencyName": "Polish złoty",
+            "callingCode": "48"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c10360-85ad-11eb-b344-e9fa8170aa5f",
+        "name": "Portugal",
+        "slug": "portugal",
+        "data": {
+            "name": "Portugal",
+            "capital": "Lisbon",
+            "flag": "https://restcountries.eu/data/prt.svg",
+            "short2Code": "PT",
+            "short3Code": "PRT",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "351"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c11b00-85ad-11eb-8451-91ba59393bae",
+        "name": "Puerto Rico",
+        "slug": "puerto-rico",
+        "data": {
+            "name": "Puerto Rico",
+            "capital": "San Juan",
+            "flag": "https://restcountries.eu/data/pri.svg",
+            "short2Code": "PR",
+            "short3Code": "PRI",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "1787"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c13170-85ad-11eb-99db-b963598d2e19",
+        "name": "Qatar",
+        "slug": "qatar",
+        "data": {
+            "name": "Qatar",
+            "capital": "Doha",
+            "flag": "https://restcountries.eu/data/qat.svg",
+            "short2Code": "QA",
+            "short3Code": "QAT",
+            "currencyCode": "QAR",
+            "currencyName": "Qatari riyal",
+            "callingCode": "974"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c146f0-85ad-11eb-a29c-dff9f514b184",
+        "name": "Republic of Kosovo",
+        "slug": "republic-of-kosovo",
+        "data": {
+            "name": "Republic of Kosovo",
+            "capital": "Pristina",
+            "flag": "https://restcountries.eu/data/kos.svg",
+            "short2Code": "XK",
+            "short3Code": "KOS",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "383"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c15d60-85ad-11eb-bc4e-bbb245547339",
+        "name": "Réunion",
+        "slug": "reunion",
+        "data": {
+            "name": "Réunion",
+            "capital": "Saint-Denis",
+            "flag": "https://restcountries.eu/data/reu.svg",
+            "short2Code": "RE",
+            "short3Code": "REU",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "262"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c17550-85ad-11eb-ad2e-3912fa064e42",
+        "name": "Romania",
+        "slug": "romania",
+        "data": {
+            "name": "Romania",
+            "capital": "Bucharest",
+            "flag": "https://restcountries.eu/data/rou.svg",
+            "short2Code": "RO",
+            "short3Code": "ROU",
+            "currencyCode": "RON",
+            "currencyName": "Romanian leu",
+            "callingCode": "40"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c18bf0-85ad-11eb-80fc-7dca60d76e64",
+        "name": "Russian Federation",
+        "slug": "russian-federation",
+        "data": {
+            "name": "Russian Federation",
+            "capital": "Moscow",
+            "flag": "https://restcountries.eu/data/rus.svg",
+            "short2Code": "RU",
+            "short3Code": "RUS",
+            "currencyCode": "RUB",
+            "currencyName": "Russian ruble",
+            "callingCode": "7"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c1a150-85ad-11eb-81f4-93c2e737ffc6",
+        "name": "Rwanda",
+        "slug": "rwanda",
+        "data": {
+            "name": "Rwanda",
+            "capital": "Kigali",
+            "flag": "https://restcountries.eu/data/rwa.svg",
+            "short2Code": "RW",
+            "short3Code": "RWA",
+            "currencyCode": "RWF",
+            "currencyName": "Rwandan franc",
+            "callingCode": "250"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c1bc20-85ad-11eb-b7af-2f1b46f96d77",
+        "name": "Saint Barthélemy",
+        "slug": "saint-barthelemy",
+        "data": {
+            "name": "Saint Barthélemy",
+            "capital": "Gustavia",
+            "flag": "https://restcountries.eu/data/blm.svg",
+            "short2Code": "BL",
+            "short3Code": "BLM",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "590"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c1d490-85ad-11eb-925e-31808a5d26f1",
+        "name": "Saint Helena, Ascension and Tristan da Cunha",
+        "slug": "saint-helena-ascension-and-tristan-da-cunha",
+        "data": {
+            "name": "Saint Helena, Ascension and Tristan da Cunha",
+            "capital": "Jamestown",
+            "flag": "https://restcountries.eu/data/shn.svg",
+            "short2Code": "SH",
+            "short3Code": "SHN",
+            "currencyCode": "SHP",
+            "currencyName": "Saint Helena pound",
+            "callingCode": "290"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c1ea40-85ad-11eb-96b3-8d3117384194",
+        "name": "Saint Kitts and Nevis",
+        "slug": "saint-kitts-and-nevis",
+        "data": {
+            "name": "Saint Kitts and Nevis",
+            "capital": "Basseterre",
+            "flag": "https://restcountries.eu/data/kna.svg",
+            "short2Code": "KN",
+            "short3Code": "KNA",
+            "currencyCode": "XCD",
+            "currencyName": "East Caribbean dollar",
+            "callingCode": "1869"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c200e0-85ad-11eb-af6f-15cd6f63faa8",
+        "name": "Saint Lucia",
+        "slug": "saint-lucia",
+        "data": {
+            "name": "Saint Lucia",
+            "capital": "Castries",
+            "flag": "https://restcountries.eu/data/lca.svg",
+            "short2Code": "LC",
+            "short3Code": "LCA",
+            "currencyCode": "XCD",
+            "currencyName": "East Caribbean dollar",
+            "callingCode": "1758"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c2aa30-85ad-11eb-a9a2-e12219e11d55",
+        "name": "Saint Martin (French part)",
+        "slug": "saint-martin-french-part",
+        "data": {
+            "name": "Saint Martin (French part)",
+            "capital": "Marigot",
+            "flag": "https://restcountries.eu/data/maf.svg",
+            "short2Code": "MF",
+            "short3Code": "MAF",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "590"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c2c720-85ad-11eb-bd66-574322926a8f",
+        "name": "Saint Pierre and Miquelon",
+        "slug": "saint-pierre-and-miquelon",
+        "data": {
+            "name": "Saint Pierre and Miquelon",
+            "capital": "Saint-Pierre",
+            "flag": "https://restcountries.eu/data/spm.svg",
+            "short2Code": "PM",
+            "short3Code": "SPM",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "508"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c2dd90-85ad-11eb-81a5-31c531de7cd4",
+        "name": "Saint Vincent and the Grenadines",
+        "slug": "saint-vincent-and-the-grenadines",
+        "data": {
+            "name": "Saint Vincent and the Grenadines",
+            "capital": "Kingstown",
+            "flag": "https://restcountries.eu/data/vct.svg",
+            "short2Code": "VC",
+            "short3Code": "VCT",
+            "currencyCode": "XCD",
+            "currencyName": "East Caribbean dollar",
+            "callingCode": "1784"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c2f3e0-85ad-11eb-9545-45f6dca0b8a6",
+        "name": "Samoa",
+        "slug": "samoa",
+        "data": {
+            "name": "Samoa",
+            "capital": "Apia",
+            "flag": "https://restcountries.eu/data/wsm.svg",
+            "short2Code": "WS",
+            "short3Code": "WSM",
+            "currencyCode": "WST",
+            "currencyName": "Samoan tālā",
+            "callingCode": "685"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c30a90-85ad-11eb-8796-a97d19bb3bd5",
+        "name": "San Marino",
+        "slug": "san-marino",
+        "data": {
+            "name": "San Marino",
+            "capital": "City of San Marino",
+            "flag": "https://restcountries.eu/data/smr.svg",
+            "short2Code": "SM",
+            "short3Code": "SMR",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "378"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c32000-85ad-11eb-b086-1b457e7976ba",
+        "name": "Sao Tome and Principe",
+        "slug": "sao-tome-and-principe",
+        "data": {
+            "name": "Sao Tome and Principe",
+            "capital": "São Tomé",
+            "flag": "https://restcountries.eu/data/stp.svg",
+            "short2Code": "ST",
+            "short3Code": "STP",
+            "currencyCode": "STD",
+            "currencyName": "São Tomé and Príncipe dobra",
+            "callingCode": "239"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c33590-85ad-11eb-9b61-95484f6893d8",
+        "name": "Saudi Arabia",
+        "slug": "saudi-arabia",
+        "data": {
+            "name": "Saudi Arabia",
+            "capital": "Riyadh",
+            "flag": "https://restcountries.eu/data/sau.svg",
+            "short2Code": "SA",
+            "short3Code": "SAU",
+            "currencyCode": "SAR",
+            "currencyName": "Saudi riyal",
+            "callingCode": "966"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c34bb0-85ad-11eb-9c0d-9b9e5784f269",
+        "name": "Senegal",
+        "slug": "senegal",
+        "data": {
+            "name": "Senegal",
+            "capital": "Dakar",
+            "flag": "https://restcountries.eu/data/sen.svg",
+            "short2Code": "SN",
+            "short3Code": "SEN",
+            "currencyCode": "XOF",
+            "currencyName": "West African CFA franc",
+            "callingCode": "221"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c360b0-85ad-11eb-916c-090d526ae7be",
+        "name": "Serbia",
+        "slug": "serbia",
+        "data": {
+            "name": "Serbia",
+            "capital": "Belgrade",
+            "flag": "https://restcountries.eu/data/srb.svg",
+            "short2Code": "RS",
+            "short3Code": "SRB",
+            "currencyCode": "RSD",
+            "currencyName": "Serbian dinar",
+            "callingCode": "381"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c37bd0-85ad-11eb-9ede-a5752ff1aba3",
+        "name": "Seychelles",
+        "slug": "seychelles",
+        "data": {
+            "name": "Seychelles",
+            "capital": "Victoria",
+            "flag": "https://restcountries.eu/data/syc.svg",
+            "short2Code": "SC",
+            "short3Code": "SYC",
+            "currencyCode": "SCR",
+            "currencyName": "Seychellois rupee",
+            "callingCode": "248"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c39120-85ad-11eb-8a7a-23916f1ebc9e",
+        "name": "Sierra Leone",
+        "slug": "sierra-leone",
+        "data": {
+            "name": "Sierra Leone",
+            "capital": "Freetown",
+            "flag": "https://restcountries.eu/data/sle.svg",
+            "short2Code": "SL",
+            "short3Code": "SLE",
+            "currencyCode": "SLL",
+            "currencyName": "Sierra Leonean leone",
+            "callingCode": "232"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c3a770-85ad-11eb-82f0-7709f6165411",
+        "name": "Singapore",
+        "slug": "singapore",
+        "data": {
+            "name": "Singapore",
+            "capital": "Singapore",
+            "flag": "https://restcountries.eu/data/sgp.svg",
+            "short2Code": "SG",
+            "short3Code": "SGP",
+            "currencyCode": "SGD",
+            "currencyName": "Singapore dollar",
+            "callingCode": "65"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c3bd60-85ad-11eb-9074-69e7b141fe77",
+        "name": "Sint Maarten (Dutch part)",
+        "slug": "sint-maarten-dutch-part",
+        "data": {
+            "name": "Sint Maarten (Dutch part)",
+            "capital": "Philipsburg",
+            "flag": "https://restcountries.eu/data/sxm.svg",
+            "short2Code": "SX",
+            "short3Code": "SXM",
+            "currencyCode": "ANG",
+            "currencyName": "Netherlands Antillean guilder",
+            "callingCode": "1721"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c3d330-85ad-11eb-9767-135d07482a6f",
+        "name": "Slovakia",
+        "slug": "slovakia",
+        "data": {
+            "name": "Slovakia",
+            "capital": "Bratislava",
+            "flag": "https://restcountries.eu/data/svk.svg",
+            "short2Code": "SK",
+            "short3Code": "SVK",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "421"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c3e9e0-85ad-11eb-bb12-41e7c28c87e3",
+        "name": "Slovenia",
+        "slug": "slovenia",
+        "data": {
+            "name": "Slovenia",
+            "capital": "Ljubljana",
+            "flag": "https://restcountries.eu/data/svn.svg",
+            "short2Code": "SI",
+            "short3Code": "SVN",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "386"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c40000-85ad-11eb-8a6b-3f7ae94f5896",
+        "name": "Solomon Islands",
+        "slug": "solomon-islands",
+        "data": {
+            "name": "Solomon Islands",
+            "capital": "Honiara",
+            "flag": "https://restcountries.eu/data/slb.svg",
+            "short2Code": "SB",
+            "short3Code": "SLB",
+            "currencyCode": "SBD",
+            "currencyName": "Solomon Islands dollar",
+            "callingCode": "677"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c415c0-85ad-11eb-910b-cd8b3d635c55",
+        "name": "Somalia",
+        "slug": "somalia",
+        "data": {
+            "name": "Somalia",
+            "capital": "Mogadishu",
+            "flag": "https://restcountries.eu/data/som.svg",
+            "short2Code": "SO",
+            "short3Code": "SOM",
+            "currencyCode": "SOS",
+            "currencyName": "Somali shilling",
+            "callingCode": "252"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c43ec0-85ad-11eb-9a91-471646b44e45",
+        "name": "South Africa",
+        "slug": "south-africa",
+        "data": {
+            "name": "South Africa",
+            "capital": "Pretoria",
+            "flag": "https://restcountries.eu/data/zaf.svg",
+            "short2Code": "ZA",
+            "short3Code": "ZAF",
+            "currencyCode": "ZAR",
+            "currencyName": "South African rand",
+            "callingCode": "27"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c45500-85ad-11eb-82df-bba293b0180f",
+        "name": "South Georgia and the South Sandwich Islands",
+        "slug": "south-georgia-and-the-south-sandwich-islands",
+        "data": {
+            "name": "South Georgia and the South Sandwich Islands",
+            "capital": "King Edward Point",
+            "flag": "https://restcountries.eu/data/sgs.svg",
+            "short2Code": "GS",
+            "short3Code": "SGS",
+            "currencyCode": "(none)",
+            "currencyName": null,
+            "callingCode": "500"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c48860-85ad-11eb-b980-a15b88120c38",
+        "name": "South Sudan",
+        "slug": "south-sudan",
+        "data": {
+            "name": "South Sudan",
+            "capital": "Juba",
+            "flag": "https://restcountries.eu/data/ssd.svg",
+            "short2Code": "SS",
+            "short3Code": "SSD",
+            "currencyCode": "SSP",
+            "currencyName": "South Sudanese pound",
+            "callingCode": "211"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c4a550-85ad-11eb-8c39-eb0b6d473e43",
+        "name": "Spain",
+        "slug": "spain",
+        "data": {
+            "name": "Spain",
+            "capital": "Madrid",
+            "flag": "https://restcountries.eu/data/esp.svg",
+            "short2Code": "ES",
+            "short3Code": "ESP",
+            "currencyCode": "EUR",
+            "currencyName": "Euro",
+            "callingCode": "34"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c4c630-85ad-11eb-8bbc-6943724342e4",
+        "name": "Sri Lanka",
+        "slug": "sri-lanka",
+        "data": {
+            "name": "Sri Lanka",
+            "capital": "Colombo",
+            "flag": "https://restcountries.eu/data/lka.svg",
+            "short2Code": "LK",
+            "short3Code": "LKA",
+            "currencyCode": "LKR",
+            "currencyName": "Sri Lankan rupee",
+            "callingCode": "94"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c4e310-85ad-11eb-983e-53a5b4996b55",
+        "name": "Sudan",
+        "slug": "sudan",
+        "data": {
+            "name": "Sudan",
+            "capital": "Khartoum",
+            "flag": "https://restcountries.eu/data/sdn.svg",
+            "short2Code": "SD",
+            "short3Code": "SDN",
+            "currencyCode": "SDG",
+            "currencyName": "Sudanese pound",
+            "callingCode": "249"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c51950-85ad-11eb-9d61-7b18ae50e9dd",
+        "name": "Suriname",
+        "slug": "suriname",
+        "data": {
+            "name": "Suriname",
+            "capital": "Paramaribo",
+            "flag": "https://restcountries.eu/data/sur.svg",
+            "short2Code": "SR",
+            "short3Code": "SUR",
+            "currencyCode": "SRD",
+            "currencyName": "Surinamese dollar",
+            "callingCode": "597"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c52f10-85ad-11eb-b0a2-9fd4bf4f426d",
+        "name": "Svalbard and Jan Mayen",
+        "slug": "svalbard-and-jan-mayen",
+        "data": {
+            "name": "Svalbard and Jan Mayen",
+            "capital": "Longyearbyen",
+            "flag": "https://restcountries.eu/data/sjm.svg",
+            "short2Code": "SJ",
+            "short3Code": "SJM",
+            "currencyCode": "NOK",
+            "currencyName": "Norwegian krone",
+            "callingCode": "4779"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c54790-85ad-11eb-840e-0dd209259c81",
+        "name": "Swaziland",
+        "slug": "swaziland",
+        "data": {
+            "name": "Swaziland",
+            "capital": "Lobamba",
+            "flag": "https://restcountries.eu/data/swz.svg",
+            "short2Code": "SZ",
+            "short3Code": "SWZ",
+            "currencyCode": "SZL",
+            "currencyName": "Swazi lilangeni",
+            "callingCode": "268"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c55d90-85ad-11eb-b387-f9e208954866",
+        "name": "Sweden",
+        "slug": "sweden",
+        "data": {
+            "name": "Sweden",
+            "capital": "Stockholm",
+            "flag": "https://restcountries.eu/data/swe.svg",
+            "short2Code": "SE",
+            "short3Code": "SWE",
+            "currencyCode": "SEK",
+            "currencyName": "Swedish krona",
+            "callingCode": "46"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c57760-85ad-11eb-a627-d386e1a472aa",
+        "name": "Switzerland",
+        "slug": "switzerland",
+        "data": {
+            "name": "Switzerland",
+            "capital": "Bern",
+            "flag": "https://restcountries.eu/data/che.svg",
+            "short2Code": "CH",
+            "short3Code": "CHE",
+            "currencyCode": "CHF",
+            "currencyName": "Swiss franc",
+            "callingCode": "41"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c58ce0-85ad-11eb-b6bb-f71a0782734e",
+        "name": "Syrian Arab Republic",
+        "slug": "syrian-arab-republic",
+        "data": {
+            "name": "Syrian Arab Republic",
+            "capital": "Damascus",
+            "flag": "https://restcountries.eu/data/syr.svg",
+            "short2Code": "SY",
+            "short3Code": "SYR",
+            "currencyCode": "SYP",
+            "currencyName": "Syrian pound",
+            "callingCode": "963"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c5b580-85ad-11eb-8aa1-cbe4a4eb2501",
+        "name": "Taiwan",
+        "slug": "taiwan",
+        "data": {
+            "name": "Taiwan",
+            "capital": "Taipei",
+            "flag": "https://restcountries.eu/data/twn.svg",
+            "short2Code": "TW",
+            "short3Code": "TWN",
+            "currencyCode": "TWD",
+            "currencyName": "New Taiwan dollar",
+            "callingCode": "886"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c5cbe0-85ad-11eb-9b75-5d1c4e29c66d",
+        "name": "Tajikistan",
+        "slug": "tajikistan",
+        "data": {
+            "name": "Tajikistan",
+            "capital": "Dushanbe",
+            "flag": "https://restcountries.eu/data/tjk.svg",
+            "short2Code": "TJ",
+            "short3Code": "TJK",
+            "currencyCode": "TJS",
+            "currencyName": "Tajikistani somoni",
+            "callingCode": "992"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c5e230-85ad-11eb-b5f6-1759e622355d",
+        "name": "Tanzania, United Republic of",
+        "slug": "tanzania-united-republic-of",
+        "data": {
+            "name": "Tanzania, United Republic of",
+            "capital": "Dodoma",
+            "flag": "https://restcountries.eu/data/tza.svg",
+            "short2Code": "TZ",
+            "short3Code": "TZA",
+            "currencyCode": "TZS",
+            "currencyName": "Tanzanian shilling",
+            "callingCode": "255"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c652c0-85ad-11eb-b9b2-fffdb3e4c8ff",
+        "name": "Thailand",
+        "slug": "thailand",
+        "data": {
+            "name": "Thailand",
+            "capital": "Bangkok",
+            "flag": "https://restcountries.eu/data/tha.svg",
+            "short2Code": "TH",
+            "short3Code": "THA",
+            "currencyCode": "THB",
+            "currencyName": "Thai baht",
+            "callingCode": "66"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c671a0-85ad-11eb-92b4-d777d07f40ef",
+        "name": "Timor-Leste",
+        "slug": "timor-leste",
+        "data": {
+            "name": "Timor-Leste",
+            "capital": "Dili",
+            "flag": "https://restcountries.eu/data/tls.svg",
+            "short2Code": "TL",
+            "short3Code": "TLS",
+            "currencyCode": null,
+            "currencyName": null,
+            "callingCode": "670"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c68a50-85ad-11eb-813f-b19440c3cb6a",
+        "name": "Togo",
+        "slug": "togo",
+        "data": {
+            "name": "Togo",
+            "capital": "Lomé",
+            "flag": "https://restcountries.eu/data/tgo.svg",
+            "short2Code": "TG",
+            "short3Code": "TGO",
+            "currencyCode": "XOF",
+            "currencyName": "West African CFA franc",
+            "callingCode": "228"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c6a0e0-85ad-11eb-8399-3f45ffa8d0ac",
+        "name": "Tokelau",
+        "slug": "tokelau",
+        "data": {
+            "name": "Tokelau",
+            "capital": "Fakaofo",
+            "flag": "https://restcountries.eu/data/tkl.svg",
+            "short2Code": "TK",
+            "short3Code": "TKL",
+            "currencyCode": "NZD",
+            "currencyName": "New Zealand dollar",
+            "callingCode": "690"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c6bb40-85ad-11eb-b9ed-45fcd5577063",
+        "name": "Tonga",
+        "slug": "tonga",
+        "data": {
+            "name": "Tonga",
+            "capital": "Nuku'alofa",
+            "flag": "https://restcountries.eu/data/ton.svg",
+            "short2Code": "TO",
+            "short3Code": "TON",
+            "currencyCode": "TOP",
+            "currencyName": "Tongan paʻanga",
+            "callingCode": "676"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c6d170-85ad-11eb-ad2a-8b048acaa5e1",
+        "name": "Trinidad and Tobago",
+        "slug": "trinidad-and-tobago",
+        "data": {
+            "name": "Trinidad and Tobago",
+            "capital": "Port of Spain",
+            "flag": "https://restcountries.eu/data/tto.svg",
+            "short2Code": "TT",
+            "short3Code": "TTO",
+            "currencyCode": "TTD",
+            "currencyName": "Trinidad and Tobago dollar",
+            "callingCode": "1868"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c6e940-85ad-11eb-8501-8b21fb291321",
+        "name": "Tunisia",
+        "slug": "tunisia",
+        "data": {
+            "name": "Tunisia",
+            "capital": "Tunis",
+            "flag": "https://restcountries.eu/data/tun.svg",
+            "short2Code": "TN",
+            "short3Code": "TUN",
+            "currencyCode": "TND",
+            "currencyName": "Tunisian dinar",
+            "callingCode": "216"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c72180-85ad-11eb-a204-bbbcac95eba6",
+        "name": "Turkey",
+        "slug": "turkey",
+        "data": {
+            "name": "Turkey",
+            "capital": "Ankara",
+            "flag": "https://restcountries.eu/data/tur.svg",
+            "short2Code": "TR",
+            "short3Code": "TUR",
+            "currencyCode": "TRY",
+            "currencyName": "Turkish lira",
+            "callingCode": "90"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c73dd0-85ad-11eb-8e3b-d3eaa4fa3007",
+        "name": "Turkmenistan",
+        "slug": "turkmenistan",
+        "data": {
+            "name": "Turkmenistan",
+            "capital": "Ashgabat",
+            "flag": "https://restcountries.eu/data/tkm.svg",
+            "short2Code": "TM",
+            "short3Code": "TKM",
+            "currencyCode": "TMT",
+            "currencyName": "Turkmenistan manat",
+            "callingCode": "993"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c78be0-85ad-11eb-adc7-a54a7534ba7a",
+        "name": "Turks and Caicos Islands",
+        "slug": "turks-and-caicos-islands",
+        "data": {
+            "name": "Turks and Caicos Islands",
+            "capital": "Cockburn Town",
+            "flag": "https://restcountries.eu/data/tca.svg",
+            "short2Code": "TC",
+            "short3Code": "TCA",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "1649"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c7bf20-85ad-11eb-b7fa-f7a25a74982a",
+        "name": "Tuvalu",
+        "slug": "tuvalu",
+        "data": {
+            "name": "Tuvalu",
+            "capital": "Funafuti",
+            "flag": "https://restcountries.eu/data/tuv.svg",
+            "short2Code": "TV",
+            "short3Code": "TUV",
+            "currencyCode": "TVD[G]",
+            "currencyName": "Tuvaluan dollar",
+            "callingCode": "688"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c7d800-85ad-11eb-82e0-71c6f09a2bae",
+        "name": "Uganda",
+        "slug": "uganda",
+        "data": {
+            "name": "Uganda",
+            "capital": "Kampala",
+            "flag": "https://restcountries.eu/data/uga.svg",
+            "short2Code": "UG",
+            "short3Code": "UGA",
+            "currencyCode": "UGX",
+            "currencyName": "Ugandan shilling",
+            "callingCode": "256"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c80500-85ad-11eb-9a64-7f0a703614d4",
+        "name": "Ukraine",
+        "slug": "ukraine",
+        "data": {
+            "name": "Ukraine",
+            "capital": "Kiev",
+            "flag": "https://restcountries.eu/data/ukr.svg",
+            "short2Code": "UA",
+            "short3Code": "UKR",
+            "currencyCode": "UAH",
+            "currencyName": "Ukrainian hryvnia",
+            "callingCode": "380"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c81b50-85ad-11eb-82dc-973b686c8ed4",
+        "name": "United Arab Emirates",
+        "slug": "united-arab-emirates",
+        "data": {
+            "name": "United Arab Emirates",
+            "capital": "Abu Dhabi",
+            "flag": "https://restcountries.eu/data/are.svg",
+            "short2Code": "AE",
+            "short3Code": "ARE",
+            "currencyCode": "AED",
+            "currencyName": "United Arab Emirates dirham",
+            "callingCode": "971"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c83230-85ad-11eb-896e-c9a18022795a",
+        "name": "United Kingdom of Great Britain and Northern Ireland",
+        "slug": "united-kingdom-of-great-britain-and-northern-ireland",
+        "data": {
+            "name": "United Kingdom of Great Britain and Northern Ireland",
+            "capital": "London",
+            "flag": "https://restcountries.eu/data/gbr.svg",
+            "short2Code": "GB",
+            "short3Code": "GBR",
+            "currencyCode": "GBP",
+            "currencyName": "British pound",
+            "callingCode": "44"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b08ed0-85ad-11eb-9feb-bd1394c2b352",
+        "name": "United States Minor Outlying Islands",
+        "slug": "united-states-minor-outlying-islands",
+        "data": {
+            "name": "United States Minor Outlying Islands",
+            "capital": "",
+            "flag": "https://restcountries.eu/data/umi.svg",
+            "short2Code": "UM",
+            "short3Code": "UMI",
+            "currencyCode": "USD",
+            "currencyName": "United States Dollar",
+            "callingCode": ""
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c86440-85ad-11eb-b22f-9b5742446050",
+        "name": "United States of America",
+        "slug": "united-states-of-america",
+        "data": {
+            "name": "United States of America",
+            "capital": "Washington, D.C.",
+            "flag": "https://restcountries.eu/data/usa.svg",
+            "short2Code": "US",
+            "short3Code": "USA",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "1"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c87e10-85ad-11eb-a62a-59808a160b74",
+        "name": "Uruguay",
+        "slug": "uruguay",
+        "data": {
+            "name": "Uruguay",
+            "capital": "Montevideo",
+            "flag": "https://restcountries.eu/data/ury.svg",
+            "short2Code": "UY",
+            "short3Code": "URY",
+            "currencyCode": "UYU",
+            "currencyName": "Uruguayan peso",
+            "callingCode": "598"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c89d80-85ad-11eb-ad8b-6d4dd89944f7",
+        "name": "Uzbekistan",
+        "slug": "uzbekistan",
+        "data": {
+            "name": "Uzbekistan",
+            "capital": "Tashkent",
+            "flag": "https://restcountries.eu/data/uzb.svg",
+            "short2Code": "UZ",
+            "short3Code": "UZB",
+            "currencyCode": "UZS",
+            "currencyName": "Uzbekistani so'm",
+            "callingCode": "998"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c8b370-85ad-11eb-8a1c-5f133d3d4958",
+        "name": "Vanuatu",
+        "slug": "vanuatu",
+        "data": {
+            "name": "Vanuatu",
+            "capital": "Port Vila",
+            "flag": "https://restcountries.eu/data/vut.svg",
+            "short2Code": "VU",
+            "short3Code": "VUT",
+            "currencyCode": "VUV",
+            "currencyName": "Vanuatu vatu",
+            "callingCode": "678"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c8d100-85ad-11eb-ab11-97b79231e159",
+        "name": "Venezuela (Bolivarian Republic of)",
+        "slug": "venezuela-bolivarian-republic-of",
+        "data": {
+            "name": "Venezuela (Bolivarian Republic of)",
+            "capital": "Caracas",
+            "flag": "https://restcountries.eu/data/ven.svg",
+            "short2Code": "VE",
+            "short3Code": "VEN",
+            "currencyCode": "VEF",
+            "currencyName": "Venezuelan bolívar",
+            "callingCode": "58"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c8f0d0-85ad-11eb-8b47-d3beae625177",
+        "name": "Viet Nam",
+        "slug": "viet-nam",
+        "data": {
+            "name": "Viet Nam",
+            "capital": "Hanoi",
+            "flag": "https://restcountries.eu/data/vnm.svg",
+            "short2Code": "VN",
+            "short3Code": "VNM",
+            "currencyCode": "VND",
+            "currencyName": "Vietnamese đồng",
+            "callingCode": "84"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b0a400-85ad-11eb-a134-a50fac1fe786",
+        "name": "Virgin Islands (British)",
+        "slug": "virgin-islands-british",
+        "data": {
+            "name": "Virgin Islands (British)",
+            "capital": "Road Town",
+            "flag": "https://restcountries.eu/data/vgb.svg",
+            "short2Code": "VG",
+            "short3Code": "VGB",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "1284"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78b0f9c0-85ad-11eb-9a12-f3b7964a72f8",
+        "name": "Virgin Islands (U.S.)",
+        "slug": "virgin-islands-us",
+        "data": {
+            "name": "Virgin Islands (U.S.)",
+            "capital": "Charlotte Amalie",
+            "flag": "https://restcountries.eu/data/vir.svg",
+            "short2Code": "VI",
+            "short3Code": "VIR",
+            "currencyCode": "USD",
+            "currencyName": "United States dollar",
+            "callingCode": "1 340"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c92370-85ad-11eb-8484-0d184c10ec08",
+        "name": "Wallis and Futuna",
+        "slug": "wallis-and-futuna",
+        "data": {
+            "name": "Wallis and Futuna",
+            "capital": "Mata-Utu",
+            "flag": "https://restcountries.eu/data/wlf.svg",
+            "short2Code": "WF",
+            "short3Code": "WLF",
+            "currencyCode": "XPF",
+            "currencyName": "CFP franc",
+            "callingCode": "681"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78c942f0-85ad-11eb-908c-5987c4432654",
+        "name": "Western Sahara",
+        "slug": "western-sahara",
+        "data": {
+            "name": "Western Sahara",
+            "capital": "El Aaiún",
+            "flag": "https://restcountries.eu/data/esh.svg",
+            "short2Code": "EH",
+            "short3Code": "ESH",
+            "currencyCode": "DZD",
+            "currencyName": "Algerian dinar",
+            "callingCode": "212"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ca0030-85ad-11eb-b0fc-95705a99baf6",
+        "name": "Yemen",
+        "slug": "yemen",
+        "data": {
+            "name": "Yemen",
+            "capital": "Sana'a",
+            "flag": "https://restcountries.eu/data/yem.svg",
+            "short2Code": "YE",
+            "short3Code": "YEM",
+            "currencyCode": "YER",
+            "currencyName": "Yemeni rial",
+            "callingCode": "967"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ca7b70-85ad-11eb-bdd9-551c10892c6a",
+        "name": "Zambia",
+        "slug": "zambia",
+        "data": {
+            "name": "Zambia",
+            "capital": "Lusaka",
+            "flag": "https://restcountries.eu/data/zmb.svg",
+            "short2Code": "ZM",
+            "short3Code": "ZMB",
+            "currencyCode": "ZMW",
+            "currencyName": "Zambian kwacha",
+            "callingCode": "260"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    },
+    {
+        "id": "78ca94a0-85ad-11eb-a6e2-29229ed7ede0",
+        "name": "Zimbabwe",
+        "slug": "zimbabwe",
+        "data": {
+            "name": "Zimbabwe",
+            "capital": "Harare",
+            "flag": "https://restcountries.eu/data/zwe.svg",
+            "short2Code": "ZW",
+            "short3Code": "ZWE",
+            "currencyCode": "(none)",
+            "currencyName": null,
+            "callingCode": "263"
+        },
+        "deleted_at": null,
+        "created_at": "2021-03-15T16:42:46.000000Z",
+        "updated_at": "2021-03-15T16:42:46.000000Z"
+    }
+]
