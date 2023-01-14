@@ -21,7 +21,27 @@ class CountryController extends Controller
     public function index(): JsonResponse
     {
         return $this->successResponse(
-            Country::query()->orderBy('name')->get()
+            Country::query()
+                ->with([
+                    'coverages.mediaable',
+                    'ads.mediaable',
+                    'careers',
+                    'contacts',
+                    'faqs',
+                    'offices.mediaable',
+                    'partners.mediaable',
+                    'posts.mediaable',
+                    'posts.user',
+                    'posts.category.subCategory',
+                    'products.mediaable',
+                    'products.category.subCategory',
+                    'slides.mediaable',
+                    'subScribers',
+                    'tenders.mediaable',
+                    'teams.mediaable'
+                ])
+                ->orderBy('name')
+                ->get()
         );
     }
 
@@ -44,7 +64,26 @@ class CountryController extends Controller
      */
     public function show(Country $country): JsonResponse
     {
-        return $this->successResponse($country);
+        return $this->successResponse(
+            $country->load(
+                'coverages.mediaable',
+                'ads.mediaable',
+                'careers',
+                'contacts',
+                'faqs',
+                'offices.mediaable',
+                'partners.mediaable',
+                'posts.mediaable',
+                'posts.user',
+                'posts.category.subCategory',
+                'products.mediaable',
+                'products.category.subCategory',
+                'slides.mediaable',
+                'subScribers',
+                'tenders.mediaable',
+                'teams.mediaable'
+            )
+        );
     }
 
     /**

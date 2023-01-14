@@ -61,7 +61,7 @@ class Country extends Model
      */
     public function coverages(): HasMany
     {
-        return $this->hasMany(Coverage::class)->latest();
+        return $this->hasMany(Coverage::class)->latest()->limit(10);
     }
 
     /**
@@ -69,7 +69,7 @@ class Country extends Model
      */
     public function ads(): HasMany
     {
-        return $this->hasMany(Ad::class)->latest();
+        return $this->hasMany(Ad::class)->latest()->limit(10);
     }
 
     /**
@@ -77,7 +77,7 @@ class Country extends Model
      */
     public function careers(): HasMany
     {
-        return $this->hasMany(Career::class)->latest();
+        return $this->hasMany(Career::class)->latest()->limit(10);
     }
 
     /**
@@ -85,7 +85,7 @@ class Country extends Model
      */
     public function contacts(): HasMany
     {
-        return $this->hasMany(Contact::class)->latest();
+        return $this->hasMany(Contact::class)->latest()->limit(10);
     }
 
     /**
@@ -93,7 +93,7 @@ class Country extends Model
      */
     public function faqs(): HasMany
     {
-        return $this->hasMany(Faq::class)->latest();
+        return $this->hasMany(Faq::class)->latest()->limit(10);
     }
 
     /**
@@ -101,7 +101,7 @@ class Country extends Model
      */
     public function offices(): HasMany
     {
-        return $this->hasMany(Office::class)->latest();
+        return $this->hasMany(Office::class)->latest()->limit(10);
     }
 
     /**
@@ -109,7 +109,7 @@ class Country extends Model
      */
     public function partners(): HasMany
     {
-        return $this->hasMany(Partner::class)->latest();
+        return $this->hasMany(Partner::class)->latest()->limit(10);
     }
 
     /**
@@ -117,7 +117,7 @@ class Country extends Model
      */
     public function posts(): HasMany
     {
-        return $this->hasMany(Post::class)->latest();
+        return $this->hasMany(Post::class)->latest()->limit(10);
     }
 
     /**
@@ -125,7 +125,7 @@ class Country extends Model
      */
     public function products(): HasMany
     {
-        return $this->hasMany(Product::class)->latest();
+        return $this->hasMany(Product::class)->latest()->limit(10);
     }
 
     /**
@@ -133,7 +133,7 @@ class Country extends Model
      */
     public function slides(): HasMany
     {
-        return $this->hasMany(Slide::class)->latest();
+        return $this->hasMany(Slide::class)->latest()->limit(10);
     }
 
     /**
@@ -141,7 +141,7 @@ class Country extends Model
      */
     public function subScribers(): HasMany
     {
-        return $this->hasMany(Subscriber::class)->latest();
+        return $this->hasMany(Subscriber::class)->latest()->limit(10);
     }
 
     /**
@@ -149,7 +149,7 @@ class Country extends Model
      */
     public function tenders(): HasMany
     {
-        return $this->hasMany(Tender::class)->latest();
+        return $this->hasMany(Tender::class)->latest()->limit(10);
     }
 
     /**
@@ -157,6 +157,6 @@ class Country extends Model
      */
     public function teams(): HasMany
     {
-        return $this->hasMany(Team::class)->orderBy('name');
+        return $this->hasMany(Team::class)->orderBy('name')->latest()->limit(10);
     }
 }

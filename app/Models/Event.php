@@ -6,15 +6,14 @@ use App\Traits\Uuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
-class Post extends Model
+class Event extends Model
 {
-    use HasFactory, Uuids, SoftDeletes, HasSlug;
+    use HasFactory, HasSlug, Uuids, SoftDeletes;
 
     /**
      * stop the autoincrement
@@ -35,11 +34,9 @@ class Post extends Model
      */
     protected $fillable = [
         'country_id',
-        'user_id',
         'name',
         'slug',
-        'description',
-        'websiteUrl',
+        'description'
     ];
 
     /**
@@ -61,44 +58,11 @@ class Post extends Model
     }
 
     /**
-     * @return BelongsTo
-     */
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
-
-    /**
      * Get report.
      * @return MorphOne
      */
     public function media(): MorphOne
     {
         return $this->morphOne(Media::class, 'mediaable');
-    }
-
-    /**
-     * Get report.
-     * @return MorphMany
-     */
-    public function comments(): MorphMany
-    {
-        return $this->morphMany(Comment::class, 'commentable');
-    }
-
-    /**
-     * @return BelongsTo
-     */
-    public function category(): BelongsTo
-    {
-        return $this->belongsTo(Category::class);
-    }
-
-    /**
-     * @return BelongsTo
-     */
-    public function subCategory(): BelongsTo
-    {
-        return $this->belongsTo(SubCategory::class);
     }
 }
