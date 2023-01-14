@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Exception;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
@@ -9,7 +10,6 @@ use Illuminate\Support\Str;
 use Monolog\Formatter\JsonFormatter;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
-use Exception;
 use Propaganistas\LaravelPhone\PhoneNumber;
 
 class SystemController extends Controller
