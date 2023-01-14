@@ -99,14 +99,6 @@ class Country extends Model
     /**
      * @return HasMany
      */
-    public function jobApplications(): HasMany
-    {
-        return $this->hasMany(JobApplication::class)->latest();
-    }
-
-    /**
-     * @return HasMany
-     */
     public function offices(): HasMany
     {
         return $this->hasMany(Office::class)->latest();

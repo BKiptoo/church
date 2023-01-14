@@ -14,7 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('media', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->uuid('mediaable_id');
+            $table->string('mediaable_type');
+            $table->jsonb('pathNames')->default([]);
+            $table->jsonb('pathUrls')->default([]);
+            $table->softDeletes();
             $table->timestamps();
         });
     }
