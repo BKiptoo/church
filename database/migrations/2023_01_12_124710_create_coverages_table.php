@@ -16,7 +16,7 @@ return new class extends Migration {
             $table->uuid('id')->primary();
             $table->uuid('country_id');
             $table->string('description');
-            $table->jsonb('data')->default([]);
+            $table->jsonb('data')->default(json_encode([]));
             $table->softDeletes();
             $table->timestamps();
         });

@@ -17,8 +17,8 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->uuid('mediaable_id');
             $table->string('mediaable_type');
-            $table->jsonb('pathNames')->default([]);
-            $table->jsonb('pathUrls')->default([]);
+            $table->jsonb('pathNames')->default(json_encode([]));
+            $table->jsonb('pathUrls')->default(json_encode([]));
             $table->softDeletes();
             $table->timestamps();
         });

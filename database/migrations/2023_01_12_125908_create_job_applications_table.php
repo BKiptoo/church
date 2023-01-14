@@ -14,7 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('job_applications', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->uuid('career_id');
+            $table->jsonb('data')->default(json_encode([]));
+            $table->softDeletes();
             $table->timestamps();
         });
     }

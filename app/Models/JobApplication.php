@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Traits\Uuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class JobApplication extends Model
@@ -32,4 +33,12 @@ class JobApplication extends Model
         'career_id',
         'data'
     ];
+
+    /**
+     * @return BelongsTo
+     */
+    public function career(): BelongsTo
+    {
+        return $this->belongsTo(Career::class);
+    }
 }
