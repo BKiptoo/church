@@ -53,4 +53,12 @@ class Category extends Model
     {
         return $this->hasMany(SubCategory::class)->orderBy('name');
     }
+
+    /**
+     * @return HasMany
+     */
+    public function posts(): HasMany
+    {
+        return $this->hasMany(Post::class)->latest();
+    }
 }

@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      *
@@ -14,7 +13,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('contacts', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->uuid('country_id');
+            $table->string('email');
+            $table->string('phoneNumber');
+            $table->string('productName');
+            $table->tinyText('description');
+            $table->boolean('isClosed')->default(false);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

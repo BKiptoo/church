@@ -6,10 +6,9 @@ use App\Traits\Uuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class JobApplication extends Model
+class Order extends Model
 {
     use HasFactory, Uuids, SoftDeletes;
 
@@ -31,24 +30,17 @@ class JobApplication extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'career_id',
-        'data'
+        'product_id',
+        'description',
+        'summary',
+        'isClosed'
     ];
 
     /**
      * @return BelongsTo
      */
-    public function career(): BelongsTo
+    public function product(): BelongsTo
     {
-        return $this->belongsTo(Career::class);
-    }
-
-    /**
-     * Get report.
-     * @return MorphOne
-     */
-    public function media(): MorphOne
-    {
-        return $this->morphOne(Media::class, 'mediaable');
+        return $this->belongsTo(Product::class);
     }
 }

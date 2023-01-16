@@ -12,12 +12,12 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('slides', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('country_id');
-            $table->string('buttonName');
-            $table->string('buttonUrl');
-            $table->tinyText('description');
+            $table->uuid('product_id');
+            $table->string('description');
+            $table->text('summary');
+            $table->boolean('isClosed')->default(false);
             $table->softDeletes();
             $table->timestamps();
         });
@@ -30,6 +30,6 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('slides');
+        Schema::dropIfExists('orders');
     }
 };

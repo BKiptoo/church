@@ -35,11 +35,14 @@ class Post extends Model
      */
     protected $fillable = [
         'country_id',
+        'category_id',
+        'sub_category_id',
         'user_id',
         'name',
         'slug',
         'description',
-        'websiteUrl',
+        'views',
+        'likes'
     ];
 
     /**

@@ -63,4 +63,12 @@ class User extends Authenticatable
     {
         return $this->hasMany(Post::class)->latest();
     }
+
+    /**
+     * @return HasMany
+     */
+    public function userCountriesAccess(): HasMany
+    {
+        return $this->hasMany(UserCountryAccess::class)->latest();
+    }
 }
