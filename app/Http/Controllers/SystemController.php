@@ -68,7 +68,7 @@ class SystemController extends Controller
      * @param string|null $path
      * @return array
      */
-    public static function store_media(
+    public static function storeMediaBase64(
         string      $mediaBase64,
         string|null $fileName = null,
         string|null $path = null
