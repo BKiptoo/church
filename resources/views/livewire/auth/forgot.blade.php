@@ -13,7 +13,7 @@
                                     </span>
             @enderror
         </div>
-        <button class="btn btn-primary d-grid w-100" wire:loading.class="disabled"
+        <button type="submit" class="btn btn-primary d-grid w-100" wire:loading.class="disabled"
                 wire:offline.attr="disabled"><span wire:target="loginUser"
                                                    wire:loading.class="spinner-border text-primary"></span> Send Reset
             Link

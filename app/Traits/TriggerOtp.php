@@ -22,6 +22,14 @@ trait TriggerOtp
         if ($otp === null)
             $otp = rand(10000, 31000);
 
+        // mark all previous otp's as used
+        if (count($user->otps))
+            $user->otps()
+                ->where('isUsed', false)
+                ->update([
+                    'isUsed' => true
+                ]);
+
         // Create the otp here
         Otp::query()->create([
             'user_id' => $user->id,
