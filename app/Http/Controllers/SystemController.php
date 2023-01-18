@@ -83,7 +83,7 @@ class SystemController extends Controller
 
         // remove the file if it exists
         if (isset($fileName)) {
-            self::un_link_media($fileName, $path);
+            self::unLinkMedia($fileName, $path);
         }
 
         // Get the base 64 file contents
@@ -117,7 +117,7 @@ class SystemController extends Controller
         $path ??= 'csquared';
         if (isset($fileRequest)) {
             // unlink media here
-            self::un_link_media($fileName);
+            self::unLinkMedia($fileName);
 
             // generate new name for image
             $newFileName = Str::slug(Str::random(16)) . '.' . $fileRequest->extension();
@@ -143,7 +143,7 @@ class SystemController extends Controller
      * @param string|null $fileName
      * @param string|null $path
      */
-    public static function un_link_media(string|null $fileName = null, string|null $path = null)
+    public static function unLinkMedia(string|null $fileName = null, string|null $path = null)
     {
         $path ??= 'csquared';
 
@@ -165,7 +165,7 @@ class SystemController extends Controller
      * @param string $short2Code
      * @return string
      */
-    public static function format_phone_number(string $phoneNumber, string $short2Code): string
+    public static function formatPhoneNumber(string $phoneNumber, string $short2Code): string
     {
         return PhoneNumber::make($phoneNumber)->ofCountry($short2Code);
     }
@@ -176,7 +176,7 @@ class SystemController extends Controller
      * @param string $short2Code
      * @return bool
      */
-    public static function validate_phone_number(string $phoneNumber, string $short2Code): bool
+    public static function validatePhoneNumber(string $phoneNumber, string $short2Code): bool
     {
         try {
             return PhoneNumber::make($phoneNumber, $short2Code)->isOfCountry($short2Code);

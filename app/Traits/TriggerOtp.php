@@ -36,7 +36,7 @@ trait TriggerOtp
 
         // Sen opt for account verification...
         dispatch(new SendSmsJob(
-            [SystemController::format_phone_number(
+            [SystemController::formatPhoneNumber(
                 $user->phone_number,
                 $user->country->data->short2Code
             )],// convert the phoneNumber to the country base
