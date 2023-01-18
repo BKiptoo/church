@@ -14,7 +14,6 @@ use Livewire\Component;
 class Reset extends Component
 {
     use LivewireAlert, FindGuard, TriggerOtp;
-
     public $email;
     public $password;
     public $password_confirmation;

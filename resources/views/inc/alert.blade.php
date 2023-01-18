@@ -1,50 +1,40 @@
 {{--alert user--}}
 @if(session('error'))
-    <div class="sufee-alert alert with-close alert-danger alert-dismissible fade show">
-        <span class="badge badge-pill badge-danger">Error</span>
+    <div class="alert alert-danger alert-dismissible" role="alert">
         {{ session('error') }}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
     </div>
 @endif
 
 @if(session('success'))
-    <div class="sufee-alert alert with-close alert-success alert-dismissible fade show">
-        <span class="badge badge-pill badge-success">Success</span>
+    <div class="alert alert-success alert-dismissible" role="alert">
         {{ session('success') }}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
     </div>
 @endif
 
 @if(session('info'))
-    <div class="sufee-alert alert with-close alert-info alert-dismissible fade show">
-        <span class="badge badge-pill badge-info">Info</span>
+    <div class="alert alert-info alert-dismissible" role="alert">
         {{ session('info') }}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
     </div>
 @endif
 
 @if(session('primary'))
-    <div class="sufee-alert alert with-close alert-primary alert-dismissible fade show">
-        <span class="badge badge-pill badge-primary">Ok</span>
+    <div class="alert alert-primary alert-dismissible" role="alert">
         {{ session('primary') }}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
     </div>
 @endif
 
 @if(session('warning'))
-    <div class="sufee-alert alert with-close alert-warning alert-dismissible fade show">
-        <span class="badge badge-pill badge-warning">Warning</span>
+    <div class="alert alert-warning alert-dismissible" role="alert">
         {{ session('warning') }}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
     </div>
 @endif

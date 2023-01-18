@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Auth;
 
 use App\Jobs\MailJob;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -14,6 +15,13 @@ class Forgot extends Component
     use LivewireAlert;
 
     public $email;
+
+    public function mount()
+    {
+        // check if user is already authorized
+        if (Auth::check())
+            return redirect()->route('home');
+    }
 
     protected array $rules = [
         'email' => ['required', 'string', 'email', 'exists:users']
