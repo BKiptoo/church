@@ -48,8 +48,14 @@
         <div class="mb-3">
             <button class="btn btn-primary d-grid w-100" type="submit" wire:loading.class="disabled"
                     wire:offline.attr="disabled"><span wire:target="loginUser"
-                                                       wire:loading.class="spinner-border text-secondary"></span> Sign in
+                                                       wire:loading.class="spinner-border text-secondary"></span> Sign
+                in
             </button>
         </div>
     </form>
+    <div class="text-center">
+        <button wire:click="googleAuthRedirect" type="button" class="btn btn-icon btn-outline-secondary">
+            <span class="bx bxl-google mb-2"></span>
+        </button>
+    </div>
 </div>

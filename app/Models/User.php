@@ -43,7 +43,7 @@ class User extends Authenticatable
         'slug',
         'password',
         'isActive',
-        'isOtpVerified'
+        'isOtpVerified',
     ];
 
     /**

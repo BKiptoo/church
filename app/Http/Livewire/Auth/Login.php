@@ -8,6 +8,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
+use Laravel\Socialite\Facades\Socialite;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
 
@@ -66,6 +67,11 @@ class Login extends Component
         $this->reset(['password']);
         $this->alert('warning', 'The credentials given don\'t match our records.');
 
+    }
+
+    public function googleAuthRedirect(): RedirectResponse
+    {
+        return Socialite::driver('google')->redirect();
     }
 
     public function render()

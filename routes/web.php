@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\Auth\Forgot;
+use App\Http\Livewire\Auth\GoogleAuth;
 use App\Http\Livewire\Auth\Login;
 use App\Http\Livewire\Auth\OtpVerification;
 use App\Http\Livewire\Auth\Reset;
@@ -20,16 +21,23 @@ use Illuminate\Support\Facades\Route;
 
 Route::group([
     'prefix' => '/'
-], function () {
+], static function () {
     Route::get('login', Login::class)->name('login');
     Route::get('forgot', Forgot::class)->name('forgot');
     Route::get('reset/{token}', Reset::class)->name('reset');
     Route::get('otp', OtpVerification::class)->name('otp.verification');
 
+    // Google authentication
+    Route::group([
+        'prefix' => 'google'
+    ], static function () {
+        Route::get('callback', GoogleAuth::class)->name('google.authentication');
+    });
+
     // Do only process that needs authentication here
     Route::group([
         'middleware' => ['auth', 'otpPass']
-    ], function () {
+    ], static function () {
         Route::get('/', UserDashboard::class)->name('home');
     });
 });
