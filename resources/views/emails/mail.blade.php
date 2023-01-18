@@ -8,7 +8,7 @@
     <meta name="author" content="SHIFTECH AFRICA LIMITED">
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ config('app.name') }}"/>
-    <meta property="og:image" content="{{ asset('assets/images/logo.png') }}"/>
+    <meta property="og:image" content="{{ asset('assets/img/logo_horizontal.png') }}"/>
     <meta property="og:description"
           content="Kenya Space Agency"/>
     <!--[if mso]>
@@ -34,7 +34,7 @@
                    style="width:602px;border-collapse:collapse;border:1px solid #cccccc;border-spacing:0;text-align:left;">
                 <tr>
                     <td align="center" style="padding:40px 0 30px 0;background:#ffffff;">
-                        <img src="{{ asset('assets/images/logo.png') }}" alt="" width="300"
+                        <img src="{{ asset('assets/img/logo_horizontal.png') }}" alt="" width="300"
                              style="height:auto;display:block;"/>
                     </td>
                 </tr>
@@ -49,7 +49,7 @@
                                         align="center"><b>{{ $title }}</b></h5>
                                     <hr>
                                     <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">
-                                        {{ \App\Http\Controllers\SystemController::pass_greetings_to_user() }} {{ $name }}
+                                        {{ \App\Http\Controllers\SystemController::passGreetings() }} {{ $name }}
                                         ,</p>
                                     <p style="margin:0 0 12px 0;font-size:16px;line-height:24px;font-family:Arial,sans-serif;">{{ $body }}</p>
                                     @if($showButton)
@@ -66,7 +66,7 @@ text-transform:uppercase;
 font-weight:600;
 font-size: large;
 color:#FFFFFF;
-background-color:#01188c;
+background-color:#189d5a;
 box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
 text-align:center;
 position:relative;">{{ $buttonName }}</a>
@@ -82,7 +82,7 @@ position:relative;">{{ $buttonName }}</a>
                     </td>
                 </tr>
                 <tr>
-                    <td style="padding:30px;background:#01188c;">
+                    <td style="padding:30px;background:#189d5a;">
                         <table role="presentation"
                                style="width:100%;border-collapse:collapse;border:0;border-spacing:0;font-size:9px;font-family:Arial,sans-serif;">
                             <tr>

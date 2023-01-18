@@ -12,13 +12,13 @@
 
     <title>{{ config('app.name', 'SHIFTECH AFRICA') }}</title>
 
-    <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}">
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon">
 
     <meta name="author" content="SHIFTECH AFRICA">
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ config('app.name') }}"/>
-    <meta property="og:image" content="{{ asset('assets/images/logo.png') }}"/>
+    <meta property="og:image" content="{{ asset('assets/img/logo_horizontal.png') }}"/>
     <meta property="og:description"
           content=""/>
     <meta name="keywords"

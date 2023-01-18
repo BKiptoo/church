@@ -4,8 +4,6 @@ namespace App\Http\Livewire\Auth;
 
 use App\Jobs\MailJob;
 use App\Models\User;
-use Exception;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -36,35 +34,30 @@ class Forgot extends Component
      */
     public function resetPassword()
     {
-        try {
-            $this->validate();
+        $this->validate();
 
-            // fetch the user here
-            $user = User::query()->firstWhere('email', $this->email);
+        // fetch the user here
+        $user = User::query()->firstWhere('email', $this->email);
 
-            // send email here
-            dispatch(new MailJob(
-                $user->name,
-                $user->email,
-                'Account Password Reset',
-                'You are receiving this email because we received a password reset request for your account.
+        // send email here
+        dispatch(new MailJob(
+            $user->name,
+            $user->email,
+            'Account Password Reset',
+            'You are receiving this email because we received a password reset request for your account.
              This password reset link will expire in 60 minutes.
              If you did not request a password reset, no further action is required.',
-                true,
-                URL::temporarySignedRoute('reset', now()->addMinutes(60), ['token' => encrypt($this->email, true)]),
-                '<<< RESET PASSWORD >>>'
-            ))->onQueue('emails')->delay(2);
+            true,
+            URL::temporarySignedRoute('reset', now()->addMinutes(60), ['token' => encrypt($this->email, true)]),
+            '<<< RESET PASSWORD >>>'
+        ))->onQueue('emails')->delay(2);
 
-            $this->reset(['email']);
-            $this->alert(
-                'success',
-                'A new password reset link has been sent to your email address.
+        $this->reset(['email']);
+        $this->alert(
+            'success',
+            'A new password reset link has been sent to your email address.
              Kindly check and use it to update your password.'
-            );
-        } catch (Exception $exception) {
-            Log::error($exception->getMessage());
-            $this->alert('error', 'An error occurred. Try again.');
-        }
+        );
     }
 
     public function render()

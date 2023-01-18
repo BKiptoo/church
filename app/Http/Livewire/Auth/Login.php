@@ -6,7 +6,6 @@ use App\Traits\TriggerOtp;
 use Exception;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
@@ -49,28 +48,24 @@ class Login extends Component
      */
     public function loginUser()
     {
-        try {
-            $this->validate();
+        $this->validate();
 
-            if (Auth::attempt([
-                'email' => $this->email,
-                'password' => $this->password,
-                'isActive' => true
-            ], $this->remember
-            )) {
-                // Send opt for account verification...
-                $this->sendOtp($this->findGuardType()->user());
+        if (Auth::attempt([
+            'email' => $this->email,
+            'password' => $this->password,
+            'isActive' => true
+        ], $this->remember
+        )) {
+            // Send opt for account verification...
+            $this->sendOtp($this->findGuardType()->user());
 
-                // Authentication passed...
-                return redirect()->intended();
-            }
-
-            $this->reset(['password']);
-            $this->alert('warning', 'The credentials given don\'t match our records.');
-        } catch (Exception $exception) {
-            Log::error($exception->getMessage());
-            $this->alert('error', 'An error occurred. Try again.');
+            // Authentication passed...
+            return redirect()->intended();
         }
+
+        $this->reset(['password']);
+        $this->alert('warning', 'The credentials given don\'t match our records.');
+
     }
 
     public function render()

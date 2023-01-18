@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Auth;
 
 use App\Models\User;
+use App\Traits\TriggerOtp;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Validation\ValidationException;
@@ -12,7 +13,7 @@ use Livewire\Component;
 
 class Reset extends Component
 {
-    use LivewireAlert, FindGuard;
+    use LivewireAlert, FindGuard, TriggerOtp;
 
     public $email;
     public $password;

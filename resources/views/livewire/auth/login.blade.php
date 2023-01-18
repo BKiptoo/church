@@ -5,7 +5,7 @@
     <form class="mb-3" wire:submit.prevent="loginUser">
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="text" class="form-control @error('email') is-invalid @enderror" wire:model="email" id="email"
+            <input type="text" class="form-control @error('email') is-invalid @enderror" wire:model="email" id="email" required
                    name="email-username"
                    placeholder="Enter your email..." autofocus>
             @error('email')
@@ -22,7 +22,7 @@
                 </a>
             </div>
             <div class="input-group input-group-merge">
-                <input type="password" id="password" class="form-control @error('password') is-invalid @enderror"
+                <input type="password" id="password" class="form-control @error('password') is-invalid @enderror" required
                        name="password"
                        placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                        wire:model="password"

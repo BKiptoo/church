@@ -46,7 +46,7 @@ class SystemController extends Controller
      * get greetings here
      * @return string
      */
-    public static function pass_greetings_to_user(): string
+    public static function passGreetings(): string
     {
         $message = '';
 
