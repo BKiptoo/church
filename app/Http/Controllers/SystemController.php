@@ -101,6 +101,44 @@ class SystemController extends Controller
     }
 
     /**
+     * store image here
+     * @param $fileRequest
+     * @param string|null $fileName
+     * @param string|null $path
+     * @return array
+     */
+    public static function storeMedia(
+        $fileRequest,
+        string|null $fileName = null,
+        string|null $path = null
+    ): array
+    {
+        // check if feature_image exists
+        $path ??= 'csquared';
+        if (isset($fileRequest)) {
+            // unlink media here
+            self::un_link_media($fileName);
+
+            // generate new name for image
+            $newFileName = Str::slug(Str::random(16)) . '.' . $fileRequest->extension();
+
+            // store the new image
+            $fileRequest->storePubliclyAs($path, $newFileName, 'do_space');
+
+            // assign variables
+            $url = Storage::disk('do_space_cdn')->url($path . '/' . $newFileName);
+            $size = Storage::disk('do_space')->size($path . '/' . $newFileName);
+
+            return [
+                $newFileName, // this will be the new file name i.e shiftechafrica.png
+                $url, // set the path for loading the image i.e http:IP/storage/shiftechafrica.png
+                $size // get file size in bytes
+            ];
+        }
+        return [null, '#', 0];
+    }
+
+    /**
      * unlink media here
      * @param string|null $fileName
      * @param string|null $path

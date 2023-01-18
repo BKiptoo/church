@@ -5,14 +5,18 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Traits\Uuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Spatie\Sluggable\HasSlug;
+use Spatie\Sluggable\SlugOptions;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable, Uuids;
+    use HasApiTokens, HasFactory, Notifiable, Uuids, HasSlug, SoftDeletes;
 
     /**
      * stop the autoincrement
@@ -32,9 +36,14 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'country_id',
         'name',
+        'phoneNumber',
         'email',
+        'slug',
         'password',
+        'isActive',
+        'isOtpVerified'
     ];
 
     /**
@@ -57,6 +66,16 @@ class User extends Authenticatable
     ];
 
     /**
+     * Get the options for generating the slug.
+     */
+    public function getSlugOptions(): SlugOptions
+    {
+        return SlugOptions::create()
+            ->generateSlugsFrom('name')
+            ->saveSlugsTo('slug');
+    }
+
+    /**
      * @return HasMany
      */
     public function posts(): HasMany
@@ -70,5 +89,13 @@ class User extends Authenticatable
     public function userCountriesAccess(): HasMany
     {
         return $this->hasMany(UserCountryAccess::class)->latest();
+    }
+
+    /**
+     * @return BelongsTo
+     */
+    public function country(): BelongsTo
+    {
+        return $this->belongsTo(Country::class);
     }
 }

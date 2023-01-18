@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c67eaae1e8c6ea0372348a540c48dc87",
+    "content-hash": "6058f930f47674607cc7aad3a418adb0",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -205,6 +205,116 @@
                 }
             ],
             "time": "2022-08-10T22:54:19+00:00"
+        },
+        {
+            "name": "dev-techguy/laravel-multiple-guards",
+            "version": "v1.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dev-techguy/laravel-multiple-guards.git",
+                "reference": "c5a4eea01221050636ccac3d3d7e9fd23b275d36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dev-techguy/laravel-multiple-guards/zipball/c5a4eea01221050636ccac3d3d7e9fd23b275d36",
+                "reference": "c5a4eea01221050636ccac3d3d7e9fd23b275d36",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.7|^5.8|^6.0|^7.0|^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelMultipleGuards\\LaravelMultipleGuardsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelMultipleGuards\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vincent-ososi",
+                    "email": "vincent@shiftech.co.ke"
+                }
+            ],
+            "description": "This library helps one to handle multiple guards. Read through the read me.",
+            "keywords": [
+                "Authentication",
+                "guards",
+                "laravel",
+                "multiple"
+            ],
+            "support": {
+                "issues": "https://github.com/dev-techguy/laravel-multiple-guards/issues",
+                "source": "https://github.com/dev-techguy/laravel-multiple-guards/tree/v1.1.8"
+            },
+            "time": "2022-02-11T16:43:11+00:00"
+        },
+        {
+            "name": "dev-techguy/note",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dev-techguy/note.git",
+                "reference": "8486b47ad6c752ccad03e929f42298ec65f7d5f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dev-techguy/note/zipball/8486b47ad6c752ccad03e929f42298ec65f7d5f8",
+                "reference": "8486b47ad6c752ccad03e929f42298ec65f7d5f8",
+                "shasum": ""
+            },
+            "require": {
+                "dev-techguy/laravel-multiple-guards": "^1.0",
+                "illuminate/support": "^5.8|^6.0|^7.0|^8.0|^9.0",
+                "webpatser/laravel-uuid": "^3.0|^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Note\\NoteServiceProvider"
+                    ],
+                    "aliases": {
+                        "Note": "Note\\NoteFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Note\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Ososi",
+                    "email": "vincent@shiftech.co.ke"
+                }
+            ],
+            "description": "This is a custom system notification channel.",
+            "keywords": [
+                "laravel",
+                "notification",
+                "notification-channels"
+            ],
+            "support": {
+                "issues": "https://github.com/dev-techguy/note/issues",
+                "source": "https://github.com/dev-techguy/note/tree/v1.0.2"
+            },
+            "time": "2022-02-11T16:45:11+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1212,6 +1322,74 @@
             "time": "2022-10-26T14:07:24+00:00"
         },
         {
+            "name": "jantinnerezo/livewire-alert",
+            "version": "2.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jantinnerezo/livewire-alert.git",
+                "reference": "352d13719741fce537893bd9372504385bc99d5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jantinnerezo/livewire-alert/zipball/352d13719741fce537893bd9372504385bc99d5c",
+                "reference": "352d13719741fce537893bd9372504385bc99d5c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+                "livewire/livewire": "^2.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.15",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jantinnerezo\\LivewireAlert\\LivewireAlertServiceProvider"
+                    ],
+                    "aliases": {
+                        "LivewireAlert": "Jantinnerezo\\LivewireAlert\\LivewireAlertFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jantinnerezo\\LivewireAlert\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jantinn Erezo",
+                    "email": "erezojantinn@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package provides a simple alert utilities for your livewire components.",
+            "homepage": "https://github.com/jantinnerezo/livewire-alert",
+            "keywords": [
+                "jantinnerezo",
+                "livewire-alert"
+            ],
+            "support": {
+                "issues": "https://github.com/jantinnerezo/livewire-alert/issues",
+                "source": "https://github.com/jantinnerezo/livewire-alert/tree/2.2.6"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/paypalme/jantinn",
+                    "type": "custom"
+                }
+            ],
+            "time": "2022-03-15T17:39:01+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v9.47.0",
             "source": {
@@ -2210,6 +2388,79 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "livewire/livewire",
+            "version": "v2.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "8667099d5889cab760d1d0083cdcebaa3d595733"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/8667099d5889cab760d1d0083cdcebaa3d595733",
+                "reference": "8667099d5889cab760d1d0083cdcebaa3d595733",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^7.0|^8.0|^9.0|^10.0",
+                "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
+                "illuminate/validation": "^7.0|^8.0|^9.0|^10.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^7.2.5|^8.0",
+                "symfony/http-kernel": "^5.0|^6.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^7.0|^8.0|^9.0|^10.0",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0",
+                "orchestra/testbench-dusk": "^5.2|^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^8.4|^9.0",
+                "psy/psysh": "@stable"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v2.11.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-01-15T23:43:31+00:00"
         },
         {
             "name": "monolog/monolog",
