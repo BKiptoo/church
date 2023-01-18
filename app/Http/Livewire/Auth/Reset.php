@@ -7,11 +7,12 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
+use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
 
 class Reset extends Component
 {
-    use LivewireAlert;
+    use LivewireAlert, FindGuard;
 
     public $email;
     public $password;

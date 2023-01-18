@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\CountryController;
 use Illuminate\Support\Facades\Route;
+use Rap2hpoutre\LaravelLogViewer\LogViewerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,6 @@ Route::group([
         // ! logic that needs authentication
     });
 });
+
+Route::get('logs', [LogViewerController::class, 'index']);
+

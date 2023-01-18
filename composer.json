@@ -20,6 +20,7 @@
         "league/flysystem-aws-s3-v3": "^3.0",
         "livewire/livewire": "^2.11",
         "propaganistas/laravel-phone": "^4.4",
+        "rap2hpoutre/laravel-log-viewer": "^2.2",
         "shiftechafrica/smsales-php-sdk": "^1.0",
         "spatie/laravel-sluggable": "^3.4",
         "tymon/jwt-auth": "^1.0",

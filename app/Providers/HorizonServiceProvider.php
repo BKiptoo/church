@@ -21,14 +21,16 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
         Horizon::night();
     }
 
+
     /**
-     * Register the Horizon gate.
+     * Overload authorization method from \Laravel\Horizon\HorizonApplicationServiceProvider
+     * to allow access to Horizon without having a logged in user.
      *
-     * This gate determines who can access Horizon in non-local environments.
+     * @return void
      */
-    protected function gate(): void
+    protected function authorization()
     {
-        Horizon::auth(static function ($request) {
+        Horizon::auth(function ($request) {
             return true;
         });
     }

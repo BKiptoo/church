@@ -5,6 +5,8 @@ namespace App\Http\Livewire\Auth;
 use App\Models\Otp;
 use App\Traits\TriggerOtp;
 use Carbon\Carbon;
+use Exception;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -52,25 +54,30 @@ class OtpVerification extends Component
 
     public function submit()
     {
-        $this->validate();
+        try {
+            $this->validate();
 
-        // verify the otp code
-        $this->findGuardType()
-            ->user()
-            ->otps()
-            ->where('isUsed', false)
-            ->where('otp', $this->otp)
-            ->first()
-            ->update([
-                'isUsed' => true
+            // verify the otp code
+            $this->findGuardType()
+                ->user()
+                ->otps()
+                ->where('isUsed', false)
+                ->where('otp', $this->otp)
+                ->first()
+                ->update([
+                    'isUsed' => true
+                ]);
+
+            // update the account opt status
+            $this->findGuardType()->user()->update([
+                'isOtpVerified' => true
             ]);
 
-        // update the account opt status
-        $this->findGuardType()->user()->update([
-            'isOtpVerified' => true
-        ]);
-
-        return redirect()->route('home');
+            return redirect()->route('home');
+        } catch (Exception $exception) {
+            Log::error($exception->getMessage());
+            $this->alert('error', 'An error occurred. Try again.');
+        }
     }
 
     public function resend()
@@ -88,39 +95,44 @@ class OtpVerification extends Component
 
     public function confirmed()
     {
-        $minutes = 5;
+        try {
+            $minutes = 5;
 
-        $model = $this->findGuardType()
-            ->user()
-            ->otps()
-            ->first();
+            $model = $this->findGuardType()
+                ->user()
+                ->otps()
+                ->first();
 
-        if ($model)
-            // check if the current OTP is more than
-            $minutes = Carbon::parse(now())->diffInMinutes($model->created_at);
+            if ($model)
+                // check if the current OTP is more than
+                $minutes = Carbon::parse(now())->diffInMinutes($model->created_at);
 
-        if ($minutes <= 5) {
-            $this->alert(
-                'info',
-                'You have an active otp sms.',
-                [
-                    'position' => 'center',
-                    'timer' => 5000,
-                    'toast' => false,
-                    'timerProgressBar' => true,
-                ]);
-        } else {
-            $this->sendOtp($this->findGuardType()->user());
+            if ($minutes <= 5) {
+                $this->alert(
+                    'info',
+                    'You have an active otp sms.',
+                    [
+                        'position' => 'center',
+                        'timer' => 5000,
+                        'toast' => false,
+                        'timerProgressBar' => true,
+                    ]);
+            } else {
+                $this->sendOtp($this->findGuardType()->user());
 
-            $this->alert(
-                'success',
-                'Otp has been sent to ' . $this->findGuardType()->user()->phoneNumber,
-                [
-                    'position' => 'center',
-                    'timer' => 5000,
-                    'toast' => false,
-                    'timerProgressBar' => true,
-                ]);
+                $this->alert(
+                    'success',
+                    'Otp has been sent to ' . $this->findGuardType()->user()->phoneNumber,
+                    [
+                        'position' => 'center',
+                        'timer' => 5000,
+                        'toast' => false,
+                        'timerProgressBar' => true,
+                    ]);
+            }
+        } catch (Exception $exception) {
+            Log::error($exception->getMessage());
+            $this->alert('error', 'An error occurred. Try again.');
         }
     }
 

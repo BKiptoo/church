@@ -37,8 +37,8 @@ trait TriggerOtp
         // Sen opt for account verification...
         dispatch(new SendSmsJob(
             [SystemController::formatPhoneNumber(
-                $user->phone_number,
-                $user->country->data->short2Code
+                $user->phoneNumber,
+                $user->country->data['short2Code']
             )],// convert the phoneNumber to the country base
             $message !== null ? $message : 'Your OTP is ' . $otp
         ))->onQueue('sms')->delay(1);

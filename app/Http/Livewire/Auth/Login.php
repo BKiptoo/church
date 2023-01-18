@@ -3,15 +3,18 @@
 namespace App\Http\Livewire\Auth;
 
 use App\Traits\TriggerOtp;
+use Exception;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
+use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
 
 class Login extends Component
 {
-    use LivewireAlert, TriggerOtp;
+    use LivewireAlert, TriggerOtp, FindGuard;
 
     public $email;
     public $password;
@@ -42,26 +45,32 @@ class Login extends Component
     /**
      * login the user here
      * @return RedirectResponse
+     * @throws Exception
      */
     public function loginUser()
     {
-        $this->validate();
+        try {
+            $this->validate();
 
-        if (Auth::attempt([
-            'email' => $this->email,
-            'password' => $this->password,
-            'is_active' => true
-        ], $this->remember
-        )) {
-            // Send opt for account verification...
-            $this->sendOtp($this->findGuardType()->user());
+            if (Auth::attempt([
+                'email' => $this->email,
+                'password' => $this->password,
+                'isActive' => true
+            ], $this->remember
+            )) {
+                // Send opt for account verification...
+                $this->sendOtp($this->findGuardType()->user());
 
-            // Authentication passed...
-            return redirect()->intended();
+                // Authentication passed...
+                return redirect()->intended();
+            }
+
+            $this->reset(['password']);
+            $this->alert('warning', 'The credentials given don\'t match our records.');
+        } catch (Exception $exception) {
+            Log::error($exception->getMessage());
+            $this->alert('error', 'An error occurred. Try again.');
         }
-
-        $this->reset(['password']);
-        $this->alert('error', 'The credentials given don\'t match our records.');
     }
 
     public function render()
