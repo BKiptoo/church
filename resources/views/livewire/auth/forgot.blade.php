@@ -5,7 +5,8 @@
     <form class="mb-3" wire:submit.prevent="resetPassword">
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="text" class="form-control @error('email') is-invalid @enderror" wire:model="email" id="email" required
+            <input type="text" class="form-control @error('email') is-invalid @enderror" wire:model="email" id="email"
+                   required
                    name="email" placeholder="Enter your email" autofocus>
             @error('email')
             <span class="invalid-feedback" role="alert">
@@ -15,7 +16,8 @@
         </div>
         <button type="submit" class="btn btn-primary d-grid w-100" wire:loading.class="disabled"
                 wire:offline.attr="disabled"><span wire:target="loginUser"
-                                                   wire:loading.class="spinner-border text-primary"></span> Send Reset
+                                                   wire:loading.class="spinner-border text-primary"></span>
+            Send Reset
             Link
         </button>
     </form>

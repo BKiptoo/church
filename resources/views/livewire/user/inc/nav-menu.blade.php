@@ -1,5 +1,6 @@
 <div>
-    <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+    <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+         id="layout-navbar">
 
 
         <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
@@ -16,7 +17,8 @@
             <div class="navbar-nav align-items-center">
                 <div class="nav-item d-flex align-items-center">
                     <i class="bx bx-search fs-4 lh-0"></i>
-                    <input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search...">
+                    <input type="text" class="form-control border-0 shadow-none" placeholder="Search..."
+                           aria-label="Search...">
                 </div>
             </div>
             <!-- /Search -->
@@ -27,7 +29,9 @@
 
                 <!-- Place this tag where you want the button to render. -->
                 <li class="nav-item lh-1 me-3">
-                    <a class="github-button" href="https://github.com/themeselection/sneat-html-admin-template-free" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
+                    <a class="github-button" href="https://github.com/themeselection/sneat-html-admin-template-free"
+                       data-icon="octicon-star" data-size="large" data-show-count="true"
+                       aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
                 </li>
 
 
@@ -44,7 +48,8 @@
                                 <div class="d-flex">
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar avatar-online">
-                                            <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle">
+                                            <img src="../assets/img/avatars/1.png" alt
+                                                 class="w-px-40 h-auto rounded-circle">
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
@@ -74,7 +79,8 @@
                                             <span class="d-flex align-items-center align-middle">
                     <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
                     <span class="flex-grow-1 align-middle">Billing</span>
-                                            <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                            <span
+                                                class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
                                             </span>
                             </a>
                         </li>
@@ -82,7 +88,7 @@
                             <div class="dropdown-divider"></div>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="auth-login-basic.html">
+                            <a class="dropdown-item" href="#" wire:click="logout">
                                 <i class="bx bx-power-off me-2"></i>
                                 <span class="align-middle">Log Out</span>
                             </a>
