@@ -28,7 +28,7 @@ Route::group([
 
     // Do only process that needs authentication here
     Route::group([
-        'middleware' => ['auth']
+        'middleware' => ['auth', 'otpPass']
     ], function () {
         Route::get('/', UserDashboard::class)->name('home');
     });

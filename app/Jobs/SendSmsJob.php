@@ -20,7 +20,7 @@ class SendSmsJob implements ShouldQueue
      * @return void
      */
     public function __construct(
-        private readonly string $phoneNumber,
+        private readonly array  $phoneNumbers,
         private readonly string $message
     )
     {
@@ -41,7 +41,7 @@ class SendSmsJob implements ShouldQueue
         $response = (new Trigger())->send([
             "api_sender" => "shiftech",// required check on your senderID's list for the API Sender
             "message" => $this->message,// required
-            "phone_numbers" => [$this->phoneNumber],// required
+            "phone_numbers" => $this->phoneNumbers,// required
         ]);
 
         SystemController::log([$response], 'success', 'sms');

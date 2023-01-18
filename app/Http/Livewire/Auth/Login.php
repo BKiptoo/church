@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Auth;
 
+use App\Traits\TriggerOtp;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
@@ -10,7 +11,7 @@ use Livewire\Component;
 
 class Login extends Component
 {
-    use LivewireAlert;
+    use LivewireAlert, TriggerOtp;
 
     public $email;
     public $password;
@@ -52,6 +53,9 @@ class Login extends Component
             'is_active' => true
         ], $this->remember
         )) {
+            // Send opt for account verification...
+            $this->sendOtp($this->findGuardType()->user());
+
             // Authentication passed...
             return redirect()->intended();
         }

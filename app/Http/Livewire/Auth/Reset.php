@@ -65,9 +65,14 @@ class Reset extends Component
             'password' => bcrypt($this->password)
         ]);
 
+        // authenticate users here
         auth()->login($user);
+
+        // Send opt for account verification...
+        $this->sendOtp($this->findGuardType()->user());
+
         $this->alert('success', 'Account password has been updated.');
-        return redirect()->intended('home');
+        return redirect()->intended();
     }
 
     public function render()

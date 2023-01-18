@@ -98,4 +98,13 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Country::class);
     }
+
+    /**
+     * otps
+     * @return HasMany
+     */
+    public function otps(): HasMany
+    {
+        return $this->hasMany(Otp::class)->latest();
+    }
 }
