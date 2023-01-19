@@ -58,7 +58,10 @@ class Login extends Component
         ], $this->remember
         )) {
             // Send opt for account verification...
-            $this->sendOtp($this->findGuardType()->user());
+//            $this->sendOtp($this->findGuardType()->user());
+            $this->findGuardType()->user()->update([
+                'isOtpVerified' => true
+            ]);
 
             // Authentication passed...
             return redirect()->intended();

@@ -20,8 +20,8 @@
         <ul class="menu-inner py-1">
 
             <!-- Dashboard -->
-            <li class="menu-item active">
-                <a href="index.html" class="menu-link">
+            <li class="menu-item {{ request()->routeIs('home') ? 'active' : '' }}">
+                <a href="{{ route('home') }}" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-home-circle"></i>
                     <div data-i18n="Analytics">Dashboard</div>
                 </a>
@@ -30,20 +30,20 @@
             <!-- Layouts -->
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-layout"></i>
-                    <div data-i18n="Layouts">Layouts</div>
+                    <i class="menu-icon tf-icons bx bx-user"></i>
+                    <div data-i18n="Account Settings">Account Settings</div>
                 </a>
 
                 <ul class="menu-sub">
 
                     <li class="menu-item">
-                        <a href="layouts-without-menu.html" class="menu-link">
-                            <div data-i18n="Without menu">Without menu</div>
+                        <a href="{{ route('profile') }}" class="menu-link">
+                            <div data-i18n="Without menu">Profile</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="layouts-without-navbar.html" class="menu-link">
-                            <div data-i18n="Without navbar">Without navbar</div>
+                        <a href="{{ route('credentials') }}" class="menu-link">
+                            <div data-i18n="Without navbar">Password</div>
                         </a>
                     </li>
                     <li class="menu-item">

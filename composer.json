@@ -23,6 +23,7 @@
         "propaganistas/laravel-phone": "^4.4",
         "rap2hpoutre/laravel-log-viewer": "^2.2",
         "shiftechafrica/smsales-php-sdk": "^1.0",
+        "spatie/laravel-permission": "^5.8",
         "spatie/laravel-sluggable": "^3.4",
         "tymon/jwt-auth": "^1.0",
         "webpatser/laravel-uuid": "^4.0"

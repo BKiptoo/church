@@ -5,6 +5,10 @@ use App\Http\Livewire\Auth\GoogleAuth;
 use App\Http\Livewire\Auth\Login;
 use App\Http\Livewire\Auth\OtpVerification;
 use App\Http\Livewire\Auth\Reset;
+use App\Http\Livewire\User\Account\CountrySetting;
+use App\Http\Livewire\User\Account\Credentials;
+use App\Http\Livewire\User\Account\Profile;
+use App\Http\Livewire\User\Account\RoleSetting;
 use App\Http\Livewire\User\UserDashboard;
 use Illuminate\Support\Facades\Route;
 
@@ -39,5 +43,18 @@ Route::group([
         'middleware' => ['auth', 'otpPass']
     ], static function () {
         Route::get('/', UserDashboard::class)->name('home');
+
+        Route::group([
+            'prefix' => 'account'
+        ], static function () {
+            Route::get('/', Profile::class)->name('profile');
+            Route::get('credentials', Credentials::class)->name('credentials');
+            Route::group([
+                'prefix' => 'settings'
+            ], static function () {
+                Route::get('country', CountrySetting::class)->name('country.settings');
+                Route::get('roles', RoleSetting::class)->name('role.settings');
+            });
+        });
     });
 });
