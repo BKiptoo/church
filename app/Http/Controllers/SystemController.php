@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Media;
 use Exception;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
@@ -196,5 +197,47 @@ class SystemController extends Controller
     public static function generateAvatars(string $name, int $size): LetterAvatar
     {
         return new LetterAvatar($name, 'circle', $size);
+    }
+
+    /**
+     * remove existing files
+     */
+    public static function removeExistingFiles(string $mediaableId)
+    {
+        $model = Media::query()->firstWhere('mediaable_id', $mediaableId);
+        if ($model)
+            foreach ($model->pathNames as $pathName) {
+                self::unLinkMedia($pathName);
+            }
+    }
+
+    /**
+     * process single storage images
+     */
+    public static function singleMediaUploadsJob(string $mediaableId, string $mediaableType, $fileRequest)
+    {
+        // start process of storage here
+        $media = self::storeMedia(
+            $fileRequest
+        );
+
+        // remove existing files first
+        self::removeExistingFiles($mediaableId);
+
+        // store in the database here
+        Media::query()->updateOrCreate([
+            'mediaable_id' => $mediaableId,
+            'mediaable_type' => $mediaableType,
+        ], [
+            'pathNames' => [
+                $media[0]
+            ],
+            'pathUrls' => [
+                $media[1]
+            ],
+            'sizes' => [
+                $media[2]
+            ],
+        ]);
     }
 }

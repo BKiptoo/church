@@ -1,206 +1,45 @@
 <div>
-    <div class="container-xxl flex-grow-1 container-p-y">
+    <div class="container-xxl flex-grow-1 container-p-y"  wire:init="loadData">
         <h4 class="fw-bold py-3 mb-4">
-            <span class="text-muted fw-light">Countries Settings / </span> Access
+            <span class="text-muted fw-light">Countries Settings / </span> Roles
         </h4>
 
         <div class="row">
             <div class="col-md-12">
                 <livewire:user.account.inc.settings-nav/>
-                <div class="row">
-                    <div class="col-md-6 col-12 mb-md-0 mb-4">
-                        <div class="card">
-                            <h5 class="card-header">Connected Accounts</h5>
-                            <div class="card-body">
-                                <p>Display content from your connected accounts on your site</p>
-                                <!-- Connections -->
-                                <div class="d-flex mb-3">
-                                    <div class="flex-shrink-0">
-                                        <img src="../assets/img/icons/brands/google.png" alt="google" class="me-3"
-                                             height="30">
-                                    </div>
-                                    <div class="flex-grow-1 row">
-                                        <div class="col-9 mb-sm-0 mb-2">
-                                            <h6 class="mb-0">Google</h6>
-                                            <small class="text-muted">Calendar and contacts</small>
-                                        </div>
-                                        <div class="col-3 text-end">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input float-end" type="checkbox" role="switch">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <div class="flex-shrink-0">
-                                        <img src="../assets/img/icons/brands/slack.png" alt="slack" class="me-3"
-                                             height="30">
-                                    </div>
-                                    <div class="flex-grow-1 row">
-                                        <div class="col-9 mb-sm-0 mb-2">
-                                            <h6 class="mb-0">Slack</h6>
-                                            <small class="text-muted">Communication</small>
-                                        </div>
-                                        <div class="col-3 text-end">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input float-end" type="checkbox" role="switch"
-                                                       checked>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <div class="flex-shrink-0">
-                                        <img src="../assets/img/icons/brands/github.png" alt="github" class="me-3"
-                                             height="30">
-                                    </div>
-                                    <div class="flex-grow-1 row">
-                                        <div class="col-9 mb-sm-0 mb-2">
-                                            <h6 class="mb-0">Github</h6>
-                                            <small class="text-muted">Manage your Git repositories</small>
-                                        </div>
-                                        <div class="col-3 text-end">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input float-end" type="checkbox" role="switch">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <div class="flex-shrink-0">
-                                        <img src="../assets/img/icons/brands/mailchimp.png" alt="mailchimp" class="me-3"
-                                             height="30">
-                                    </div>
-                                    <div class="flex-grow-1 row">
-                                        <div class="col-9 mb-sm-0 mb-2">
-                                            <h6 class="mb-0">Mailchimp</h6>
-                                            <small class="text-muted">Email marketing service</small>
-                                        </div>
-                                        <div class="col-3 text-end">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input float-end" type="checkbox" role="switch"
-                                                       checked>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0">
-                                        <img src="../assets/img/icons/brands/asana.png" alt="asana" class="me-3"
-                                             height="30">
-                                    </div>
-                                    <div class="flex-grow-1 row">
-                                        <div class="col-9 mb-sm-0 mb-2">
-                                            <h6 class="mb-0">Asana</h6>
-                                            <small class="text-muted">Communication</small>
-                                        </div>
-                                        <div class="col-3 text-end">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input float-end" type="checkbox" role="switch"
-                                                       checked>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /Connections -->
-                            </div>
-                        </div>
+                <div class="card">
+                    <!-- Notifications -->
+                    <h5 class="card-header">Access</h5>
+                    <div class="card-body">
+                        <span>This list shows what countries you can access.</span>
+                        <div class="error"></div>
                     </div>
-                    <div class="col-md-6 col-12">
-                        <div class="card">
-                            <h5 class="card-header">Social Accounts</h5>
-                            <div class="card-body">
-                                <p>Display content from social accounts on your site</p>
-                                <!-- Social Accounts -->
-                                <div class="d-flex mb-3">
-                                    <div class="flex-shrink-0">
-                                        <img src="../assets/img/icons/brands/facebook.png" alt="facebook" class="me-3"
-                                             height="30">
-                                    </div>
-                                    <div class="flex-grow-1 row">
-                                        <div class="col-8 col-sm-7 mb-sm-0 mb-2">
-                                            <h6 class="mb-0">Facebook</h6>
-                                            <small class="text-muted">Not Connected</small>
-                                        </div>
-                                        <div class="col-4 col-sm-5 text-end">
-                                            <button type="button" class="btn btn-icon btn-outline-secondary">
-                                                <i class='bx bx-link-alt'></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <div class="flex-shrink-0">
-                                        <img src="../assets/img/icons/brands/twitter.png" alt="twitter" class="me-3"
-                                             height="30">
-                                    </div>
-                                    <div class="flex-grow-1 row">
-                                        <div class="col-8 col-sm-7 mb-sm-0 mb-2">
-                                            <h6 class="mb-0">Twitter</h6>
-                                            <a href="https://twitter.com/Theme_Selection" target="_blank">@ThemeSelection</a>
-                                        </div>
-                                        <div class="col-4 col-sm-5 text-end">
-                                            <button type="button" class="btn btn-icon btn-outline-danger">
-                                                <i class='bx bx-trash-alt'></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <div class="flex-shrink-0">
-                                        <img src="../assets/img/icons/brands/instagram.png" alt="instagram" class="me-3"
-                                             height="30">
-                                    </div>
-                                    <div class="flex-grow-1 row">
-                                        <div class="col-8 col-sm-7 mb-sm-0 mb-2">
-                                            <h6 class="mb-0">instagram</h6>
-                                            <a href="https://www.instagram.com/themeselection/" target="_blank">@ThemeSelection</a>
-                                        </div>
-                                        <div class="col-4 col-sm-5 text-end">
-                                            <button type="button" class="btn btn-icon btn-outline-danger">
-                                                <i class='bx bx-trash-alt'></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <div class="flex-shrink-0">
-                                        <img src="../assets/img/icons/brands/dribbble.png" alt="dribbble" class="me-3"
-                                             height="30">
-                                    </div>
-                                    <div class="flex-grow-1 row">
-                                        <div class="col-8 col-sm-7 mb-sm-0 mb-2">
-                                            <h6 class="mb-0">Dribbble</h6>
-                                            <small class="text-muted">Not Connected</small>
-                                        </div>
-                                        <div class="col-4 col-sm-5 text-end">
-                                            <button type="button" class="btn btn-icon btn-outline-secondary">
-                                                <i class='bx bx-link-alt'></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0">
-                                        <img src="../assets/img/icons/brands/behance.png" alt="behance" class="me-3"
-                                             height="30">
-                                    </div>
-                                    <div class="flex-grow-1 row">
-                                        <div class="col-8 col-sm-7 mb-sm-0 mb-2">
-                                            <h6 class="mb-0">Behance</h6>
-                                            <small class="text-muted">Not Connected</small>
-                                        </div>
-                                        <div class="col-4 col-sm-5 text-end">
-                                            <button type="button" class="btn btn-icon btn-outline-secondary">
-                                                <i class='bx bx-link-alt'></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /Social Accounts -->
-                            </div>
-                        </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-borderless border-bottom">
+                            <thead>
+                            <tr>
+                                <th class="text-nowrap">Country Name</th>
+                                <th class="text-nowrap">Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($countries as $country)
+                                <tr>
+                                    <td class="text-nowrap">{{ $country->name }}</td>
+                                    <td>
+                                        <input class="form-check-input" type="checkbox" id="defaultCheck1" disabled
+                                               @if(in_array(\Illuminate\Support\Str::slug($country->id), $access)) checked
+                                            @endif/>
+                                    </td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
                     </div>
+                    <div class="card-body">
+                        &nbsp;
+                    </div>
+                    <!-- /Notifications -->
                 </div>
             </div>
         </div>

@@ -2,16 +2,18 @@
 
 namespace App\Http\Livewire\User\Account;
 
+use App\Http\Controllers\SystemController;
 use App\Models\User;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 use Note\Note;
 
 class Profile extends Component
 {
-    use FindGuard, LivewireAlert;
+    use FindGuard, LivewireAlert, WithFileUploads;
 
     public $user;
     public $name;
@@ -39,6 +41,7 @@ class Profile extends Component
         'name' => ['required', 'string', 'max:255'],
         'position' => ['required', 'string', 'max:255'],
         'email' => ['required', 'string', 'email', 'max:255'],
+        'photo' => ['file', 'image', 'max:4096', 'nullable'], // 4MB Max
         'phoneNumber' => ['required', 'string']
     ];
 
@@ -73,9 +76,19 @@ class Profile extends Component
     public function confirmed()
     {
         $this->user->fill($this->validatedData);
-        if ($this->user->isClean()) {
+        if ($this->user->isClean() && $this->photo === null) {
             $this->alert('warning', 'At least one value must change.');
             return redirect()->back();
+        }
+
+        // upload avatar here
+        if ($this->photo) {
+            // upload image here
+            SystemController::singleMediaUploadsJob(
+                $this->user->id,
+                User::class,
+                $this->photo
+            );
         }
 
         $this->user->save();
@@ -85,11 +98,7 @@ class Profile extends Component
             'Successfully updated your profile.'
         );
         $this->alert('success', 'Successfully updated your profile.');
-    }
-
-    public function uploadAvatar()
-    {
-
+        $this->reset(['photo']);
     }
 
     public function cancelled()

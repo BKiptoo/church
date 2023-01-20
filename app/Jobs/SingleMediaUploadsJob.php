@@ -7,6 +7,7 @@ use App\Models\Media;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Http\Request;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 
@@ -20,9 +21,9 @@ class SingleMediaUploadsJob implements ShouldQueue
      * @return void
      */
     public function __construct(
-        private readonly string $mediaableId,
-        private readonly string $mediaableType,
-        private                 $fileRequest
+        private readonly string  $mediaableId,
+        private readonly string  $mediaableType,
+        private  $fileRequest
     )
     {
         //
