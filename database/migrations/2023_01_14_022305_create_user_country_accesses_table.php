@@ -13,7 +13,10 @@ return new class extends Migration {
     public function up()
     {
         Schema::create('user_country_accesses', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->uuid('user_id');
+            $table->uuid('country_id');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

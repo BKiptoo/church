@@ -17,6 +17,8 @@ class NavMenu extends Component
 
     public function render()
     {
-        return view('livewire.user.inc.nav-menu');
+        return view('livewire.user.inc.nav-menu', [
+            'user' => $this->findGuardType()->user()->load('media')
+        ]);
     }
 }

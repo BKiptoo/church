@@ -42,6 +42,7 @@ class User extends Authenticatable
         'phoneNumber',
         'email',
         'slug',
+        'position',
         'password',
         'isActive',
         'isOtpVerified',

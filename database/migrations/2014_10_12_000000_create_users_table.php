@@ -19,6 +19,7 @@ return new class extends Migration {
             $table->string('slug')->unique();
             $table->string('phoneNumber')->unique();
             $table->string('email')->unique();
+            $table->string('position');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->boolean('isActive')->default(true);

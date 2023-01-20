@@ -34,7 +34,8 @@ class Media extends Model
         'mediaable_id',
         'mediaable_type',
         'pathNames',
-        'pathUrls'
+        'pathUrls',
+        'sizes',
     ];
 
     /**
@@ -44,7 +45,8 @@ class Media extends Model
      */
     protected $casts = [
         'pathNames' => 'array',
-        'pathUrls' => 'array'
+        'pathUrls' => 'array',
+        'sizes' => 'array'
     ];
 
     /**

@@ -11,6 +11,7 @@ use Monolog\Formatter\JsonFormatter;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 use Propaganistas\LaravelPhone\PhoneNumber;
+use YoHang88\LetterAvatar\LetterAvatar;
 
 class SystemController extends Controller
 {
@@ -184,5 +185,16 @@ class SystemController extends Controller
             Log::error($exception->getMessage());
             return false;
         }
+    }
+
+    /**
+     * generate avatars here
+     * @param string $name
+     * @param int $size
+     * @return LetterAvatar
+     */
+    public static function generateAvatars(string $name, int $size): LetterAvatar
+    {
+        return new LetterAvatar($name, 'circle', $size);
     }
 }

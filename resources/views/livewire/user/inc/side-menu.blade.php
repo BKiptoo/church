@@ -1,7 +1,5 @@
 <div>
     <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-
-
         <div class="app-brand demo ">
             <a href="{{ route('home') }}" class="app-brand-link">
               <span class="app-brand-logo demo">
@@ -27,7 +25,7 @@
                 </a>
             </li>
 
-            <!-- Layouts -->
+            <!-- Account -->
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-user"></i>

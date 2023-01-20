@@ -5,7 +5,7 @@
     <form class="mb-3" wire:submit.prevent="submit">
         <div class="mb-3">
             <label for="otp" class="form-label">OTP</label>
-            <input type="text" class="form-control @error('otp') is-invalid @enderror" wire:model="otp" id="otp" required
+            <input type="number" class="form-control @error('otp') is-invalid @enderror" wire:model="otp" id="otp" required
                    name="otp" placeholder="Enter your otp..." autofocus>
             @error('otp')
             <span class="invalid-feedback text-center" role="alert">
