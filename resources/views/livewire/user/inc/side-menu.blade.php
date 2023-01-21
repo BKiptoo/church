@@ -44,91 +44,235 @@
                             <div data-i18n="Without navbar">Password</div>
                         </a>
                     </li>
+                </ul>
+            </li>
+
+            {{--System operations--}}
+            <li class="menu-header small text-uppercase">
+                <span class="menu-header-text">Sys Ops</span>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bxs-user-account"></i>
+                    <div data-i18n="Account Settings">User Management</div>
+                </a>
+                <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="layouts-container.html" class="menu-link">
-                            <div data-i18n="Container">Container</div>
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
                         </a>
                     </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-store-alt"></i>
+                    <div data-i18n="Account Settings">Ads Management</div>
+                </a>
+                <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="layouts-fluid.html" class="menu-link">
-                            <div data-i18n="Fluid">Fluid</div>
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
                         </a>
                     </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-hive"></i>
+                    <div data-i18n="Account Settings">Career Management</div>
+                </a>
+                <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="layouts-blank.html" class="menu-link">
-                            <div data-i18n="Blank">Blank</div>
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-book-content"></i>
+                    <div data-i18n="Account Settings">Contacts Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-link-alt"></i>
+                    <div data-i18n="Account Settings">Subscribers Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-map-alt"></i>
+                    <div data-i18n="Account Settings">Coverages Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-calendar-event"></i>
+                    <div data-i18n="Account Settings">Events Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-question-mark"></i>
+                    <div data-i18n="Account Settings">Faq's Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-buildings"></i>
+                    <div data-i18n="Account Settings">Office Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-category"></i>
+                    <div data-i18n="Account Settings">Category Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bxs-category-alt"></i>
+                    <div data-i18n="Account Settings">Sub-Category Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bxl-product-hunt"></i>
+                    <div data-i18n="Account Settings">Products Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-cart-alt"></i>
+                    <div data-i18n="Account Settings">Orders Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bxl-blogger"></i>
+                    <div data-i18n="Account Settings">Blogs Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-slider-alt"></i>
+                    <div data-i18n="Account Settings">Slider Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bxs-user-detail"></i>
+                    <div data-i18n="Account Settings">Team Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bxs-file-pdf"></i>
+                    <div data-i18n="Account Settings">Tender Management</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="" class="menu-link">
+                            <div data-i18n="Account">List</div>
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li class="menu-header small text-uppercase">
-                <span class="menu-header-text">Pages</span>
-            </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                    <div data-i18n="Account Settings">Account Settings</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="pages-account-settings-account.html" class="menu-link">
-                            <div data-i18n="Account">Account</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="pages-account-settings-notifications.html" class="menu-link">
-                            <div data-i18n="Notifications">Notifications</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="pages-account-settings-connections.html" class="menu-link">
-                            <div data-i18n="Connections">Connections</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-                    <div data-i18n="Authentications">Authentications</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="auth-login-basic.html" class="menu-link" target="_blank">
-                            <div data-i18n="Basic">Login</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="auth-register-basic.html" class="menu-link" target="_blank">
-                            <div data-i18n="Basic">Register</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="auth-forgot-password-basic.html" class="menu-link" target="_blank">
-                            <div data-i18n="Basic">Forgot Password</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                    <div data-i18n="Misc">Misc</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="pages-misc-error.html" class="menu-link">
-                            <div data-i18n="Error">Error</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="pages-misc-under-maintenance.html" class="menu-link">
-                            <div data-i18n="Under Maintenance">Under Maintenance</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
             <!-- Components -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li>
             <!-- Cards -->

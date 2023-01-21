@@ -130,11 +130,13 @@ class SystemController extends Controller
             // assign variables
             $url = Storage::disk('do_space_cdn')->url($path . '/' . $newFileName);
             $size = Storage::disk('do_space')->size($path . '/' . $newFileName);
+            $mimeType = Storage::disk('do_space')->mimeType($path . '/' . $newFileName);
 
             return [
                 $newFileName, // this will be the new file name i.e shiftechafrica.png
                 $url, // set the path for loading the image i.e http:IP/storage/shiftechafrica.png
-                $size // get file size in bytes
+                $size, // get file size in bytes
+                $mimeType // get file mime Type
             ];
         }
         return [null, '#', 0];
@@ -213,6 +215,9 @@ class SystemController extends Controller
 
     /**
      * process single storage images
+     * @param string $mediaableId
+     * @param string $mediaableType
+     * @param
      */
     public static function singleMediaUploadsJob(string $mediaableId, string $mediaableType, $fileRequest)
     {
@@ -238,6 +243,40 @@ class SystemController extends Controller
             'sizes' => [
                 $media[2]
             ],
+            'mimeTypes' => [
+                $media[3]
+            ],
         ]);
+    }
+
+    /**
+     * store images in multiple ways
+     */
+    public static function multipleMediaUploadsJob(string $mediaableId, string $mediaableType, $fileRequests)
+    {
+        // define empty array here for pathNames and pathUrls
+        $pathUrls = $pathNames = $sizes = $mimeTypes = [];
+
+        // start process of storage here
+        foreach ($fileRequests as $fileRequest) {
+            $media = self::storeMedia(
+                $fileRequest
+            );
+
+            // add the items to the array
+            $pathNames[] = $media[0];
+            $pathUrls[] = $media[1];
+            $sizes[] = $media[2];
+            $mimeTypes[] = $media[3];
+        }
+
+        // remove existing files first
+        self::removeExistingFiles($mediaableId);
+
+        // store in the database here
+        Media::query()->updateOrCreate([
+            'mediaable_id' => $this->mediaableId,
+            'mediaable_type' => $this->mediaableType,
+        ], compact('pathNames', 'pathUrls', 'sizes', 'mimeTypes'));
     }
 }

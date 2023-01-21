@@ -36,6 +36,7 @@ class Media extends Model
         'pathNames',
         'pathUrls',
         'sizes',
+        'mimeTypes',
     ];
 
     /**
@@ -46,7 +47,8 @@ class Media extends Model
     protected $casts = [
         'pathNames' => 'array',
         'pathUrls' => 'array',
-        'sizes' => 'array'
+        'sizes' => 'array',
+        'mimeTypes' => 'array'
     ];
 
     /**
