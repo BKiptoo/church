@@ -19,6 +19,7 @@ return new class extends Migration {
             $table->jsonb('pathNames')->default(json_encode([]));
             $table->jsonb('pathUrls')->default(json_encode([]));
             $table->jsonb('sizes')->default(json_encode([]));
+            $table->jsonb('mimeTypes')->default(json_encode([]));
             $table->softDeletes();
             $table->timestamps();
         });

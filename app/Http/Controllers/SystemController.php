@@ -275,8 +275,8 @@ class SystemController extends Controller
 
         // store in the database here
         Media::query()->updateOrCreate([
-            'mediaable_id' => $this->mediaableId,
-            'mediaable_type' => $this->mediaableType,
+            'mediaable_id' => $mediaableId,
+            'mediaable_type' => $mediaableType,
         ], compact('pathNames', 'pathUrls', 'sizes', 'mimeTypes'));
     }
 }
