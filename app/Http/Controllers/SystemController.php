@@ -279,4 +279,19 @@ class SystemController extends Controller
             'mediaable_type' => $mediaableType,
         ], compact('pathNames', 'pathUrls', 'sizes', 'mimeTypes'));
     }
+
+    /**
+     * @param $bytes
+     * @return string
+     */
+    public static function bytesToHuman($bytes): string
+    {
+        $units = ['B', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB'];
+
+        for ($i = 0; $bytes > 1024; $i++) {
+            $bytes /= 1024;
+        }
+
+        return round($bytes, 2) . ' ' . $units[$i];
+    }
 }
