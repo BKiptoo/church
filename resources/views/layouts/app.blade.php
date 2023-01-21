@@ -56,8 +56,7 @@
 
 </head>
 <body>
-
-<div class="layout-wrapper layout-content-navbar  ">
+<div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
         <livewire:user.inc.side-menu/>
         <div class="layout-page">

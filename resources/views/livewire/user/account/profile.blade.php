@@ -3,38 +3,34 @@
         <h4 class="fw-bold py-3 mb-4">
             <span class="text-muted fw-light">Account Settings / </span> Profile
         </h4>
-
         <div class="row">
             <div class="col-md-12">
                 <livewire:user.account.inc.settings-nav/>
                 <div class="card mb-4" wire:poll.visible>
                     <h5 class="card-header">Profile Details</h5>
-
                     <form wire:submit.prevent="submit">
-                        <div class="card-body">
-                            <div class="d-flex align-items-start align-items-sm-center gap-4">
-                                <div class="button-wrapper">
-                                    <label for="upload" tabindex="0">
-                                        @if ($photo)
-                                            <img
-                                                src="{{ $photo->temporaryUrl() }}"
-                                                class="d-block rounded" height="100" width="100"/>
-                                        @else
-                                            <img
-                                                src="{{ $user->media ? $user->media->pathUrls[0] : \App\Http\Controllers\SystemController::generateAvatars($user->slug,100) }}"
-                                                class="d-block rounded" height="100" width="100"/>
-                                        @endif
-                                        <input type="file" wire:model="photo" id="upload" class="account-file-input"
-                                               hidden
-                                               accept="image/png, image/jpeg, image/gif"/>
-                                    </label>
-                                    <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 4MB's</p>
-                                </div>
-                            </div>
-                        </div>
                         <hr class="my-0">
                         <div class="card-body">
                             <div class="row">
+                                <div class="mb-3 col-md-12 text-center">
+                                    <div class="button-wrapper">
+                                        <label for="upload" tabindex="0">
+                                            @if ($photo)
+                                                <img
+                                                    src="{{ $photo->temporaryUrl() }}"
+                                                    class="d-block rounded" height="100" width="100"/>
+                                            @else
+                                                <img
+                                                    src="{{ $user->media ? $user->media->pathUrls[0] : \App\Http\Controllers\SystemController::generateAvatars($user->slug,100) }}"
+                                                    class="d-block rounded" height="100" width="100"/>
+                                            @endif
+                                            <input type="file" wire:model="photo" id="upload" class="account-file-input"
+                                                   hidden
+                                                   accept="image/png, image/jpeg, image/gif"/>
+                                        </label>
+                                        <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 4MB's</p>
+                                    </div>
+                                </div>
                                 <div class="mb-3 col-md-6">
                                     <label for="name" class="form-label">Full Name</label>
                                     <input class="form-control @error('name') is-invalid @enderror" type="text"

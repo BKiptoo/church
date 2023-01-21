@@ -1,9 +1,8 @@
 <div>
-    <div class="container-xxl flex-grow-1 container-p-y"  wire:init="loadData">
+    <div class="container-xxl flex-grow-1 container-p-y" wire:poll.visible>
         <h4 class="fw-bold py-3 mb-4">
-            <span class="text-muted fw-light">Countries Settings / </span> Roles
+            <span class="text-muted fw-light">Countries Settings / </span> Access
         </h4>
-
         <div class="row">
             <div class="col-md-12">
                 <livewire:user.account.inc.settings-nav/>
@@ -23,13 +22,12 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($countries as $country)
+                            @foreach($user->userCountriesAccess as $userCountryAccess)
                                 <tr>
-                                    <td class="text-nowrap">{{ $country->name }}</td>
+                                    <td class="text-nowrap">{{ $userCountryAccess->country->name }}</td>
                                     <td>
                                         <input class="form-check-input" type="checkbox" id="defaultCheck1" disabled
-                                               @if(in_array(\Illuminate\Support\Str::slug($country->id), $access)) checked
-                                            @endif/>
+                                               checked/>
                                     </td>
                                 </tr>
                             @endforeach

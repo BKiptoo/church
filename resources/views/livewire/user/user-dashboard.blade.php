@@ -1,5 +1,5 @@
 <div>
-    <div class="container-xxl flex-grow-1 container-p-y">
+    <div class="container-xxl flex-grow-1 container-p-y" wire:poll.visible>
         <div class="row">
             <div class="col-lg-8 mb-4 order-0">
                 <div class="card">
@@ -7,7 +7,9 @@
                         <div class="col-sm-7">
                             <div class="card-body">
                                 <h5 class="card-title text-primary">Congratulations John! 🎉</h5>
-                                <p class="mb-4">You have done <span class="fw-bold">72%</span> more sales today. Check your new badge in your profile.</p>
+                                <p class="mb-4">You have done <span class="fw-bold">72%</span> more sales today. Check
+                                    your
+                                    new badge in your profile.</p>
 
                                 <a href="javascript:;" class="btn btn-sm btn-outline-primary">View
                                     Badges</a>
@@ -15,7 +17,9 @@
                         </div>
                         <div class="col-sm-5 text-center text-sm-left">
                             <div class="card-body pb-0 px-0 px-md-4">
-                                <img src="../assets/img/illustrations/man-with-laptop-light.png" height="140" alt="View Badge User" data-app-dark-img="illustrations/man-with-laptop-dark.png" data-app-light-img="illustrations/man-with-laptop-light.png">
+                                <img src="../assets/img/illustrations/man-with-laptop-light.png" height="140"
+                                     alt="View Badge User" data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                                     data-app-light-img="illustrations/man-with-laptop-light.png">
                             </div>
                         </div>
                     </div>
@@ -28,10 +32,12 @@
                             <div class="card-body">
                                 <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="../assets/img/icons/unicons/chart-success.png" alt="chart success" class="rounded">
+                                        <img src="../assets/img/icons/unicons/chart-success.png" alt="chart success"
+                                             class="rounded">
                                     </div>
                                     <div class="dropdown">
-                                        <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
                                             <i class="bx bx-dots-vertical-rounded"></i>
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
@@ -53,10 +59,12 @@
                             <div class="card-body">
                                 <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="../assets/img/icons/unicons/wallet-info.png" alt="Credit Card" class="rounded">
+                                        <img src="../assets/img/icons/unicons/wallet-info.png" alt="Credit Card"
+                                             class="rounded">
                                     </div>
                                     <div class="dropdown">
-                                        <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
                                             <i class="bx bx-dots-vertical-rounded"></i>
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
@@ -87,7 +95,9 @@
                             <div class="card-body">
                                 <div class="text-center">
                                     <div class="dropdown">
-                                        <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="growthReportId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button"
+                                                id="growthReportId" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
                                             2022
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="growthReportId">
@@ -135,10 +145,12 @@
                             <div class="card-body">
                                 <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="../assets/img/icons/unicons/paypal.png" alt="Credit Card" class="rounded">
+                                        <img src="../assets/img/icons/unicons/paypal.png" alt="Credit Card"
+                                             class="rounded">
                                     </div>
                                     <div class="dropdown">
-                                        <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
                                             <i class="bx bx-dots-vertical-rounded"></i>
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
@@ -160,10 +172,12 @@
                             <div class="card-body">
                                 <div class="card-title d-flex align-items-start justify-content-between">
                                     <div class="avatar flex-shrink-0">
-                                        <img src="../assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded">
+                                        <img src="../assets/img/icons/unicons/cc-primary.png" alt="Credit Card"
+                                             class="rounded">
                                     </div>
                                     <div class="dropdown">
-                                        <button class="btn p-0" type="button" id="cardOpt1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn p-0" type="button" id="cardOpt1" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
                                             <i class="bx bx-dots-vertical-rounded"></i>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="cardOpt1">
@@ -186,7 +200,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
-                                    <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                                    <div
+                                        class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
                                         <div class="card-title">
                                             <h5 class="text-nowrap mb-2">Profile Report</h5>
                                             <span class="badge bg-label-warning rounded-pill">Year 2021</span>
@@ -215,7 +230,8 @@
                             <small class="text-muted">42.82k Total Sales</small>
                         </div>
                         <div class="dropdown">
-                            <button class="btn p-0" type="button" id="orederStatistics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn p-0" type="button" id="orederStatistics" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
                                 <i class="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orederStatistics">
@@ -306,7 +322,9 @@
                     <div class="card-header">
                         <ul class="nav nav-pills" role="tablist">
                             <li class="nav-item">
-                                <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#navs-tabs-line-card-income" aria-controls="navs-tabs-line-card-income" aria-selected="true">
+                                <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab"
+                                        data-bs-target="#navs-tabs-line-card-income"
+                                        aria-controls="navs-tabs-line-card-income" aria-selected="true">
                                     Income
                                 </button>
                             </li>
@@ -359,7 +377,8 @@
                     <div class="card-header d-flex align-items-center justify-content-between">
                         <h5 class="card-title m-0 me-2">Transactions</h5>
                         <div class="dropdown">
-                            <button class="btn p-0" type="button" id="transactionID" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn p-0" type="button" id="transactionID" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
                                 <i class="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
@@ -461,7 +480,5 @@
             </div>
             <!--/ Transactions -->
         </div>
-
-
     </div>
 </div>
