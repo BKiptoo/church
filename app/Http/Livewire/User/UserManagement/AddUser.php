@@ -158,7 +158,7 @@ class AddUser extends Component
                     $query->orWhere('name', 'ilike', '%' . $this->search . '%')
                         ->orWhere('slug', 'ilike', '%' . $this->search . '%');
                 })
-                ->limit(10)
+                ->limit(18)
                 ->get() : [],
             'countriesList' => $this->readyToLoad ? Country::query()
                 ->orderBy('name')

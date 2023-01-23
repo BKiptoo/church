@@ -62,6 +62,11 @@
                             <div data-i18n="Account">Add</div>
                         </a>
                     </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.users') }}" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
                 </ul>
             </li>
             <li class="menu-item">

@@ -12,6 +12,7 @@ use App\Http\Livewire\User\Account\RoleSetting;
 use App\Http\Livewire\User\UserDashboard;
 use App\Http\Livewire\User\UserManagement\AddUser;
 use App\Http\Livewire\User\UserManagement\EditUser;
+use App\Http\Livewire\User\UserManagement\ListUsers;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -64,6 +65,7 @@ Route::group([
         ], static function () {
             Route::get('add', AddUser::class)->name('add.user');
             Route::get('edit/{slug}', EditUser::class)->name('edit.user');
+            Route::get('/', ListUsers::class)->name('list.users');
         });
     });
 });
