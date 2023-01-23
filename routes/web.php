@@ -12,6 +12,9 @@ use App\Http\Livewire\User\Account\RoleSetting;
 use App\Http\Livewire\User\AdManagement\AddAd;
 use App\Http\Livewire\User\AdManagement\EditAd;
 use App\Http\Livewire\User\AdManagement\ListAds;
+use App\Http\Livewire\User\Careers\AddCareer;
+use App\Http\Livewire\User\Careers\EditCareer;
+use App\Http\Livewire\User\Careers\ListCareers;
 use App\Http\Livewire\User\UserDashboard;
 use App\Http\Livewire\User\UserManagement\AddUser;
 use App\Http\Livewire\User\UserManagement\EditUser;
@@ -77,6 +80,14 @@ Route::group([
             Route::get('add', AddAd::class)->name('add.ad');
             Route::get('edit/{slug}', EditAd::class)->name('edit.ad');
             Route::get('/', ListAds::class)->name('list.ads');
+        });
+
+        Route::group([
+            'prefix' => 'careers'
+        ], static function () {
+            Route::get('add', AddCareer::class)->name('add.career');
+            Route::get('edit/{slug}', EditCareer::class)->name('edit.career');
+            Route::get('/', ListCareers::class)->name('list.careers');
         });
     });
 });

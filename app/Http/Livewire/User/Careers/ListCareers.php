@@ -1,16 +1,17 @@
 <?php
 
-namespace App\Http\Livewire\User\UserManagement;
+namespace App\Http\Livewire\User\Careers;
 
+use App\Models\Career;
 use App\Models\User;
 use App\Traits\SharedProcess;
-use Exception;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Note\Note;
+use Exception;
 
-class ListUsers extends Component
+class ListCareers extends Component
 {
     use WithPagination, LivewireAlert, SharedProcess;
 
@@ -57,13 +58,13 @@ class ListUsers extends Component
 
     public function confirmed()
     {
-        User::query()->findOrFail($this->model_id)->delete();
+        Career::query()->findOrFail($this->model_id)->delete();
         Note::createSystemNotification(
             User::class,
             'User Deletion',
-            'You have successfully deleted user'
+            'You have successfully deleted career'
         );
-        $this->alert('success', 'You have successfully deleted user');
+        $this->alert('success', 'You have successfully deleted career');
     }
 
     public function cancelled()
@@ -76,22 +77,19 @@ class ListUsers extends Component
      */
     public function render()
     {
-        return view('livewire.user.user-management.list-users', [
+        return view('livewire.user.careers.list-careers',[
             'models' => $this->readyToLoad
-                ? User::query()
+                ? Career::query()
                     ->with([
-                        'country',
-                        'media'
+                        'country'
                     ])
-                    ->latest('updated_at')
+                    ->oldest('deadLine')
                     ->whereIn('country_id',
                         $this->worldAccess()
                     )
                     ->where(function ($query) {
                         $query->orWhere('name', 'ilike', '%' . $this->search . '%')
-                            ->orWhere('phoneNumber', 'ilike', '%' . $this->search . '%')
-                            ->orWhere('email', 'ilike', '%' . $this->search . '%')
-                            ->orWhere('position', 'ilike', '%' . $this->search . '%')
+                            ->orWhere('description', 'ilike', '%' . $this->search . '%')
                             ->whereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
                             ->orWhere('slug', 'ilike', '%' . $this->search . '%');
                     })

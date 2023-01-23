@@ -1,29 +1,24 @@
 <?php
 
-namespace App\Http\Livewire\User\AdManagement;
+namespace App\Http\Livewire\User\Careers;
 
-use App\Http\Controllers\SystemController;
-use App\Models\Ad;
+use App\Models\Career;
 use App\Models\Country;
-use App\Models\User;
 use App\Traits\SharedProcess;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
-use Note\Note;
 
-class EditAd extends Component
+class EditCareer extends Component
 {
     use FindGuard, LivewireAlert, SharedProcess;
 
     public $model;
     public $country_id;
-    public $photo;
     public $name;
-    public $linkUrl;
-    public $buttonName;
     public $description;
+    public $deadLine;
     public $validatedData;
 
     protected $listeners = [
@@ -40,14 +35,13 @@ class EditAd extends Component
 
     public function mount(string $slug)
     {
-        $this->model = Ad::query()->firstWhere('slug', $slug);
+        $this->model = Career::query()->firstWhere('slug', $slug);
         if (!$this->model) {
             return redirect()->route('list.ads');
         } else {
             $this->name = $this->model->name;
             $this->country_id = $this->model->country_id;
-            $this->linkUrl = $this->model->linkUrl;
-            $this->buttonName = $this->model->buttonName;
+            $this->deadLine = $this->model->deadLine;
             $this->description = $this->model->description;
         }
     }
@@ -57,10 +51,8 @@ class EditAd extends Component
         return [
             'country_id' => ['required', 'string', 'max:255'],
             'name' => ['required', 'string', 'max:255'],
-            'linkUrl' => ['required', 'string', 'max:255'],
-            'buttonName' => ['required', 'string', 'max:255'],
-            'description' => ['required', 'string'],
-            'photo' => ['file', 'image', 'max:5096', 'nullable'] // 5MB Max
+            'deadLine' => ['date', 'required', 'after:today'],
+            'description' => ['required', 'string']
         ];
     }
 
@@ -98,20 +90,7 @@ class EditAd extends Component
             return redirect()->back();
         }
 
-        // upload photo
-        if ($this->photo)
-            SystemController::singleMediaUploadsJob(
-                $this->model->id,
-                Ad::class,
-                $this->photo
-            );
-
-        Note::createSystemNotification(
-            User::class,
-            'New Add',
-            'Successfully updated ad.'
-        );
-        $this->alert('success', 'Successfully updated ad.');
+        $this->alert('success', 'Successfully updated career.');
         $this->loadData();
     }
 
@@ -122,7 +101,7 @@ class EditAd extends Component
 
     public function render()
     {
-        return view('livewire.user.ad-management.edit-ad',[
+        return view('livewire.user.careers.edit-career', [
             'countries' => $this->readyToLoad ? Country::query()
                 ->orderBy('name')
                 ->whereIn('id',

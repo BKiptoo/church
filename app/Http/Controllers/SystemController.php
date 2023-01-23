@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Media;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
@@ -16,6 +17,17 @@ use YoHang88\LetterAvatar\LetterAvatar;
 
 class SystemController extends Controller
 {
+
+    /**
+     * returns the elapsed time
+     * @param $time
+     * @return string
+     */
+    public static function elapsedTime($time): string
+    {
+        return Carbon::parse($time)->diffForHumans();
+    }
+
     /**
      * Write the system log files
      * @param array $data
