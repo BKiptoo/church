@@ -28,7 +28,15 @@ class AddAd extends Component
     public function render()
     {
         return view('livewire.user.ad-management.add-ad', [
-            'countries' => $this->readyToLoad ? Country::query()->orderBy('name') : [],
+            'countries' => $this->readyToLoad ? Country::query()
+                ->orderBy('name')
+                ->whereIn('id',
+                    $this->findGuardType()->user()
+                        ->load('userCountriesAccess')
+                        ->userCountriesAccess()->get('country_id')
+                        ->toArray()
+                )
+                ->get() : [],
         ]);
     }
 }

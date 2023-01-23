@@ -92,6 +92,8 @@
 
 <!-- Page JS -->
 <script src="{{ asset('assets/js/dashboards-analytics.js') }}"></script>
+{{--<script src="{{ asset('assets/js/jquery-ck.js') }}"></script>--}}
+{{--<script src="{{ asset('assets/js/ckeditor.js') }}"></script>--}}
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="{{ asset('assets/js/buttons.js') }}"></script>

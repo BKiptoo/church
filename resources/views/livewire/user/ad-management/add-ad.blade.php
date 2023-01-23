@@ -37,14 +37,14 @@
                                     </div>
                                 </div>
                                 <div class="mb-3 col-6">
-                                    <label class="form-label" for="name">Ad Name</label>
+                                    <label class="form-label" for="name">Ad Title</label>
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
-                                            class="bx bx-user"></i></span>
+                                            class="bx bxl-blogger"></i></span>
                                         <input type="text" id="name"
                                                class="form-control @error('name') is-invalid @enderror"
                                                required
-                                               name="name" placeholder="Enter name..."
+                                               name="name" placeholder="Enter title..."
                                                wire:model="name"
                                                aria-describedby="name"/>
                                         @error('name')
@@ -55,17 +55,35 @@
                                     </div>
                                 </div>
                                 <div class="mb-3 col-6">
-                                    <label class="form-label" for="email">E-mail Address</label>
+                                    <label class="form-label" for="linkUrl">Ad Link</label>
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
-                                            class="bx bx-envelope"></i></span>
-                                        <input type="email" id="email"
-                                               class="form-control @error('email') is-invalid @enderror"
+                                            class="bx bx-link"></i></span>
+                                        <input type="url" id="linkUrl"
+                                               class="form-control @error('linkUrl') is-invalid @enderror"
                                                required
-                                               name="email" placeholder="Enter email address"
-                                               wire:model="email"
-                                               aria-describedby="email"/>
-                                        @error('email')
+                                               name="linkUrl" placeholder="Enter link address"
+                                               wire:model="linkUrl"
+                                               aria-describedby="linkUrl"/>
+                                        @error('linkUrl')
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label class="form-label" for="buttonName">Ad Button Name</label>
+                                    <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-fullname2" class="input-group-text"><i
+                                            class="bx bxs-mouse-alt"></i></span>
+                                        <input type="text" id="buttonName"
+                                               class="form-control @error('buttonName') is-invalid @enderror"
+                                               required
+                                               name="buttonName" placeholder="Enter button name"
+                                               wire:model="buttonName"
+                                               aria-describedby="buttonName"/>
+                                        @error('buttonName')
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -74,16 +92,30 @@
                                 </div>
                                 <div class="mb-3 col-12" wire:model.debounce.365ms="description" wire:ignore>
                                     <label class="form-label" for="description">Ad Description</label>
+                                    <input id="description"
+                                           value="{{ $description }}"
+                                           type="hidden"
+                                           name="description">
+                                    <trix-editor
+                                        input="description"></trix-editor>
+                                    @error('description')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+                                </div>
+                                <div class="mb-3 col-12">
+                                    <label class="form-label" for="photo">Ad Banner</label>
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
-                                            class="bx bxl-blogger"></i></span>
-                                        <input id="description"
-                                               value="{{ $description }}"
-                                               type="hidden"
-                                               name="description">
-                                        <trix-editor
-                                            input="description"></trix-editor>
-                                        @error('description')
+                                            class="bx bxs-image-add"></i></span>
+                                        <input type="file" id="photo"
+                                               class="form-control @error('photo') is-invalid @enderror"
+                                               required
+                                               name="photo" placeholder="Ad banner"
+                                               wire:model="photo"
+                                               aria-describedby="photo"/>
+                                        @error('photo')
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
