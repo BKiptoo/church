@@ -163,7 +163,7 @@ class AddUser extends Component
             'countriesList' => $this->readyToLoad ? Country::query()
                 ->orderBy('name')
                 ->get() : [],
-            'permissions' => $this->permissions()
+            'permissions' => $this->readyToLoad ? $this->permissions() : []
         ]);
     }
 }
