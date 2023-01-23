@@ -105,15 +105,15 @@
                                     @enderror
                                 </div>
                                 <div class="mb-3 col-12">
-                                    <label class="form-label" for="photo">Ad Banner</label>
+                                    <label class="form-label" for="photo">Ad Banner <i class="text-info"><b>optional</b></i></label>
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                             class="bx bxs-image-add"></i></span>
                                         <input type="file" id="photo"
                                                class="form-control @error('photo') is-invalid @enderror"
-                                               required
                                                name="photo" placeholder="Ad banner"
                                                wire:model="photo"
+                                               accept="image/png, image/jpeg, image/gif"
                                                aria-describedby="photo"/>
                                         @error('photo')
                                         <span class="invalid-feedback" role="alert">
@@ -122,6 +122,9 @@
                                         @enderror
                                     </div>
                                 </div>
+                            </div>
+                            <div wire:loading wire:target="photo"><span
+                                    class="spinner-border spinner-border-sm"></span> Uploading
                             </div>
                             <button type="submit" class="btn btn-primary me-2" wire:loading.class="disabled"
                                     wire:offline.attr="disabled"><span wire:target="submit"

@@ -31,6 +31,9 @@
                                         <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 4MB's</p>
                                     </div>
                                 </div>
+                                <div wire:loading wire:target="photo"><span
+                                        class="spinner-border spinner-border-sm"></span> Uploading
+                                </div>
                                 <div class="mb-3 col-md-6">
                                     <label for="name" class="form-label">Full Name</label>
                                     <input class="form-control @error('name') is-invalid @enderror" type="text"

@@ -3,6 +3,8 @@
 namespace App\Http\Livewire\User\UserManagement;
 
 use App\Models\User;
+use App\Traits\SharedProcess;
+use Exception;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -10,7 +12,7 @@ use Note\Note;
 
 class ListUsers extends Component
 {
-    use WithPagination, LivewireAlert;
+    use WithPagination, LivewireAlert, SharedProcess;
 
     public $search;
     public $model_id;
@@ -58,7 +60,7 @@ class ListUsers extends Component
         User::query()->findOrFail($this->model_id)->delete();
         Note::createSystemNotification(
             User::class,
-            'Measure Deletion',
+            'User Deletion',
             'You have successfully deleted user'
         );
         $this->alert('success', 'You have successfully deleted user');
@@ -69,6 +71,9 @@ class ListUsers extends Component
         $this->alert('error', 'You have canceled.');
     }
 
+    /**
+     * @throws Exception
+     */
     public function render()
     {
         return view('livewire.user.user-management.list-users', [
@@ -79,6 +84,9 @@ class ListUsers extends Component
                         'media'
                     ])
                     ->latest('updated_at')
+                    ->whereIn('country_id',
+                        $this->worldAccess()
+                    )
                     ->where(function ($query) {
                         $query->orWhere('name', 'ilike', '%' . $this->search . '%')
                             ->orWhere('phoneNumber', 'ilike', '%' . $this->search . '%')
