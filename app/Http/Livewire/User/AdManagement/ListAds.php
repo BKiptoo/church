@@ -2,14 +2,15 @@
 
 namespace App\Http\Livewire\User\AdManagement;
 
+use App\Http\Controllers\SystemController;
 use App\Models\Ad;
 use App\Models\User;
 use App\Traits\SharedProcess;
+use Exception;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Note\Note;
-use Exception;
 
 class ListAds extends Component
 {
@@ -58,7 +59,16 @@ class ListAds extends Component
 
     public function confirmed()
     {
-        Ad::query()->findOrFail($this->model_id)->delete();
+        $ad = Ad::query()
+            ->with(['media'])
+            ->findOrFail($this->model_id);
+
+        // unlink media
+        SystemController::removeExistingFiles($ad->id, true);
+
+        // then delete
+        $ad->forceDelete();
+
         Note::createSystemNotification(
             User::class,
             'Ad Deletion',

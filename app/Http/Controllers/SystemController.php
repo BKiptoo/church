@@ -204,13 +204,19 @@ class SystemController extends Controller
     /**
      * remove existing files
      */
-    public static function removeExistingFiles(string $mediaableId)
+    public static function removeExistingFiles(string $mediaableId, bool|null $deleteMedia = null)
     {
+        $deleteMedia ??= false;
         $model = Media::query()->firstWhere('mediaable_id', $mediaableId);
-        if ($model)
+        if ($model) {
             foreach ($model->pathNames as $pathName) {
                 self::unLinkMedia($pathName);
             }
+
+            // forceDelete
+            if ($deleteMedia)
+                $model->forceDelete();
+        }
     }
 
     /**
