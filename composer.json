@@ -25,6 +25,7 @@
         "shiftechafrica/smsales-php-sdk": "^1.0",
         "spatie/laravel-permission": "^5.8",
         "spatie/laravel-sluggable": "^3.4",
+        "te7a-houdini/laravel-trix": "^2.0",
         "tymon/jwt-auth": "^1.0",
         "webpatser/laravel-uuid": "^4.0",
         "yohang88/letter-avatar": "^2.2"

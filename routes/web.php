@@ -9,6 +9,9 @@ use App\Http\Livewire\User\Account\CountrySetting;
 use App\Http\Livewire\User\Account\Credentials;
 use App\Http\Livewire\User\Account\Profile;
 use App\Http\Livewire\User\Account\RoleSetting;
+use App\Http\Livewire\User\AdManagement\AddAd;
+use App\Http\Livewire\User\AdManagement\EditAd;
+use App\Http\Livewire\User\AdManagement\ListAds;
 use App\Http\Livewire\User\UserDashboard;
 use App\Http\Livewire\User\UserManagement\AddUser;
 use App\Http\Livewire\User\UserManagement\EditUser;
@@ -66,6 +69,14 @@ Route::group([
             Route::get('add', AddUser::class)->name('add.user');
             Route::get('edit/{slug}', EditUser::class)->name('edit.user');
             Route::get('/', ListUsers::class)->name('list.users');
+        });
+
+        Route::group([
+            'prefix' => 'ads'
+        ], static function () {
+            Route::get('add', AddAd::class)->name('add.ad');
+            Route::get('edit/{slug}', EditAd::class)->name('edit.ad');
+            Route::get('/', ListAds::class)->name('list.ads');
         });
     });
 });
