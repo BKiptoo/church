@@ -30,7 +30,6 @@ trait SysPermissions
             $this->viewDashBoardAnalytics,
             $this->usersManagement,
             $this->adsManagement,
-            $this->contactsManagement,
             $this->subscribersManagement,
             $this->contactsManagement,
             $this->coveragesManagement,
