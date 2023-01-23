@@ -121,7 +121,7 @@
                             <button type="submit" class="btn btn-primary me-2" wire:loading.class="disabled"
                                     wire:offline.attr="disabled"><span wire:target="submit"
                                                                        wire:loading.class="spinner-border text-secondary"></span>
-                                Save
+                                Update
                             </button>
                             <hr class="my-5">
                             <div class="row">
