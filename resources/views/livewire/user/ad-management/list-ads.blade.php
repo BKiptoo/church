@@ -53,7 +53,8 @@
                                                href="{{ route('edit.ad',['slug'=>$model->slug]) }}"><i
                                                     class="bx bx-edit-alt me-1"></i> Edit</a>
                                             <a class="dropdown-item"
-                                               href="javascript:void(0);"><i
+                                               href="javascript:void(0);" data-bs-toggle="modal"
+                                               data-bs-target="#cs-{{ $model->id }}"><i
                                                     class="bx bx-images me-1"></i> Media</a>
                                             <a class="dropdown-item text-danger" wire:click="delete('{{ $model->id }}')"
                                                href="javascript:void(0);"><i
@@ -62,6 +63,7 @@
                                     </div>
                                 </td>
                             </tr>
+                            <livewire:user.modal.media-pop-up :model="$model" :wire:key="$model->id">
                         @endforeach
                         </tbody>
                     </table>
