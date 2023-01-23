@@ -15,8 +15,8 @@
                                class="form-control">
                     </div>
                     <div class="col-2">
-                        <a href="{{ route('add.user') }}" class="btn btn-outline-primary"><span
-                                class="bx bx-plus"></span>Add User</a>
+                        <a href="{{ route('add.career') }}" class="btn btn-outline-primary"><span
+                                class="bx bx-plus"></span>Add Career</a>
                     </div>
                 </div>
             </div>
