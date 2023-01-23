@@ -58,8 +58,8 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
-                            <div data-i18n="Account">List</div>
+                        <a href="{{ route('add.user') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
                         </a>
                     </li>
                 </ul>

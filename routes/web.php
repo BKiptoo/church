@@ -10,6 +10,8 @@ use App\Http\Livewire\User\Account\Credentials;
 use App\Http\Livewire\User\Account\Profile;
 use App\Http\Livewire\User\Account\RoleSetting;
 use App\Http\Livewire\User\UserDashboard;
+use App\Http\Livewire\User\UserManagement\AddUser;
+use App\Http\Livewire\User\UserManagement\EditUser;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -55,6 +57,13 @@ Route::group([
                 Route::get('country', CountrySetting::class)->name('country.settings');
                 Route::get('roles', RoleSetting::class)->name('role.settings');
             });
+        });
+
+        Route::group([
+            'prefix' => 'users'
+        ], static function () {
+            Route::get('add', AddUser::class)->name('add.user');
+            Route::get('edit/{slug}', EditUser::class)->name('edit.user');
         });
     });
 });
