@@ -109,6 +109,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr class="my-5">
                             <div class="row">
                                 <div class="col-md-6">
                                     <p class="card-description"><b class="text-decoration-underline">Assign User
