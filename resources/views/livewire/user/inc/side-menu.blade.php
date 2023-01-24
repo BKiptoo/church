@@ -156,7 +156,12 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('add.event') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.events') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>

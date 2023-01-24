@@ -18,6 +18,8 @@ return new class extends Migration {
             $table->string('name');
             $table->string('slug')->unique();
             $table->text('description');
+            $table->dateTime('startDate')->default(now());
+            $table->dateTime('endDate')->default(now());
             $table->softDeletes();
             $table->timestamps();
         });

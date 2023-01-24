@@ -36,7 +36,19 @@ class Event extends Model
         'country_id',
         'name',
         'slug',
-        'description'
+        'description',
+        'startDate',
+        'endDate',
+    ];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'startDate' => 'datetime',
+        'endDate' => 'datetime',
     ];
 
     /**

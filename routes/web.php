@@ -18,6 +18,9 @@ use App\Http\Livewire\User\Careers\ListCareers;
 use App\Http\Livewire\User\Coverage\AddCoverage;
 use App\Http\Livewire\User\Coverage\EditCoverage;
 use App\Http\Livewire\User\Coverage\ListCoverages;
+use App\Http\Livewire\User\Events\AddEvent;
+use App\Http\Livewire\User\Events\EditEvent;
+use App\Http\Livewire\User\Events\ListEvents;
 use App\Http\Livewire\User\UserDashboard;
 use App\Http\Livewire\User\UserManagement\AddUser;
 use App\Http\Livewire\User\UserManagement\EditUser;
@@ -99,6 +102,14 @@ Route::group([
             Route::get('add', AddCoverage::class)->name('add.coverage');
             Route::get('edit/{slug}', EditCoverage::class)->name('edit.coverage');
             Route::get('/', ListCoverages::class)->name('list.coverages');
+        });
+
+        Route::group([
+            'prefix' => 'events'
+        ], static function () {
+            Route::get('add', AddEvent::class)->name('add.event');
+            Route::get('edit/{slug}', EditEvent::class)->name('edit.event');
+            Route::get('/', ListEvents::class)->name('list.events');
         });
     });
 });
