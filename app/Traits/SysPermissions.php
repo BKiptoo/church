@@ -18,7 +18,7 @@ trait SysPermissions
     public string $productsManagement = 'Products Management';
     public string $ordersManagement = 'Orders Management';
     public string $blogsManagement = 'Blogs Management';
-    public string $sliderManagement = 'Slider Management';
+    public string $slideManagement = 'Slide Management';
     public string $teamManagement = 'Team Management';
     public string $tendersManagement = 'Tenders Management';
     public string $mediaFileManagement = 'Media/File Management';
@@ -41,7 +41,7 @@ trait SysPermissions
             $this->productsManagement,
             $this->ordersManagement,
             $this->blogsManagement,
-            $this->sliderManagement,
+            $this->slideManagement,
             $this->teamManagement,
             $this->tendersManagement,
             $this->mediaFileManagement

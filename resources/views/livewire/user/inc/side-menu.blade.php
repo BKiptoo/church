@@ -192,7 +192,12 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('add.office') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.offices') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
@@ -205,7 +210,12 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('add.category') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.categories') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
@@ -218,7 +228,12 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('add.sub.category') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.sub.categories') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
@@ -231,7 +246,12 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('add.product') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.products') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
@@ -244,7 +264,7 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('list.orders') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
@@ -257,7 +277,12 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('add.post') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.posts') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
@@ -266,11 +291,16 @@
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-slider-alt"></i>
-                    <div data-i18n="Account Settings">Slider Management</div>
+                    <div data-i18n="Account Settings">Slide Management</div>
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('add.slide') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.slides') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
@@ -283,7 +313,12 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('add.team') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.teams') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
@@ -296,7 +331,12 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('add.tender') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.tenders') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
@@ -307,7 +347,7 @@
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Media</span></li>
             <!-- Cards -->
             <li class="menu-item">
-                <a href="" class="menu-link">
+                <a href="{{ route('list.media') }}" class="menu-link">
                     <i class="menu-icon tf-icons bx bx-images"></i>
                     <div data-i18n="Basic">Media</div>
                 </a>
@@ -323,7 +363,7 @@
                 </a>
             </li>
             <li class="menu-item">
-                <a href="#" class="menu-link">
+                <a href="#" class="menu-link" wire:click="logout">
                     <i class="menu-icon tf-icons bx bxs-log-out"></i>
                     Logout
                 </a>

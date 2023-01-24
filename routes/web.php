@@ -12,9 +12,16 @@ use App\Http\Livewire\User\Account\RoleSetting;
 use App\Http\Livewire\User\AdManagement\AddAd;
 use App\Http\Livewire\User\AdManagement\EditAd;
 use App\Http\Livewire\User\AdManagement\ListAds;
+use App\Http\Livewire\User\Blogs\AddPost;
+use App\Http\Livewire\User\Blogs\EditPost;
+use App\Http\Livewire\User\Blogs\ListPosts;
 use App\Http\Livewire\User\Careers\AddCareer;
 use App\Http\Livewire\User\Careers\EditCareer;
 use App\Http\Livewire\User\Careers\ListCareers;
+use App\Http\Livewire\User\Category\AddCategory;
+use App\Http\Livewire\User\Category\EditCategory;
+use App\Http\Livewire\User\Category\ListCategories;
+use App\Http\Livewire\User\Contact\ListContacts;
 use App\Http\Livewire\User\Coverage\AddCoverage;
 use App\Http\Livewire\User\Coverage\EditCoverage;
 use App\Http\Livewire\User\Coverage\ListCoverages;
@@ -24,6 +31,27 @@ use App\Http\Livewire\User\Events\ListEvents;
 use App\Http\Livewire\User\Faqs\AddFaq;
 use App\Http\Livewire\User\Faqs\EditFaq;
 use App\Http\Livewire\User\Faqs\ListFaqs;
+use App\Http\Livewire\User\ListMedia;
+use App\Http\Livewire\User\Office\AddOffice;
+use App\Http\Livewire\User\Office\EditOffice;
+use App\Http\Livewire\User\Office\ListOffices;
+use App\Http\Livewire\User\Orders\ListOrders;
+use App\Http\Livewire\User\Products\AddProduct;
+use App\Http\Livewire\User\Products\EditProduct;
+use App\Http\Livewire\User\Products\ListProducts;
+use App\Http\Livewire\User\Slider\AddSlide;
+use App\Http\Livewire\User\Slider\EditSlide;
+use App\Http\Livewire\User\Slider\ListSlides;
+use App\Http\Livewire\User\SubCategory\AddSubCategory;
+use App\Http\Livewire\User\SubCategory\EditSubCategory;
+use App\Http\Livewire\User\SubCategory\ListSubCategories;
+use App\Http\Livewire\User\Subscriber\ListSubscribers;
+use App\Http\Livewire\User\Team\AddTeam;
+use App\Http\Livewire\User\Team\EditTeam;
+use App\Http\Livewire\User\Team\ListTeams;
+use App\Http\Livewire\User\Tender\AddTenders;
+use App\Http\Livewire\User\Tender\EditTenders;
+use App\Http\Livewire\User\Tender\ListTenders;
 use App\Http\Livewire\User\UserDashboard;
 use App\Http\Livewire\User\UserManagement\AddUser;
 use App\Http\Livewire\User\UserManagement\EditUser;
@@ -121,6 +149,94 @@ Route::group([
             Route::get('add', AddFaq::class)->name('add.faq');
             Route::get('edit/{id}', EditFaq::class)->name('edit.faq');
             Route::get('/', ListFaqs::class)->name('list.faqs');
+        });
+
+        Route::group([
+            'prefix' => 'offices'
+        ], static function () {
+            Route::get('add', AddOffice::class)->name('add.office');
+            Route::get('edit/{slug}', EditOffice::class)->name('edit.office');
+            Route::get('/', ListOffices::class)->name('list.offices');
+        });
+
+        Route::group([
+            'prefix' => 'categories'
+        ], static function () {
+            Route::get('add', AddCategory::class)->name('add.category');
+            Route::get('edit/{slug}', EditCategory::class)->name('edit.category');
+            Route::get('/', ListCategories::class)->name('list.categories');
+        });
+
+        Route::group([
+            'prefix' => 'sub-categories'
+        ], static function () {
+            Route::get('add', AddSubCategory::class)->name('add.sub.category');
+            Route::get('edit/{slug}', EditSubCategory::class)->name('edit.sub.category');
+            Route::get('/', ListSubCategories::class)->name('list.sub.categories');
+        });
+
+        Route::group([
+            'prefix' => 'products'
+        ], static function () {
+            Route::get('add', AddProduct::class)->name('add.product');
+            Route::get('edit/{slug}', EditProduct::class)->name('edit.product');
+            Route::get('/', ListProducts::class)->name('list.products');
+        });
+
+        Route::group([
+            'prefix' => 'blogs'
+        ], static function () {
+            Route::get('add', AddPost::class)->name('add.post');
+            Route::get('edit/{slug}', EditPost::class)->name('edit.post');
+            Route::get('/', ListPosts::class)->name('list.posts');
+        });
+
+        Route::group([
+            'prefix' => 'orders'
+        ], static function () {
+            Route::get('/', ListOrders::class)->name('list.orders');
+        });
+
+        Route::group([
+            'prefix' => 'contacts'
+        ], static function () {
+            Route::get('/', ListContacts::class)->name('list.contacts');
+        });
+
+        Route::group([
+            'prefix' => 'subscribers'
+        ], static function () {
+            Route::get('/', ListSubscribers::class)->name('list.subscribers');
+        });
+
+        Route::group([
+            'prefix' => 'media'
+        ], static function () {
+            Route::get('/', ListMedia::class)->name('list.media');
+        });
+
+        Route::group([
+            'prefix' => 'slides'
+        ], static function () {
+            Route::get('add', AddSlide::class)->name('add.slide');
+            Route::get('edit/{slug}', EditSlide::class)->name('edit.slide');
+            Route::get('/', ListSlides::class)->name('list.slides');
+        });
+
+        Route::group([
+            'prefix' => 'teams'
+        ], static function () {
+            Route::get('add', AddTeam::class)->name('add.team');
+            Route::get('edit/{slug}', EditTeam::class)->name('edit.team');
+            Route::get('/', ListTeams::class)->name('list.teams');
+        });
+
+        Route::group([
+            'prefix' => 'tenders'
+        ], static function () {
+            Route::get('add', AddTenders::class)->name('add.tender');
+            Route::get('edit/{slug}', EditTenders::class)->name('edit.tender');
+            Route::get('/', ListTenders::class)->name('list.tenders');
         });
     });
 });
