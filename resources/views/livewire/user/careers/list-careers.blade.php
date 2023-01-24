@@ -3,7 +3,7 @@
 
 
         <h4 class="fw-bold py-3 mb-4">
-            <span class="text-muted fw-light">Users /</span> List
+            <span class="text-muted fw-light">Careers /</span> List
         </h4>
 
         <!-- Basic Bootstrap Table -->

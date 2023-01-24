@@ -108,7 +108,7 @@ class EditAd extends Component
 
         Note::createSystemNotification(
             User::class,
-            'New Add',
+            'Updated Ad',
             'Successfully updated ad.'
         );
         $this->alert('success', 'Successfully updated ad.');
