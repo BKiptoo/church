@@ -15,6 +15,9 @@ use App\Http\Livewire\User\AdManagement\ListAds;
 use App\Http\Livewire\User\Careers\AddCareer;
 use App\Http\Livewire\User\Careers\EditCareer;
 use App\Http\Livewire\User\Careers\ListCareers;
+use App\Http\Livewire\User\Coverage\AddCoverage;
+use App\Http\Livewire\User\Coverage\EditCoverage;
+use App\Http\Livewire\User\Coverage\ListCoverages;
 use App\Http\Livewire\User\UserDashboard;
 use App\Http\Livewire\User\UserManagement\AddUser;
 use App\Http\Livewire\User\UserManagement\EditUser;
@@ -88,6 +91,14 @@ Route::group([
             Route::get('add', AddCareer::class)->name('add.career');
             Route::get('edit/{slug}', EditCareer::class)->name('edit.career');
             Route::get('/', ListCareers::class)->name('list.careers');
+        });
+
+        Route::group([
+            'prefix' => 'coverages'
+        ], static function () {
+            Route::get('add', AddCoverage::class)->name('add.coverage');
+            Route::get('edit/{slug}', EditCoverage::class)->name('edit.coverage');
+            Route::get('/', ListCoverages::class)->name('list.coverages');
         });
     });
 });

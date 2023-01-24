@@ -15,7 +15,9 @@ return new class extends Migration {
         Schema::create('coverages', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->uuid('country_id');
-            $table->string('description');
+            $table->string('name');
+            $table->string('slug')->unique();
+            $table->text('description');
             $table->jsonb('data')->default(json_encode([]));
             $table->softDeletes();
             $table->timestamps();
