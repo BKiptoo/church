@@ -14,7 +14,6 @@ return new class extends Migration {
     {
         Schema::create('analytics', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('country_id');
             $table->jsonb('data')->default(json_encode([]));
             $table->softDeletes();
             $table->timestamps();

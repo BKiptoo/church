@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Models\Analytic;
 use DateTime;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

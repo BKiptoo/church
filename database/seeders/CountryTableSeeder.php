@@ -24,19 +24,28 @@ class CountryTableSeeder extends Seeder
 
         // Loop through the data
         foreach ($countries as $key => $value) {
-            $saveCountry = [
-                [
-                    'id' => $value->id,
-                    'name' => $value->name,
-                    'slug' => $value->slug,
-                    'data' => json_encode($value->data),
-                    'created_at' => now(),
-                    'updated_at' => now(),
-                ]
-            ];
+            if (in_array($value->name, [
+                'Kenya',
+                'Uganda',
+                'Congo (Democratic Republic of the)',
+                'Ghana',
+                'Liberia',
+                'Togo'
+            ], true)) {
+                $saveCountry = [
+                    [
+                        'id' => $value->id,
+                        'name' => $value->name,
+                        'slug' => $value->slug,
+                        'data' => json_encode($value->data),
+                        'created_at' => now(),
+                        'updated_at' => now(),
+                    ]
+                ];
 
-            // store
-            DB::table((new Country())->getTable())->insert($saveCountry);
+                // store
+                DB::table((new Country())->getTable())->insert($saveCountry);
+            }
         }
     }
 }
