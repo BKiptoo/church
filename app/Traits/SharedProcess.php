@@ -3,6 +3,7 @@
 namespace App\Traits;
 
 use Exception;
+use Illuminate\Support\Arr;
 use LaravelMultipleGuards\Traits\FindGuard;
 
 trait SharedProcess
@@ -11,15 +12,15 @@ trait SharedProcess
 
     /**
      * Get all the countries one is related to here
-     * @return mixed
+     * @return array
      * @throws Exception
      */
-    public function worldAccess(): mixed
+    public function worldAccess(): array
     {
-        return $this->findGuardType()->user()
+        return Arr::flatten($this->findGuardType()->user()
             ->load('userCountriesAccess')
             ->userCountriesAccess()->get('country_id')
-            ->toArray();
+            ->toArray());
     }
 
 }
