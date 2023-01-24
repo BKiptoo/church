@@ -21,6 +21,9 @@ use App\Http\Livewire\User\Coverage\ListCoverages;
 use App\Http\Livewire\User\Events\AddEvent;
 use App\Http\Livewire\User\Events\EditEvent;
 use App\Http\Livewire\User\Events\ListEvents;
+use App\Http\Livewire\User\Faqs\AddFaq;
+use App\Http\Livewire\User\Faqs\EditFaq;
+use App\Http\Livewire\User\Faqs\ListFaqs;
 use App\Http\Livewire\User\UserDashboard;
 use App\Http\Livewire\User\UserManagement\AddUser;
 use App\Http\Livewire\User\UserManagement\EditUser;
@@ -110,6 +113,14 @@ Route::group([
             Route::get('add', AddEvent::class)->name('add.event');
             Route::get('edit/{slug}', EditEvent::class)->name('edit.event');
             Route::get('/', ListEvents::class)->name('list.events');
+        });
+
+        Route::group([
+            'prefix' => 'faqs'
+        ], static function () {
+            Route::get('add', AddFaq::class)->name('add.faq');
+            Route::get('edit/{id}', EditFaq::class)->name('edit.faq');
+            Route::get('/', ListFaqs::class)->name('list.faqs');
         });
     });
 });

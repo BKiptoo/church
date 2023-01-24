@@ -174,7 +174,12 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('add.faq') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.faqs') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
