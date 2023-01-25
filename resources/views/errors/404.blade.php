@@ -58,7 +58,7 @@
 <div class="container-xxl container-p-y">
     <div class="misc-wrapper">
         <div class="mt-3">
-            <img src="{{ asset('assets/img/illustrations/500.png') }}" alt="page-misc-error-light"
+            <img src="{{ asset('assets/img/illustrations/404.png') }}" alt="page-misc-error-light"
                  width="500" class="img-fluid">
         </div>
         <br>
