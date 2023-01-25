@@ -32,6 +32,7 @@ class Order extends Model
     protected $fillable = [
         'product_id',
         'description',
+        'amount',
         'summary',
         'isClosed'
     ];

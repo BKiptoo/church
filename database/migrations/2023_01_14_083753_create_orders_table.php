@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->uuid('product_id');
             $table->string('description');
             $table->text('summary');
+            $table->double('orders')->default(0.00);
             $table->boolean('isClosed')->default(false);
             $table->softDeletes();
             $table->timestamps();
