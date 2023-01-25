@@ -104,7 +104,7 @@
                         <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
                             <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
                                 <div class="card-title">
-                                    <h5 class="text-nowrap mb-2">Orders Report</h5>
+                                    <h5 class="text-nowrap mb-2">Orders Insights</h5>
                                     <span class="badge bg-label-warning rounded-pill"><span
                                             class="bx bx-line-chart"></span></span>
                                 </div>
@@ -125,7 +125,7 @@
                         <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
                             <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
                                 <div class="card-title">
-                                    <h5 class="text-nowrap mb-2">Blogs Report</h5>
+                                    <h5 class="text-nowrap mb-2">Blogs Insights</h5>
                                     <span class="badge bg-label-warning rounded-pill"><span
                                             class="bx bxl-blogger"></span></span>
                                 </div>

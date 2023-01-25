@@ -14,6 +14,7 @@ use Livewire\Component;
 class Reset extends Component
 {
     use LivewireAlert, FindGuard, TriggerOtp;
+
     public $email;
     public $password;
     public $password_confirmation;
@@ -70,7 +71,10 @@ class Reset extends Component
         auth()->login($user);
 
         // Send opt for account verification...
-        $this->sendOtp($this->findGuardType()->user());
+//        $this->sendOtp($this->findGuardType()->user());
+        $this->findGuardType()->user()->update([
+            'isOtpVerified' => true
+        ]);
 
         $this->alert('success', 'Account password has been updated.');
         return redirect()->intended();
