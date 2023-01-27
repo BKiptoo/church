@@ -36,16 +36,7 @@ class Office extends Model
         'country_id',
         'name',
         'slug',
-        'data'
-    ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'data' => 'array',
+        'description'
     ];
 
     /**

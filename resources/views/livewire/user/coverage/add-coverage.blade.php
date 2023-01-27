@@ -55,7 +55,7 @@
                                     </div>
                                 </div>
                                 <div class="mb-3 col-12" wire:model.debounce.365ms="description" wire:ignore>
-                                    <label class="form-label" for="description">Ad Description</label>
+                                    <label class="form-label" for="description">Coverage Description</label>
                                     <input id="description"
                                            value="{{ $description }}"
                                            type="hidden"
