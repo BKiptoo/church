@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\User\Office;
 
 use App\Http\Controllers\SystemController;
+use App\Models\Country;
 use App\Models\Office;
 use App\Models\User;
 use App\Traits\SharedProcess;
@@ -115,6 +116,13 @@ class EditOffice extends Component
 
     public function render()
     {
-        return view('livewire.user.office.edit-office');
+        return view('livewire.user.office.edit-office',[
+            'countries' => $this->readyToLoad ? Country::query()
+                ->orderBy('name')
+                ->whereIn('id',
+                    $this->worldAccess()
+                )
+                ->get() : [],
+        ]);
     }
 }
