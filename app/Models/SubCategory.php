@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
@@ -62,5 +63,14 @@ class SubCategory extends Model
     public function posts(): HasMany
     {
         return $this->hasMany(Post::class)->latest();
+    }
+
+    /**
+     * Get report.
+     * @return MorphOne
+     */
+    public function media(): MorphOne
+    {
+        return $this->morphOne(Media::class, 'mediaable');
     }
 }
