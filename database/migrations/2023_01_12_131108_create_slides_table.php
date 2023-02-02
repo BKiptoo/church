@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->uuid('country_id');
             $table->string('buttonName');
             $table->string('buttonUrl');
-            $table->tinyText('description');
+            $table->text('description');
             $table->softDeletes();
             $table->timestamps();
         });

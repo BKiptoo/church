@@ -219,7 +219,7 @@ Route::group([
             'prefix' => 'slides'
         ], static function () {
             Route::get('add', AddSlide::class)->name('add.slide');
-            Route::get('edit/{slug}', EditSlide::class)->name('edit.slide');
+            Route::get('edit/{id}', EditSlide::class)->name('edit.slide');
             Route::get('/', ListSlides::class)->name('list.slides');
         });
 
