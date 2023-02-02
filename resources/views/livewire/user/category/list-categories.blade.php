@@ -37,9 +37,11 @@
                             <tr>
                                 <th scope="row">{{ $count++ }}</th>
                                 <td>{{ $model->name }}</td>
-                                <td><a href="{{ route('list.sub.categories') }}" class="btn btn-outline-primary"><span
+                                <td>
+                                    <a href="{{ route('list.sub.categories') }}" class="btn btn-outline-primary"><span
                                             class="bx bx-link-alt"></span> {{ number_format(count($model->subCategories)) }}
-                                    </a></td>
+                                    </a>
+                                </td>
                                 <td>
                                     <div class="dropdown">
                                         <button type="button" class="btn p-0 dropdown-toggle hide-arrow"

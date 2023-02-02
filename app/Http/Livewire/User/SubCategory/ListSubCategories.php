@@ -65,7 +65,7 @@ class ListSubCategories extends Component
         SystemController::removeExistingFiles($model->id, true);
 
         // then delete
-        $model->forceDelete();
+        $model->delete();
 
         Note::createSystemNotification(
             User::class,

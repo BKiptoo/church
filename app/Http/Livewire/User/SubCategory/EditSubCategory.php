@@ -84,7 +84,7 @@ class EditSubCategory extends Component
     public function confirmed()
     {
         $this->model->fill($this->validatedData);
-        if ($this->model->isClean()) {
+        if ($this->model->isClean() && $this->photo === null) {
             $this->alert('warning', 'At least one value must change.');
             return redirect()->back();
         }

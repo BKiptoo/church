@@ -13,7 +13,7 @@ return new class extends Migration {
     public function up()
     {
         Schema::create('products', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
             $table->uuid('country_id');
             $table->uuid('category_id');
             $table->uuid('sub_category_id');

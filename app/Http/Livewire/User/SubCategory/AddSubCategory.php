@@ -94,7 +94,6 @@ class AddSubCategory extends Component
         $this->alert('error', 'You have canceled.');
     }
 
-
     public function render()
     {
         return view('livewire.user.sub-category.add-sub-category', [

@@ -65,7 +65,7 @@ class ListCategories extends Component
         SystemController::removeExistingFiles($category->id, true);
 
         // then delete
-        $category->forceDelete();
+        $category->delete();
 
         Note::createSystemNotification(
             User::class,
