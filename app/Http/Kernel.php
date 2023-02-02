@@ -27,6 +27,7 @@ use Illuminate\Routing\Middleware\ThrottleRequests;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Spatie\Permission\Middlewares\PermissionMiddleware;
 
 class Kernel extends HttpKernel
 {
@@ -89,5 +90,6 @@ class Kernel extends HttpKernel
         'verified' => EnsureEmailIsVerified::class,
         'horizonBasicAuth' => HorizonBasicAuthMiddleware::class,
         'otpPass' => OtpPass::class,
+        'permission' => PermissionMiddleware::class,
     ];
 }

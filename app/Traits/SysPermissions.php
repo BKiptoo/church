@@ -8,6 +8,7 @@ trait SysPermissions
     public string $usersManagement = 'Users Management';
     public string $adsManagement = 'Ads Management';
     public string $contactsManagement = 'Contacts Management';
+    public string $careersManagement = 'Careers Management';
     public string $subscribersManagement = 'Subscribers Management';
     public string $coveragesManagement = 'Coverages Management';
     public string $eventsManagement = 'Events Management';
@@ -28,6 +29,7 @@ trait SysPermissions
     {
         return [
             $this->viewDashBoardAnalytics,
+            $this->careersManagement,
             $this->usersManagement,
             $this->adsManagement,
             $this->subscribersManagement,

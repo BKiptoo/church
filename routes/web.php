@@ -57,6 +57,7 @@ use App\Http\Livewire\User\UserManagement\AddUser;
 use App\Http\Livewire\User\UserManagement\EditUser;
 use App\Http\Livewire\User\UserManagement\ListUsers;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 
 /*
 |--------------------------------------------------------------------------
@@ -88,7 +89,12 @@ Route::group([
     Route::group([
         'middleware' => ['auth', 'otpPass']
     ], static function () {
-        Route::get('/', UserDashboard::class)->name('home');
+
+        Route::group([
+            'middleware' => ['permission:' . Str::slug('View Dashboard Analytics')]
+        ], static function () {
+            Route::get('/', UserDashboard::class)->name('home');
+        });
 
         Route::group([
             'prefix' => 'account'
@@ -104,6 +110,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Users Management')],
             'prefix' => 'users'
         ], static function () {
             Route::get('add', AddUser::class)->name('add.user');
@@ -112,6 +119,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Ads Management')],
             'prefix' => 'ads'
         ], static function () {
             Route::get('add', AddAd::class)->name('add.ad');
@@ -120,6 +128,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Careers Management')],
             'prefix' => 'careers'
         ], static function () {
             Route::get('add', AddCareer::class)->name('add.career');
@@ -128,6 +137,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Coverages Management')],
             'prefix' => 'coverages'
         ], static function () {
             Route::get('add', AddCoverage::class)->name('add.coverage');
@@ -136,6 +146,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Events Management')],
             'prefix' => 'events'
         ], static function () {
             Route::get('add', AddEvent::class)->name('add.event');
@@ -144,6 +155,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Faqs Management')],
             'prefix' => 'faqs'
         ], static function () {
             Route::get('add', AddFaq::class)->name('add.faq');
@@ -152,6 +164,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Office Management')],
             'prefix' => 'offices'
         ], static function () {
             Route::get('add', AddOffice::class)->name('add.office');
@@ -160,6 +173,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Category Management')],
             'prefix' => 'categories'
         ], static function () {
             Route::get('add', AddCategory::class)->name('add.category');
@@ -168,6 +182,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Sub Category Management')],
             'prefix' => 'sub-categories'
         ], static function () {
             Route::get('add', AddSubCategory::class)->name('add.sub.category');
@@ -176,6 +191,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Products Management')],
             'prefix' => 'products'
         ], static function () {
             Route::get('add', AddProduct::class)->name('add.product');
@@ -184,6 +200,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Blogs Management')],
             'prefix' => 'blogs'
         ], static function () {
             Route::get('add', AddPost::class)->name('add.post');
@@ -192,30 +209,35 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Orders Management')],
             'prefix' => 'orders'
         ], static function () {
             Route::get('/', ListOrders::class)->name('list.orders');
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Contacts Management')],
             'prefix' => 'contacts'
         ], static function () {
             Route::get('/', ListContacts::class)->name('list.contacts');
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Subscribers Management')],
             'prefix' => 'subscribers'
         ], static function () {
             Route::get('/', ListSubscribers::class)->name('list.subscribers');
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Media/File Management')],
             'prefix' => 'media'
         ], static function () {
             Route::get('/', ListMedia::class)->name('list.media');
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Slide Management')],
             'prefix' => 'slides'
         ], static function () {
             Route::get('add', AddSlide::class)->name('add.slide');
@@ -224,6 +246,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Team Management')],
             'prefix' => 'teams'
         ], static function () {
             Route::get('add', AddTeam::class)->name('add.team');
@@ -232,6 +255,7 @@ Route::group([
         });
 
         Route::group([
+            'middleware' => ['permission:' . Str::slug('Tenders Management')],
             'prefix' => 'tenders'
         ], static function () {
             Route::get('add', AddTenders::class)->name('add.tender');
