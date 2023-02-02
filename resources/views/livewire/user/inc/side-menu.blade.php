@@ -343,15 +343,15 @@
                 </ul>
             </li>
 
-            <!-- Media -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Media</span></li>
-            <!-- Cards -->
-            <li class="menu-item">
-                <a href="{{ route('list.media') }}" class="menu-link">
-                    <i class="menu-icon tf-icons bx bx-images"></i>
-                    <div data-i18n="Basic">Media</div>
-                </a>
-            </li>
+{{--            <!-- Media -->--}}
+{{--            <li class="menu-header small text-uppercase"><span class="menu-header-text">Media</span></li>--}}
+{{--            <!-- Cards -->--}}
+{{--            <li class="menu-item">--}}
+{{--                <a href="{{ route('list.media') }}" class="menu-link">--}}
+{{--                    <i class="menu-icon tf-icons bx bx-images"></i>--}}
+{{--                    <div data-i18n="Basic">Media</div>--}}
+{{--                </a>--}}
+{{--            </li>--}}
 
             <!-- Support -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text"></span>Quick Links</li>
