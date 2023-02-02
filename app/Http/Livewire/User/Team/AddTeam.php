@@ -6,6 +6,7 @@ use Livewire\Component;
 
 class AddTeam extends Component
 {
+
     public function render()
     {
         return view('livewire.user.team.add-team');

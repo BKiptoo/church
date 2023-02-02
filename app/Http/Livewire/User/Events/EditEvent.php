@@ -120,6 +120,7 @@ class EditEvent extends Component
     {
         $this->alert('error', 'You have canceled.');
     }
+
     public function render()
     {
         return view('livewire.user.events.edit-event',[
