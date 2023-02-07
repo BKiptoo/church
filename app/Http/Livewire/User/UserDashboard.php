@@ -66,8 +66,8 @@ class UserDashboard extends Component
             $this->analytics->data['orders'],
             $this->analytics->data['pendingOrders'],
             $this->analytics->data['media'],
-        ])->backgroundColor(collect(['#7158e2', '#3ae374', '#ff3838', '#ffc107']))
-            ->color(collect(['#7d5fff', '#32ff7e', '#ff4d4d', '#0000ff']));
+        ])->backgroundColor(collect(['#7158e2', '#3ae374', '#ff3838', '#ffc107','#189d5a']))
+            ->color(collect(['#7d5fff', '#32ff7e', '#ff4d4d', '#0000ff','#189d5a']));
 
         // blog chart
         $this->blogChart = new BlogReportChart();
