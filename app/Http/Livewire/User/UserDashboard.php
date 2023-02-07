@@ -43,11 +43,8 @@ class UserDashboard extends Component
             $orderSummary[4],
             $orderSummary[5],
             $orderSummary[6]
-        ])->backgroundColor(
-            'rgb(255, 99, 132)',
-            'rgb(54, 162, 235)',
-            'rgb(255, 205, 86)'
-        );
+        ])->backgroundColor(collect(['#7158e2', '#3ae374', '#ff3838', '#ffc107']))
+            ->color(collect(['#7d5fff', '#32ff7e', '#ff4d4d', '#0000ff']));
 
         // pie chart
         $this->pieChart = new PieChart();
@@ -57,11 +54,8 @@ class UserDashboard extends Component
             $this->analytics->data['contacts'],
             $this->analytics->data['customers'],
             $this->analytics->data['failed']
-        ])->backgroundColor(
-            'rgb(255, 99, 132)',
-            'rgb(54, 162, 235)',
-            'rgb(255, 205, 86)'
-        );
+        ])->backgroundColor(collect(['#7158e2', '#3ae374', '#ff3838', '#ffc107']))
+            ->color(collect(['#7d5fff', '#32ff7e', '#ff4d4d', '#0000ff']));
 
         // general chart
         $this->chart = new GeneralChart();
@@ -72,11 +66,8 @@ class UserDashboard extends Component
             $this->analytics->data['orders'],
             $this->analytics->data['pendingOrders'],
             $this->analytics->data['media'],
-        ])->backgroundColor(
-            'rgb(255, 99, 132)',
-            'rgb(54, 162, 235)',
-            'rgb(255, 205, 86)'
-        );
+        ])->backgroundColor(collect(['#7158e2', '#3ae374', '#ff3838', '#ffc107']))
+            ->color(collect(['#7d5fff', '#32ff7e', '#ff4d4d', '#0000ff']));
 
         // blog chart
         $this->blogChart = new BlogReportChart();
@@ -84,11 +75,8 @@ class UserDashboard extends Component
         $this->blogChart->dataset('Blogs Overview', 'doughnut', [
             $this->analytics->data['blogViews'],
             $this->analytics->data['blogLikes']
-        ])->backgroundColor(
-            'rgb(255, 99, 132)',
-            'rgb(54, 162, 235)',
-            'rgb(255, 205, 86)'
-        );
+        ])->backgroundColor(collect(['#7158e2', '#3ae374', '#ff3838', '#ffc107']))
+            ->color(collect(['#7d5fff', '#32ff7e', '#ff4d4d', '#0000ff']));
 
 
         return [
