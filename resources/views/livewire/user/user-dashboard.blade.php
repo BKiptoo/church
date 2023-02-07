@@ -112,7 +112,7 @@
                                     <h3 class="mb-0">{{ isset($analytics) ? number_format($analytics->data['orders']) : 0 }}</h3>
                                 </div>
                             </div>
-                            <div id="orderChart" wire:ignore style="height: 150px;">
+                            <div id="orderChart" wire:ignore>
                                 {!! $orderChart->container() !!}
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                                     <h3 class="mb-0">{{ isset($analytics) ? number_format($analytics->data['blogs']) : 0 }}</h3>
                                 </div>
                             </div>
-                            <div id="blogChart" wire:ignore style="height: 150px;">
+                            <div id="blogChart" wire:ignore>
                                 {!! $blogChart->container() !!}
                             </div>
                         </div>
