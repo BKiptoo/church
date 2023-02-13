@@ -146,7 +146,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">General Overview</h5>
-                        <div id="app" style="height: 300px;">{!! $chart->container() !!}</div>
+                        <div id="app">{!! $chart->container() !!}</div>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Leads Overview</h5>
-                        <div id="pie" style="height: 300px;">{!! $pieChart->container() !!}</div>
+                        <div id="pie">{!! $pieChart->container() !!}</div>
                     </div>
                 </div>
             </div>

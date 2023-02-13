@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\API\CategoryController;
+use App\Http\Controllers\API\ContactController;
 use App\Http\Controllers\API\CountryController;
+use App\Http\Controllers\API\OrderController;
+use App\Http\Controllers\API\SubCategoryController;
+use App\Http\Controllers\API\SubscriberController;
 use Illuminate\Support\Facades\Route;
 use Rap2hpoutre\LaravelLogViewer\LogViewerController;
 
@@ -20,8 +25,14 @@ Route::group([
 ], static function () {
     // open routes - loads all the api resources
     Route::apiResources([
-        'countries' => CountryController::class
+        'countries' => CountryController::class,
+        'categories' => CategoryController::class,
+        'sub-categories' => SubCategoryController::class,
     ]);
+
+    Route::post('order', OrderController::class);
+    Route::post('subscriber', SubscriberController::class);
+    Route::post('contact', ContactController::class);
 
     // protected routes
     Route::group([

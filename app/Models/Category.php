@@ -64,6 +64,14 @@ class Category extends Model
     }
 
     /**
+     * @return HasMany
+     */
+    public function products(): HasMany
+    {
+        return $this->hasMany(Product::class)->latest();
+    }
+
+    /**
      * Get report.
      * @return MorphOne
      */

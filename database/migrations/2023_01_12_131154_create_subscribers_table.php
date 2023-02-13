@@ -16,7 +16,7 @@ return new class extends Migration {
             $table->uuid('id')->primary();
             $table->uuid('country_id');
             $table->string('email')->unique();
-            $table->text('summary');
+            $table->text('summary')->nullable();
             $table->boolean('isLead')->default(true);
             $table->boolean('isContact')->default(false);
             $table->boolean('isCustomer')->default(false);

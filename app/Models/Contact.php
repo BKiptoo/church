@@ -31,9 +31,11 @@ class Contact extends Model
      */
     protected $fillable = [
         'country_id',
+        'firstName',
+        'lastName',
         'email',
         'phoneNumber',
-        'productName',
+        'subject',
         'description',
         'isClosed'
     ];

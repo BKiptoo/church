@@ -23,23 +23,23 @@ class CountryController extends Controller
         return $this->successResponse(
             Country::query()
                 ->with([
-                    'coverages.mediaable',
-                    'ads.mediaable',
+                    'coverages.media',
+                    'ads.media',
                     'careers',
                     'contacts',
                     'faqs',
-                    'events.mediaable',
-                    'offices.mediaable',
-                    'partners.mediaable',
-                    'posts.mediaable',
+                    'events.media',
+                    'offices.media',
+                    'partners.media',
+                    'posts.media',
                     'posts.user',
                     'posts.category.subCategory',
-                    'products.mediaable',
+                    'products.media',
                     'products.category.subCategory',
-                    'slides.mediaable',
+                    'slides.media',
                     'subScribers',
-                    'tenders.mediaable',
-                    'teams.mediaable'
+                    'tenders.media',
+                    'teams.media'
                 ])
                 ->orderBy('name')
                 ->get()
@@ -67,23 +67,23 @@ class CountryController extends Controller
     {
         return $this->successResponse(
             $country->load(
-                'coverages.mediaable',
-                'ads.mediaable',
+                'coverages.media',
+                'ads.media',
                 'careers',
                 'contacts',
                 'faqs',
-                'events.mediaable',
-                'offices.mediaable',
-                'partners.mediaable',
-                'posts.mediaable',
+                'events.media',
+                'offices.media',
+                'partners.media',
+                'posts.media',
                 'posts.user',
                 'posts.category.subCategory',
-                'products.mediaable',
+                'products.media',
                 'products.category.subCategory',
-                'slides.mediaable',
+                'slides.media',
                 'subScribers',
-                'tenders.mediaable',
-                'teams.mediaable'
+                'tenders.media',
+                'teams.media'
             )
         );
     }
