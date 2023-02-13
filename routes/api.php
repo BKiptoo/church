@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\CategoryController;
+use App\Http\Controllers\API\CommentController;
 use App\Http\Controllers\API\ContactController;
 use App\Http\Controllers\API\CountryController;
 use App\Http\Controllers\API\OrderController;
@@ -33,6 +34,7 @@ Route::group([
     Route::post('order', OrderController::class);
     Route::post('subscriber', SubscriberController::class);
     Route::post('contact', ContactController::class);
+    Route::post('comment', CommentController::class);
 
     // protected routes
     Route::group([
