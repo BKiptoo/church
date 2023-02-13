@@ -24,8 +24,8 @@ class SubscribeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'country_id' => ['string', 'required', 'exists:countries.id'],
-            'email' => ['string', 'email', 'required', 'max:255'],
+            'country_id' => ['string', 'required', 'exists:countries,id'],
+            'email' => ['string', 'email', 'required', 'max:255', 'unique:subscribers'],
         ];
     }
 }
