@@ -112,7 +112,7 @@
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
-                        <a href="" class="menu-link">
+                        <a href="{{ route('list.contacts') }}" class="menu-link">
                             <div data-i18n="Account">List</div>
                         </a>
                     </li>
@@ -306,24 +306,24 @@
                     </li>
                 </ul>
             </li>
-{{--            <li class="menu-item">--}}
-{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
-{{--                    <i class="menu-icon tf-icons bx bxs-user-detail"></i>--}}
-{{--                    <div data-i18n="Account Settings">Team Management</div>--}}
-{{--                </a>--}}
-{{--                <ul class="menu-sub">--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('add.team') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">Add</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('list.teams') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">List</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
+            {{--            <li class="menu-item">--}}
+            {{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
+            {{--                    <i class="menu-icon tf-icons bx bxs-user-detail"></i>--}}
+            {{--                    <div data-i18n="Account Settings">Team Management</div>--}}
+            {{--                </a>--}}
+            {{--                <ul class="menu-sub">--}}
+            {{--                    <li class="menu-item">--}}
+            {{--                        <a href="{{ route('add.team') }}" class="menu-link">--}}
+            {{--                            <div data-i18n="Account">Add</div>--}}
+            {{--                        </a>--}}
+            {{--                    </li>--}}
+            {{--                    <li class="menu-item">--}}
+            {{--                        <a href="{{ route('list.teams') }}" class="menu-link">--}}
+            {{--                            <div data-i18n="Account">List</div>--}}
+            {{--                        </a>--}}
+            {{--                    </li>--}}
+            {{--                </ul>--}}
+            {{--            </li>--}}
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bxs-file-pdf"></i>
