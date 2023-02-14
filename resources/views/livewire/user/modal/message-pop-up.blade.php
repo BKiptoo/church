@@ -9,11 +9,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="col-md-12">
-                        <div class="card-body">
-                            <p>{!! $model->description !!}</p>
-                        </div>
-                    </div>
+                    {!! $model->description !!}
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
