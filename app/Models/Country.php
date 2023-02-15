@@ -171,6 +171,14 @@ class Country extends Model
     /**
      * @return HasMany
      */
+    public function orders(): HasMany
+    {
+        return $this->hasMany(Order::class)->latest()->limit(10);
+    }
+
+    /**
+     * @return HasMany
+     */
     public function teams(): HasMany
     {
         return $this->hasMany(Team::class)->orderBy('name')->latest()->limit(10);

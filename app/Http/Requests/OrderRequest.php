@@ -24,8 +24,9 @@ class OrderRequest extends FormRequest
     public function rules(): array
     {
         return [
+            'country_id' => ['string', 'required', 'exists:countries,id'],
             'product_id' => ['string', 'required', 'exists:products,id'],
-            'description' => ['string', 'required'],
+            'email' => ['string', 'required'],
         ];
     }
 }

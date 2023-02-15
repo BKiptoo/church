@@ -176,6 +176,19 @@ class SystemController extends Controller
     }
 
     /**
+     * unlink media here
+     * @param string|null $fileName
+     * @param string|null $path
+     * @return string|null
+     */
+    public static function getMedia(string|null $fileName, string|null $path = null): ?string
+    {
+        $path ??= 'csquared';
+
+        return Storage::disk('do_space_cdn')->get($path . '/' . $fileName);
+    }
+
+    /**
      * format phone number
      * @param string $phoneNumber
      * @param string $short2Code

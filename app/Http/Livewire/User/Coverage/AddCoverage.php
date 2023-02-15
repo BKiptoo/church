@@ -3,18 +3,17 @@
 namespace App\Http\Livewire\User\Coverage;
 
 use App\Http\Controllers\SystemController;
-use App\Models\Ad;
 use App\Models\Country;
 use App\Models\Coverage;
 use App\Models\User;
 use App\Traits\SharedProcess;
+use Exception;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Note\Note;
-use Exception;
 
 class AddCoverage extends Component
 {
@@ -84,6 +83,11 @@ class AddCoverage extends Component
                 $this->mapFile
             );
 
+        // update co-ordinates
+        $ad->update([
+            'data' => json_decode(SystemController::getMedia($ad->media->pathNames[0]))
+        ]);
+
         Note::createSystemNotification(
             User::class,
             'New Coverage',
@@ -104,7 +108,7 @@ class AddCoverage extends Component
      */
     public function render()
     {
-        return view('livewire.user.coverage.add-coverage',[
+        return view('livewire.user.coverage.add-coverage', [
             'countries' => $this->readyToLoad ? Country::query()
                 ->orderBy('name')
                 ->whereIn('id',

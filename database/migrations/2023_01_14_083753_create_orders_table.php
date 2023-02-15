@@ -14,8 +14,9 @@ return new class extends Migration {
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->uuid('id')->primary();
+            $table->uuid('country_id');
             $table->uuid('product_id');
-            $table->string('description');
+            $table->string('email');
             $table->text('summary')->nullable();
             $table->double('orders')->default(0.00);
             $table->boolean('isClosed')->default(false);

@@ -30,12 +30,21 @@ class Order extends Model
      * @var array<int, string>
      */
     protected $fillable = [
+        'country_id',
         'product_id',
-        'description',
+        'email',
         'amount',
         'summary',
         'isClosed'
     ];
+
+    /**
+     * @return BelongsTo
+     */
+    public function country(): BelongsTo
+    {
+        return $this->belongsTo(Country::class);
+    }
 
     /**
      * @return BelongsTo

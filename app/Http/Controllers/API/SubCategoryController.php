@@ -19,7 +19,7 @@ class SubCategoryController extends Controller
     public function index(): JsonResponse
     {
         return $this->successResponse(
-            Category::query()->with([
+            SubCategory::query()->with([
                 'category.media',
                 'posts.media',
                 'products.media',
