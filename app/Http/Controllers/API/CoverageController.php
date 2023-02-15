@@ -11,11 +11,11 @@ class CoverageController extends Controller
     /**
      * Handle the incoming request.
      *
-     * @param string|null $countryId
+     * @param string $countryId
      * @param int $limit
      * @return JsonResponse
      */
-    public function __invoke(string $countryId = null, int $limit = 10): JsonResponse
+    public function __invoke(string $countryId = '', int $limit = 10): JsonResponse
     {
         return $this->successResponse(
             Coverage::query()
@@ -24,7 +24,9 @@ class CoverageController extends Controller
                     'media'
                 ])
                 ->latest()
-                ->orWhereIn('country_id', [$countryId])
+                ->where(function ($query) use ($countryId) {
+                    $query->orWhere('country_id', 'ilike', '%' . $countryId . '%');
+                })
                 ->limit($limit)
                 ->get()
         );

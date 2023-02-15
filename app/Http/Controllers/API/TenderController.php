@@ -24,7 +24,9 @@ class TenderController extends Controller
                     'media'
                 ])
                 ->latest()
-                ->orWhereIn('country_id', [$countryId])
+                ->where(function ($query) use ($countryId) {
+                    $query->orWhere('country_id', 'ilike', '%' . $countryId . '%');
+                })
                 ->limit($limit)
                 ->get()
         );
