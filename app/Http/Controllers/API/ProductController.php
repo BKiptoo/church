@@ -24,7 +24,6 @@ class ProductController extends Controller
                 ->with([
                     'country',
                     'media',
-                    'comments',
                     'category',
                     'subCategory'
                 ])
