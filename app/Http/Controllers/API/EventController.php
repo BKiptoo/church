@@ -17,7 +17,7 @@ class EventController extends Controller
      * @param int $limit
      * @return JsonResponse
      */
-    public function __invoke(string $countryId = null, int $limit = 10): JsonResponse
+    public function __invoke(int $limit = 10, string $countryId = null): JsonResponse
     {
         return $this->successResponse(
             Event::query()

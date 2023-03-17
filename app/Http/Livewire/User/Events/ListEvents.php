@@ -3,7 +3,6 @@
 namespace App\Http\Livewire\User\Events;
 
 use App\Http\Controllers\SystemController;
-use App\Models\Career;
 use App\Models\Event;
 use App\Models\User;
 use App\Traits\SharedProcess;

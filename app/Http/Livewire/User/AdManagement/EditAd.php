@@ -122,7 +122,7 @@ class EditAd extends Component
 
     public function render()
     {
-        return view('livewire.user.ad-management.edit-ad',[
+        return view('livewire.user.ad-management.edit-ad', [
             'countries' => $this->readyToLoad ? Country::query()
                 ->orderBy('name')
                 ->whereIn('id',

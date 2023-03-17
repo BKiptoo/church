@@ -7,6 +7,7 @@ use Livewire\Component;
 class TenderFiles extends Component
 {
     public $model;
+
     public function render()
     {
         return view('livewire.user.modal.tender-files');

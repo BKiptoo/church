@@ -133,6 +133,42 @@
             </li>
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-link-alt"></i>
+                    <div data-i18n="Account Settings">Impact Types</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="{{ route('add.impact.type') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.impact.types') }}" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-link-alt"></i>
+                    <div data-i18n="Account Settings">Impact</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="{{ route('add.impact') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.impacts') }}" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-map-alt"></i>
                     <div data-i18n="Account Settings">Coverages Management</div>
                 </a>

@@ -31,6 +31,12 @@ use App\Http\Livewire\User\Events\ListEvents;
 use App\Http\Livewire\User\Faqs\AddFaq;
 use App\Http\Livewire\User\Faqs\EditFaq;
 use App\Http\Livewire\User\Faqs\ListFaqs;
+use App\Http\Livewire\User\Impact\AddImpact;
+use App\Http\Livewire\User\Impact\EditImpact;
+use App\Http\Livewire\User\Impact\ListImpact;
+use App\Http\Livewire\User\ImpactTypes\AddImpactType;
+use App\Http\Livewire\User\ImpactTypes\EditImpactType;
+use App\Http\Livewire\User\ImpactTypes\ListImpactType;
 use App\Http\Livewire\User\ListMedia;
 use App\Http\Livewire\User\Office\AddOffice;
 use App\Http\Livewire\User\Office\EditOffice;
@@ -261,6 +267,24 @@ Route::group([
             Route::get('add', AddTenders::class)->name('add.tender');
             Route::get('edit/{slug}', EditTenders::class)->name('edit.tender');
             Route::get('/', ListTenders::class)->name('list.tenders');
+        });
+
+        Route::group([
+            'middleware' => ['permission:' . Str::slug('Impact Type Management')],
+            'prefix' => 'impact-types'
+        ], static function () {
+            Route::get('add', AddImpactType::class)->name('add.impact.type');
+            Route::get('edit/{slug}', EditImpactType::class)->name('edit.impact.type');
+            Route::get('/', ListImpactType::class)->name('list.impact.types');
+        });
+
+        Route::group([
+            'middleware' => ['permission:' . Str::slug('Impact Type Management')],
+            'prefix' => 'impacts'
+        ], static function () {
+            Route::get('add', AddImpact::class)->name('add.impact');
+            Route::get('edit/{slug}', EditImpact::class)->name('edit.impact');
+            Route::get('/', ListImpact::class)->name('list.impacts');
         });
     });
 });

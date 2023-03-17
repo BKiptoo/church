@@ -3,7 +3,6 @@
 namespace App\Http\Livewire\User\Office;
 
 use App\Http\Controllers\SystemController;
-use App\Models\Ad;
 use App\Models\Office;
 use App\Models\User;
 use App\Traits\SharedProcess;
@@ -84,7 +83,7 @@ class ListOffices extends Component
 
     public function render()
     {
-        return view('livewire.user.office.list-offices',[
+        return view('livewire.user.office.list-offices', [
             'models' => $this->readyToLoad
                 ? Office::query()
                     ->with([

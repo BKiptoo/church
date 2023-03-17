@@ -4,7 +4,6 @@ namespace App\Http\Livewire\User\Products;
 
 use App\Http\Controllers\SystemController;
 use App\Models\Product;
-use App\Models\SubCategory;
 use App\Models\User;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;

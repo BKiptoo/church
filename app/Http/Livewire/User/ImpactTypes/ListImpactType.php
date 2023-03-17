@@ -1,19 +1,17 @@
 <?php
 
-namespace App\Http\Livewire\User\Tender;
+namespace App\Http\Livewire\User\ImpactTypes;
 
-use App\Http\Controllers\SystemController;
-use App\Models\Tender;
+use App\Models\ImpactType;
 use App\Models\User;
-use App\Traits\SharedProcess;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Note\Note;
 
-class ListTenders extends Component
+class ListImpactType extends Component
 {
-    use WithPagination, LivewireAlert, SharedProcess;
+    use WithPagination, LivewireAlert;
 
     public $search;
     public $model_id;
@@ -58,22 +56,18 @@ class ListTenders extends Component
 
     public function confirmed()
     {
-        $event = Tender::query()
-            ->with(['media'])
+        $model = ImpactType::query()
             ->findOrFail($this->model_id);
 
-        // unlink media
-        SystemController::removeExistingFiles($event->id, true);
-
         // then delete
-        $event->forceDelete();
+        $model->delete();
 
         Note::createSystemNotification(
             User::class,
-            'Tender Deletion',
-            'You have successfully deleted tender'
+            'Impact Type Deletion',
+            'You have successfully deleted impact type'
         );
-        $this->alert('success', 'You have successfully deleted tender');
+        $this->alert('success', 'You have successfully deleted impact type');
     }
 
     public function cancelled()
@@ -83,20 +77,15 @@ class ListTenders extends Component
 
     public function render()
     {
-        return view('livewire.user.tender.list-tenders', [
+        return view('livewire.user.impact-types.list-impact-type', [
             'models' => $this->readyToLoad
-                ? Tender::query()
+                ? ImpactType::query()
                     ->with([
-                        'country'
+                        'impacts'
                     ])
-                    ->oldest('closingDate')
-                    ->whereIn('country_id',
-                        $this->worldAccess()
-                    )
+                    ->latest('updated_at')
                     ->where(function ($query) {
                         $query->orWhere('name', 'ilike', '%' . $this->search . '%')
-                            ->orWhere('description', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
                             ->orWhere('slug', 'ilike', '%' . $this->search . '%');
                     })
                     ->paginate(10)

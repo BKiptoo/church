@@ -5,11 +5,11 @@ namespace App\Http\Livewire\User\Careers;
 use App\Models\Career;
 use App\Models\User;
 use App\Traits\SharedProcess;
+use Exception;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Note\Note;
-use Exception;
 
 class ListCareers extends Component
 {
@@ -77,7 +77,7 @@ class ListCareers extends Component
      */
     public function render()
     {
-        return view('livewire.user.careers.list-careers',[
+        return view('livewire.user.careers.list-careers', [
             'models' => $this->readyToLoad
                 ? Career::query()
                     ->with([

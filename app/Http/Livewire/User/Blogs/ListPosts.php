@@ -4,7 +4,6 @@ namespace App\Http\Livewire\User\Blogs;
 
 use App\Http\Controllers\SystemController;
 use App\Models\Post;
-use App\Models\Product;
 use App\Models\User;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;

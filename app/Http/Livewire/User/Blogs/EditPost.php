@@ -6,7 +6,6 @@ use App\Http\Controllers\SystemController;
 use App\Models\Category;
 use App\Models\Country;
 use App\Models\Post;
-use App\Models\Product;
 use App\Models\SubCategory;
 use App\Models\User;
 use App\Traits\SharedProcess;
@@ -126,7 +125,7 @@ class EditPost extends Component
 
     public function render()
     {
-        return view('livewire.user.blogs.edit-post',[
+        return view('livewire.user.blogs.edit-post', [
             'countries' => $this->readyToLoad ? Country::query()
                 ->orderBy('name')
                 ->whereIn('id',

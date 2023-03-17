@@ -3,11 +3,8 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Models\Ad;
 use App\Models\Post;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class PostController extends Controller
 {
@@ -18,14 +15,14 @@ class PostController extends Controller
      * @param int $limit
      * @return JsonResponse
      */
-    public function __invoke(string $countryId = null, int $limit = 10): JsonResponse
+    public function __invoke(int $limit = 10, string $countryId = null): JsonResponse
     {
         return $this->successResponse(
             Post::query()
                 ->with([
                     'country',
                     'media',
-                    'user',
+                    'user.media',
                     'comments',
                     'category',
                     'subCategory'

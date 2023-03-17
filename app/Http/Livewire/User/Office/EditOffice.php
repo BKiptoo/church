@@ -116,7 +116,7 @@ class EditOffice extends Component
 
     public function render()
     {
-        return view('livewire.user.office.edit-office',[
+        return view('livewire.user.office.edit-office', [
             'countries' => $this->readyToLoad ? Country::query()
                 ->orderBy('name')
                 ->whereIn('id',

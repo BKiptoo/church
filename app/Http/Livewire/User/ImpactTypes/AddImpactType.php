@@ -1,28 +1,20 @@
 <?php
 
-namespace App\Http\Livewire\User\Tender;
+namespace App\Http\Livewire\User\ImpactTypes;
 
-use App\Http\Controllers\SystemController;
-use App\Models\Country;
-use App\Models\Tender;
+use App\Models\ImpactType;
 use App\Models\User;
-use App\Traits\SharedProcess;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
-use Livewire\WithFileUploads;
 use Note\Note;
 
-class AddTenders extends Component
+class AddImpactType extends Component
 {
-    use FindGuard, LivewireAlert, SharedProcess, WithFileUploads;
+    use FindGuard, LivewireAlert;
 
-    public $country_id;
-    public $tenderFiles;
     public $name;
-    public $description;
-    public $closingDate;
     public $validatedData;
 
     public bool $readyToLoad = false;
@@ -40,11 +32,7 @@ class AddTenders extends Component
     protected function rules(): array
     {
         return [
-            'country_id' => ['required', 'string', 'max:255'],
-            'name' => ['required', 'string', 'max:255'],
-            'closingDate' => ['date', 'required', 'after:today'],
-            'description' => ['required', 'string'],
-            'tenderFiles.*' => ['file', 'max:100096', 'nullable'] // 100MB Max
+            'name' => ['required', 'string', 'max:255']
         ];
     }
 
@@ -73,23 +61,15 @@ class AddTenders extends Component
 
     public function confirmed()
     {
-        // create the event here
-        $event = Tender::query()->create($this->validatedData);
-
-        // upload photo
-        if (count($this->tenderFiles))
-            SystemController::multipleMediaUploadsJob(
-                $event->id,
-                Tender::class,
-                $this->tenderFiles
-            );
+        // create here
+        ImpactType::query()->create($this->validatedData);
 
         Note::createSystemNotification(
             User::class,
-            'New Tender',
-            'Successfully added tender.'
+            'New Impact Type',
+            'Successfully added new impact type.'
         );
-        $this->alert('success', 'Successfully added tender.');
+        $this->alert('success', 'Successfully added new impact type.');
         $this->reset();
         $this->loadData();
     }
@@ -101,13 +81,6 @@ class AddTenders extends Component
 
     public function render()
     {
-        return view('livewire.user.tender.add-tenders', [
-            'countries' => $this->readyToLoad ? Country::query()
-                ->orderBy('name')
-                ->whereIn('id',
-                    $this->worldAccess()
-                )
-                ->get() : []
-        ]);
+        return view('livewire.user.impact-types.add-impact-type');
     }
 }

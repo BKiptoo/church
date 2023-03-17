@@ -113,7 +113,7 @@ class EditSubCategory extends Component
 
     public function render()
     {
-        return view('livewire.user.sub-category.edit-sub-category',[
+        return view('livewire.user.sub-category.edit-sub-category', [
             'categories' => $this->readyToLoad ? Category::query()
                 ->orderBy('name')
                 ->get() : []

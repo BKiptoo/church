@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Livewire\User\Tender;
+namespace App\Http\Livewire\User\Impact;
 
 use App\Http\Controllers\SystemController;
-use App\Models\Tender;
+use App\Models\Impact;
+use App\Models\ImpactType;
 use App\Models\User;
 use App\Traits\SharedProcess;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -11,7 +12,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 use Note\Note;
 
-class ListTenders extends Component
+class ListImpact extends Component
 {
     use WithPagination, LivewireAlert, SharedProcess;
 
@@ -58,7 +59,7 @@ class ListTenders extends Component
 
     public function confirmed()
     {
-        $event = Tender::query()
+        $event = Impact::query()
             ->with(['media'])
             ->findOrFail($this->model_id);
 
@@ -70,10 +71,10 @@ class ListTenders extends Component
 
         Note::createSystemNotification(
             User::class,
-            'Tender Deletion',
-            'You have successfully deleted tender'
+            'Impact Deletion',
+            'You have successfully deleted impact'
         );
-        $this->alert('success', 'You have successfully deleted tender');
+        $this->alert('success', 'You have successfully deleted impact');
     }
 
     public function cancelled()
@@ -83,20 +84,18 @@ class ListTenders extends Component
 
     public function render()
     {
-        return view('livewire.user.tender.list-tenders', [
+        return view('livewire.user.impact.list-impact', [
             'models' => $this->readyToLoad
-                ? Tender::query()
+                ? Impact::query()
                     ->with([
-                        'country'
+                        'impactType'
                     ])
-                    ->oldest('closingDate')
-                    ->whereIn('country_id',
-                        $this->worldAccess()
-                    )
+                    ->latest()
                     ->where(function ($query) {
                         $query->orWhere('name', 'ilike', '%' . $this->search . '%')
                             ->orWhere('description', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
+                            ->whereRelation('impactType', 'name', 'ilike', '%' . $this->search . '%')
+                            ->whereRelation('impactType', 'slug', 'ilike', '%' . $this->search . '%')
                             ->orWhere('slug', 'ilike', '%' . $this->search . '%');
                     })
                     ->paginate(10)

@@ -8,10 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Sluggable\HasSlug;
+use Spatie\Sluggable\SlugOptions;
 
-class JobApplication extends Model
+class Impact extends Model
 {
-    use HasFactory, Uuids, SoftDeletes;
+    use HasFactory, HasSlug, Uuids, SoftDeletes;
 
     /**
      * stop the autoincrement
@@ -31,21 +33,28 @@ class JobApplication extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'career_id',
-        'linkedInUrl',
-        'phoneNumber',
-        'email',
-        'firstName',
-        'lastName',
-        'coverLetter'
+        'impact_type_id',
+        'name',
+        'slug',
+        'description',
     ];
+
+    /**
+     * Get the options for generating the slug.
+     */
+    public function getSlugOptions(): SlugOptions
+    {
+        return SlugOptions::create()
+            ->generateSlugsFrom('name')
+            ->saveSlugsTo('slug');
+    }
 
     /**
      * @return BelongsTo
      */
-    public function career(): BelongsTo
+    public function impactType(): BelongsTo
     {
-        return $this->belongsTo(Career::class);
+        return $this->belongsTo(ImpactType::class);
     }
 
     /**

@@ -3,7 +3,6 @@
 namespace App\Http\Livewire\User\Slider;
 
 use App\Http\Controllers\SystemController;
-use App\Models\Ad;
 use App\Models\Country;
 use App\Models\Slide;
 use App\Models\User;

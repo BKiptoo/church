@@ -3,7 +3,6 @@
 namespace App\Http\Livewire\User\Coverage;
 
 use App\Http\Controllers\SystemController;
-use App\Models\Ad;
 use App\Models\Coverage;
 use App\Models\User;
 use App\Traits\SharedProcess;
@@ -84,7 +83,7 @@ class ListCoverages extends Component
 
     public function render()
     {
-        return view('livewire.user.coverage.list-coverages',[
+        return view('livewire.user.coverage.list-coverages', [
             'models' => $this->readyToLoad
                 ? Coverage::query()
                     ->with([

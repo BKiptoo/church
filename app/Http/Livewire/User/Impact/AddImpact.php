@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Livewire\User\Events;
+namespace App\Http\Livewire\User\Impact;
 
 use App\Http\Controllers\SystemController;
-use App\Models\Ad;
 use App\Models\Country;
-use App\Models\Event;
+use App\Models\Impact;
+use App\Models\ImpactType;
 use App\Models\User;
-use App\Traits\SharedProcess;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
@@ -15,23 +14,15 @@ use Livewire\Component;
 use Livewire\WithFileUploads;
 use Note\Note;
 
-class EditEvent extends Component
+class AddImpact extends Component
 {
-    use FindGuard, LivewireAlert, SharedProcess, WithFileUploads;
+    use FindGuard, LivewireAlert, WithFileUploads;
 
-    public $model;
-    public $country_id;
-    public $photo;
+    public $impact_type_id;
     public $name;
-    public $startDate;
-    public $endDate;
+    public $photo;
     public $description;
     public $validatedData;
-
-    protected $listeners = [
-        'confirmed',
-        'cancelled'
-    ];
 
     public bool $readyToLoad = false;
 
@@ -40,27 +31,16 @@ class EditEvent extends Component
         $this->readyToLoad = true;
     }
 
-    public function mount(string $slug)
-    {
-        $this->model = Ad::query()->firstWhere('slug', $slug);
-        if (!$this->model) {
-            return redirect()->route('list.ads');
-        } else {
-            $this->name = $this->model->name;
-            $this->country_id = $this->model->country_id;
-            $this->startDate = $this->model->startDate;
-            $this->endDate = $this->model->endDate;
-            $this->description = $this->model->description;
-        }
-    }
+    protected $listeners = [
+        'confirmed',
+        'cancelled'
+    ];
 
     protected function rules(): array
     {
         return [
-            'country_id' => ['required', 'string', 'max:255'],
+            'impact_type_id' => ['required', 'string', 'max:255'],
             'name' => ['required', 'string', 'max:255'],
-            'startDate' => ['date', 'required', 'after:today'],
-            'endDate' => ['date', 'required', 'after:startDate'],
             'description' => ['required', 'string'],
             'photo' => ['file', 'image', 'max:5096', 'nullable'] // 5MB Max
         ];
@@ -75,9 +55,6 @@ class EditEvent extends Component
         $this->validateOnly($propertyName);
     }
 
-    /**
-     * update model password here
-     */
     public function submit()
     {
         $this->validatedData = $this->validate();
@@ -94,26 +71,24 @@ class EditEvent extends Component
 
     public function confirmed()
     {
-        $this->model->fill($this->validatedData);
-        if ($this->model->isClean() && $this->photo === null) {
-            $this->alert('warning', 'At least one value must change.');
-            return redirect()->back();
-        }
+        // create here
+        $model = Impact::query()->create($this->validatedData);
 
         // upload photo
         if ($this->photo)
             SystemController::singleMediaUploadsJob(
-                $this->model->id,
-                Event::class,
+                $model->id,
+                Impact::class,
                 $this->photo
             );
 
         Note::createSystemNotification(
             User::class,
-            'Updated Event',
-            'Successfully updated event.'
+            'New Impact',
+            'Successfully added new impact.'
         );
-        $this->alert('success', 'Successfully updated event.');
+        $this->alert('success', 'Successfully added new impact.');
+        $this->reset();
         $this->loadData();
     }
 
@@ -124,13 +99,10 @@ class EditEvent extends Component
 
     public function render()
     {
-        return view('livewire.user.events.edit-event', [
-            'countries' => $this->readyToLoad ? Country::query()
+        return view('livewire.user.impact.add-impact',[
+            'impactTypes' => $this->readyToLoad ? ImpactType::query()
                 ->orderBy('name')
-                ->whereIn('id',
-                    $this->worldAccess()
-                )
-                ->get() : [],
+                ->get() : []
         ]);
     }
 }

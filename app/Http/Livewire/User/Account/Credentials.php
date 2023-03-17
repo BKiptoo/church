@@ -3,13 +3,13 @@
 namespace App\Http\Livewire\User\Account;
 
 use App\Models\User;
+use Exception;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
-use Exception;
 use Note\Note;
 
 class Credentials extends Component

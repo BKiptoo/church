@@ -12,15 +12,12 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('job_applications', function (Blueprint $table) {
+        Schema::create('impacts', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('career_id');
-            $table->string('linkedInUrl');
-            $table->string('phoneNumber');
-            $table->string('email');
-            $table->string('firstName');
-            $table->string('lastName');
-            $table->text('coverLetter');
+            $table->uuid('impact_type_id');
+            $table->string('name');
+            $table->string('slug')->unique();
+            $table->text('description');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -33,6 +30,6 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('job_applications');
+        Schema::dropIfExists('impacts');
     }
 };
