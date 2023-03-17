@@ -9,6 +9,7 @@ use App\Http\Controllers\API\CountryController;
 use App\Http\Controllers\API\CoverageController;
 use App\Http\Controllers\API\EventController;
 use App\Http\Controllers\API\FaqController;
+use App\Http\Controllers\API\ImpactController;
 use App\Http\Controllers\API\OfficeController;
 use App\Http\Controllers\API\OrderController;
 use App\Http\Controllers\API\PartnerController;
@@ -44,18 +45,19 @@ Route::group([
     ]);
 
     // get
-    Route::get('ads/{countryId?}/{limit?}', AdController::class);
-    Route::get('careers/{countryId?}/{limit?}', CareerController::class);
-    Route::get('coverages/{countryId?}/{limit?}', CoverageController::class);
-    Route::get('events/{countryId?}/{limit?}', EventController::class);
-    Route::get('faqs/{countryId?}/{limit?}', FaqController::class);
-    Route::get('offices/{countryId?}/{limit?}', OfficeController::class);
-    Route::get('partners/{countryId?}/{limit?}', PartnerController::class);
-    Route::get('posts/{countryId?}/{limit?}', PostController::class);
-    Route::get('products/{countryId?}/{limit?}', ProductController::class);
-    Route::get('slides/{countryId?}/{limit?}', SlideController::class);
-    Route::get('teams/{countryId?}/{limit?}', TeamController::class);
-    Route::get('tenders/{countryId?}/{limit?}', TenderController::class);
+    Route::get('ads/{limit?}/{countryId?}', AdController::class);
+    Route::get('careers/{limit?}/{countryId?}', CareerController::class);
+    Route::get('coverages/{limit?}/{countryId?}', CoverageController::class);
+    Route::get('events/{limit?}/{countryId?}', EventController::class);
+    Route::get('faqs/{limit?}/{countryId?}', FaqController::class);
+    Route::get('offices/{limit?}/{countryId?}', OfficeController::class);
+    Route::get('partners/{limit?}/{countryId?}', PartnerController::class);
+    Route::get('posts/{limit?}/{countryId?}', PostController::class);
+    Route::get('products/{limit?}/{countryId?}', ProductController::class);
+    Route::get('slides/{limit?}/{countryId?}', SlideController::class);
+    Route::get('teams/{limit?}/{countryId?}', TeamController::class);
+    Route::get('tenders/{limit?}/{countryId?}', TenderController::class);
+    Route::get('impacts/{limit?}/{impactTypeSlug?}', ImpactController::class);
 
     // post
     Route::post('order', OrderController::class);

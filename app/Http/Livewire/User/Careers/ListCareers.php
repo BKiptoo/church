@@ -81,7 +81,8 @@ class ListCareers extends Component
             'models' => $this->readyToLoad
                 ? Career::query()
                     ->with([
-                        'country'
+                        'country',
+                        'jobApplications'
                     ])
                     ->oldest('deadLine')
                     ->whereIn('country_id',

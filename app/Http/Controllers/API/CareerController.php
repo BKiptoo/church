@@ -3,11 +3,8 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Models\Ad;
 use App\Models\Career;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class CareerController extends Controller
 {
@@ -23,10 +20,10 @@ class CareerController extends Controller
         return $this->successResponse(
             Career::query()
                 ->with([
-                    'country',
-                    'jobApplications.media'
+                    'country'
                 ])
                 ->latest()
+                ->whereDate('deadLine', '>=', today())
                 ->where(function ($query) use ($countryId) {
                     $query->orWhere('country_id', 'ilike', '%' . $countryId . '%');
                 })

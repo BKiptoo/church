@@ -41,7 +41,11 @@
                                 <th scope="row">{{ $count++ }}</th>
                                 <td>{{ $model->country->name }}</td>
                                 <td>{{ $model->name }}</td>
-                                <td>{{ count($model->jobApplications) }}</td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-primary"><span
+                                            class="bx bx-group"></span> {{ number_format(count($model->jobApplications)) }}
+                                    </a>
+                                </td>
                                 <td>{{ \App\Http\Controllers\SystemController::elapsedTime($model->deadLine) }}</td>
                                 <td>
                                     @if($model->deadLine >= now())
