@@ -10,13 +10,9 @@
         <div class="card" wire:poll.6000ms.visible>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-10">
+                    <div class="col-12">
                         <input type="search" wire:model="search" placeholder="Search..." title="Search..."
                                class="form-control">
-                    </div>
-                    <div class="col-2">
-                        <a href="{{ route('add.career') }}" class="btn btn-outline-primary"><span
-                                class="bx bx-plus"></span>Add Career</a>
                     </div>
                 </div>
             </div>
@@ -28,8 +24,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Country</th>
                             <th scope="col">Career Name</th>
-                            <th scope="col">Applications</th>
-                            <th scope="col">DeadLine</th>
+                            <th scope="col">Applicant Name</th>
                             <th scope="col">Status</th>
                             <th scope="col">Actions</th>
                         </tr>
@@ -39,19 +34,16 @@
                         @foreach($models as $model)
                             <tr>
                                 <th scope="row">{{ $count++ }}</th>
-                                <td>{{ $model->country->name }}</td>
-                                <td>{{ $model->name }}</td>
+                                <td>{{ $model->career->country->name }}</td>
+                                <td>{{ $model->career->name }}</td>
+                                <td>{{ $model->firstName }} {{ $model->lastName }}</td>
                                 <td>
-                                    <a href="{{ route('list.job.applications') }}" class="btn btn-outline-primary"><span
-                                            class="bx bx-group"></span> {{ number_format(count($model->jobApplications)) }}
-                                    </a>
-                                </td>
-                                <td>{{ \App\Http\Controllers\SystemController::elapsedTime($model->deadLine) }}</td>
-                                <td>
-                                    @if($model->deadLine >= now())
-                                        <span class="badge bg-label-success me-1">Active</span>
+                                    @if(!$model->isPassed && !$model->isClosed)
+                                        <span class="badge bg-label-primary me-1">Pending</span>
+                                    @elseif($model->isPassed)
+                                        <span class="badge bg-label-success me-1">Pass</span>
                                     @else
-                                        <span class="badge bg-label-danger me-1">In-Active</span>
+                                        <span class="badge bg-label-danger me-1">Fail</span>
                                     @endif
                                 </td>
                                 <td>
@@ -61,11 +53,17 @@
                                                 class="bx bx-dots-vertical-rounded"></i></button>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item"
-                                               href="{{ route('edit.career',['slug'=>$model->slug]) }}"><i
-                                                    class="bx bx-edit-alt me-1"></i> Edit</a>
-                                            <a class="dropdown-item"
-                                               href="{{ route('list.job.applications') }}"><i
-                                                    class="bx bx-list-ul me-1"></i> Applications</a>
+                                               href="javascript:void(0);" data-bs-toggle="modal"
+                                               data-bs-target="#cs-{{ $model->id }}"><i
+                                                    class="bx bx-card me-1"></i> View</a>
+                                            @if(!$model->isClosed)
+                                                <a class="dropdown-item" wire:click="close('{{ $model->id }}')"
+                                                   href="#"><i
+                                                        class="bx bx-window-close me-1"></i> Close</a>
+                                                <a class="dropdown-item" wire:click="pass('{{ $model->id }}')"
+                                                   href="#"><i
+                                                        class="bx bx-check-shield me-1"></i> Passed</a>
+                                            @endif
                                             <a class="dropdown-item text-danger" wire:click="delete('{{ $model->id }}')"
                                                href="javascript:void(0);"><i
                                                     class="bx bx-trash me-1"></i> Delete</a>
@@ -73,6 +71,7 @@
                                     </div>
                                 </td>
                             </tr>
+                            <livewire:user.modal.job-application-pop-up :model="$model" :wire:key="$model->id">
                         @endforeach
                         </tbody>
                     </table>

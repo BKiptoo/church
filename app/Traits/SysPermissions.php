@@ -6,6 +6,7 @@ trait SysPermissions
 {
     public string $viewDashBoardAnalytics = 'View Dashboard Analytics';
     public string $usersManagement = 'Users Management';
+    public string $jobApplications = 'Job Applications';
     public string $impactTypesManagement = 'Impact Type Management';
     public string $impactsManagement = 'Impacts Management';
     public string $adsManagement = 'Ads Management';
@@ -31,6 +32,7 @@ trait SysPermissions
     {
         return [
             $this->viewDashBoardAnalytics,
+            $this->jobApplications,
             $this->impactsManagement,
             $this->impactTypesManagement,
             $this->careersManagement,

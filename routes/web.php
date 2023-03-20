@@ -17,6 +17,7 @@ use App\Http\Livewire\User\Blogs\EditPost;
 use App\Http\Livewire\User\Blogs\ListPosts;
 use App\Http\Livewire\User\Careers\AddCareer;
 use App\Http\Livewire\User\Careers\EditCareer;
+use App\Http\Livewire\User\Careers\Job\ListJobApplications;
 use App\Http\Livewire\User\Careers\ListCareers;
 use App\Http\Livewire\User\Category\AddCategory;
 use App\Http\Livewire\User\Category\EditCategory;
@@ -140,6 +141,13 @@ Route::group([
             Route::get('add', AddCareer::class)->name('add.career');
             Route::get('edit/{slug}', EditCareer::class)->name('edit.career');
             Route::get('/', ListCareers::class)->name('list.careers');
+
+            Route::group([
+                'middleware' => ['permission:' . Str::slug('Job Applications')],
+                'prefix' => 'applications'
+            ], static function () {
+                Route::get('/', ListJobApplications::class)->name('list.job.applications');
+            });
         });
 
         Route::group([

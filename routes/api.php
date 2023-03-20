@@ -10,6 +10,7 @@ use App\Http\Controllers\API\CoverageController;
 use App\Http\Controllers\API\EventController;
 use App\Http\Controllers\API\FaqController;
 use App\Http\Controllers\API\ImpactController;
+use App\Http\Controllers\API\JobApplicationController;
 use App\Http\Controllers\API\OfficeController;
 use App\Http\Controllers\API\OrderController;
 use App\Http\Controllers\API\PartnerController;
@@ -64,6 +65,7 @@ Route::group([
     Route::post('subscriber', SubscriberController::class);
     Route::post('contact', ContactController::class);
     Route::post('comment', CommentController::class);
+    Route::post('job-application', JobApplicationController::class);
 
     // protected routes
     Route::group([

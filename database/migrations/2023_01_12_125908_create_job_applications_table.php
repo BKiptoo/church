@@ -21,6 +21,8 @@ return new class extends Migration {
             $table->string('firstName');
             $table->string('lastName');
             $table->text('coverLetter');
+            $table->boolean('isPassed')->default(false);
+            $table->boolean('isClosed')->default(false);
             $table->softDeletes();
             $table->timestamps();
         });

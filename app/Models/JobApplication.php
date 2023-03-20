@@ -37,7 +37,9 @@ class JobApplication extends Model
         'email',
         'firstName',
         'lastName',
-        'coverLetter'
+        'coverLetter',
+        'isPassed',
+        'isClosed',
     ];
 
     /**
