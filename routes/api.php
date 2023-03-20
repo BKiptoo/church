@@ -21,6 +21,7 @@ use App\Http\Controllers\API\SubCategoryController;
 use App\Http\Controllers\API\SubscriberController;
 use App\Http\Controllers\API\TeamController;
 use App\Http\Controllers\API\TenderController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Rap2hpoutre\LaravelLogViewer\LogViewerController;
 
@@ -38,6 +39,12 @@ use Rap2hpoutre\LaravelLogViewer\LogViewerController;
 Route::group([
     'prefix' => 'v1',
 ], static function () {
+    Route::get('auth', function (Request $request) {
+//        $token = $request->user()->createToken($request->token_name);
+//        return ['token' => $token->plainTextToken];
+        return 'Later...';
+    });
+
     // open routes - loads all the api resources
     Route::apiResources([
         'countries' => CountryController::class,
