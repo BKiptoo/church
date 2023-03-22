@@ -67,7 +67,7 @@ Route::group([
     Route::get('teams/{limit?}/{countryId?}', TeamController::class);
     Route::get('tenders/{limit?}/{countryId?}', TenderController::class);
     Route::get('impacts/{limit?}/{impactTypeSlug?}', ImpactController::class);
-    Route::get('impacts-types', ImpactTypeController::class);
+    Route::get('impact-types', ImpactTypeController::class);
 
     // post
     Route::post('order', OrderController::class);
