@@ -10,6 +10,7 @@ use App\Http\Controllers\API\CoverageController;
 use App\Http\Controllers\API\EventController;
 use App\Http\Controllers\API\FaqController;
 use App\Http\Controllers\API\ImpactController;
+use App\Http\Controllers\API\ImpactTypeController;
 use App\Http\Controllers\API\JobApplicationController;
 use App\Http\Controllers\API\OfficeController;
 use App\Http\Controllers\API\OrderController;
@@ -66,6 +67,7 @@ Route::group([
     Route::get('teams/{limit?}/{countryId?}', TeamController::class);
     Route::get('tenders/{limit?}/{countryId?}', TenderController::class);
     Route::get('impacts/{limit?}/{impactTypeSlug?}', ImpactController::class);
+    Route::get('impacts-types', ImpactTypeController::class);
 
     // post
     Route::post('order', OrderController::class);
