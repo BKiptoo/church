@@ -15,7 +15,7 @@ class ImpactController extends Controller
      * @param string|null $impactTypeSlug
      * @return JsonResponse
      */
-    public function __invoke(int $limit = 10, string $impactTypeSlug = null): JsonResponse
+    public function index(int $limit = 10, string $impactTypeSlug = null): JsonResponse
     {
         return $this->successResponse(
             Impact::query()
@@ -29,6 +29,23 @@ class ImpactController extends Controller
                 })
                 ->limit($limit)
                 ->get()
+        );
+    }
+
+    /**
+     * fetch specific impact
+     * @param string $slug
+     * @return JsonResponse
+     */
+    public function show(string $slug): JsonResponse
+    {
+        return $this->successResponse(
+            Impact::query()
+                ->with([
+                    'impactType',
+                    'media'
+                ])
+                ->firstWhere('slug', $slug)
         );
     }
 }

@@ -15,7 +15,7 @@ class PostController extends Controller
      * @param int $limit
      * @return JsonResponse
      */
-    public function __invoke(int $limit = 10, string $countryId = null): JsonResponse
+    public function index(int $limit = 10, string $countryId = null): JsonResponse
     {
         return $this->successResponse(
             Post::query()
@@ -33,6 +33,27 @@ class PostController extends Controller
                 })
                 ->limit($limit)
                 ->get()
+        );
+    }
+
+    /**
+     * fetch specific posts
+     * @param string $slug
+     * @return JsonResponse
+     */
+    public function show(string $slug): JsonResponse
+    {
+        return $this->successResponse(
+            Post::query()
+                ->with([
+                    'country',
+                    'media',
+                    'user.media',
+                    'comments',
+                    'category',
+                    'subCategory'
+                ])
+                ->firstWhere('slug', $slug)
         );
     }
 }

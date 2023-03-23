@@ -61,13 +61,25 @@ Route::group([
     Route::get('faqs/{limit?}/{countryId?}', FaqController::class);
     Route::get('offices/{limit?}/{countryId?}', OfficeController::class);
     Route::get('partners/{limit?}/{countryId?}', PartnerController::class);
-    Route::get('posts/{limit?}/{countryId?}', PostController::class);
     Route::get('products/{limit?}/{countryId?}', ProductController::class);
     Route::get('slides/{limit?}/{countryId?}', SlideController::class);
     Route::get('teams/{limit?}/{countryId?}', TeamController::class);
     Route::get('tenders/{limit?}/{countryId?}', TenderController::class);
-    Route::get('impacts/{limit?}/{impactTypeSlug?}', ImpactController::class);
     Route::get('impact-types', ImpactTypeController::class);
+
+    // posts/blogs
+    Route::controller(PostController::class)
+        ->group(function () {
+            Route::get('posts/{limit?}/{countryId?}', 'index');
+            Route::get('post/{slug}', 'show');
+        });
+
+    // impacts
+    Route::controller(ImpactController::class)
+        ->group(function () {
+            Route::get('impacts/{limit?}/{impactTypeSlug?}', 'index');
+            Route::get('impact/{slug}', 'show');
+        });
 
     // post
     Route::post('order', OrderController::class);
