@@ -43,17 +43,22 @@ class PostController extends Controller
      */
     public function show(string $slug): JsonResponse
     {
-        return $this->successResponse(
-            Post::query()
-                ->with([
-                    'country',
-                    'media',
-                    'user.media',
-                    'comments',
-                    'category',
-                    'subCategory'
-                ])
-                ->firstWhere('slug', $slug)
-        );
+        $post = Post::query()
+            ->with([
+                'country',
+                'media',
+                'user.media',
+                'comments',
+                'category',
+                'subCategory'
+            ])
+            ->firstWhere('slug', $slug)
+
+           // increment views
+        $post->update([
+            'views' => $post->views + 1
+        ]);
+
+        return $this->successResponse($post);
     }
 }
