@@ -52,7 +52,7 @@ class PostController extends Controller
                 'category',
                 'subCategory'
             ])
-            ->firstWhere('slug', $slug)
+            ->firstWhere('slug', $slug);
 
            // increment views
         $post->update([
