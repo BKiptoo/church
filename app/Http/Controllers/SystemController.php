@@ -134,7 +134,47 @@ class SystemController extends Controller
             self::unLinkMedia($fileName);
 
             // generate new name for image
-            $newFileName = Str::slug(Str::random(16)) . '.' . $fileRequest->extension();
+            $newFileName = Str::slug(Str::random()) . '.' . $fileRequest->extension();
+
+            // store the new image
+            $fileRequest->storePubliclyAs($path, $newFileName, 'do_space');
+
+            // assign variables
+            $url = Storage::disk('do_space_cdn')->url($path . '/' . $newFileName);
+            $size = Storage::disk('do_space')->size($path . '/' . $newFileName);
+            $mimeType = Storage::disk('do_space')->mimeType($path . '/' . $newFileName);
+
+            return [
+                $newFileName, // this will be the new file name i.e shiftechafrica.png
+                $url, // set the path for loading the image i.e http:IP/storage/shiftechafrica.png
+                $size, // get file size in bytes
+                $mimeType // get file mime Type
+            ];
+        }
+        return [null, '#', 0];
+    }
+
+    /**
+     * store image here
+     * @param $fileRequest
+     * @param string|null $fileName
+     * @param string|null $path
+     * @return array
+     */
+    public static function storeMediaKML(
+        $fileRequest,
+        string|null $fileName = null,
+        string|null $path = null
+    ): array
+    {
+        // check if feature_image exists
+        $path ??= 'csquared';
+        if (isset($fileRequest)) {
+            // unlink media here
+            self::unLinkMedia($fileName);
+
+            // generate new name for image
+            $newFileName = Str::slug(Str::random()) . '.' . 'kml';
 
             // store the new image
             $fileRequest->storePubliclyAs($path, $newFileName, 'do_space');
@@ -249,13 +289,20 @@ class SystemController extends Controller
      * @param string $mediaableId
      * @param string $mediaableType
      * @param
+     * @param bool $isKML
      */
-    public static function singleMediaUploadsJob(string $mediaableId, string $mediaableType, $fileRequest)
+    public static function singleMediaUploadsJob(string $mediaableId, string $mediaableType, $fileRequest, bool $isKML = false)
     {
         // start process of storage here
-        $media = self::storeMedia(
-            $fileRequest
-        );
+        if ($isKML) {
+            $media = self::storeMediaKML(
+                $fileRequest
+            );
+        } else {
+            $media = self::storeMedia(
+                $fileRequest
+            );
+        }
 
         // remove existing files first
         self::removeExistingFiles($mediaableId);

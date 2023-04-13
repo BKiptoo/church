@@ -69,13 +69,13 @@
                                     @enderror
                                 </div>
                                 <div class="mb-3 col-12">
-                                    <label class="form-label" for="mapFile">Map Json File</label>
+                                    <label class="form-label" for="mapFile">Map Kml File</label>
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                             class="bx bxs-file-json"></i></span>
                                         <input type="file" id="mapFile"
                                                class="form-control @error('mapFile') is-invalid @enderror"
-                                               name="mapFile" placeholder="Select json file..."
+                                               name="mapFile" placeholder="Select kml file..."
                                                wire:model="mapFile" required
                                                aria-describedby="mapFile"/>
                                         @error('mapFile')

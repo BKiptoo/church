@@ -11,11 +11,8 @@
                 <div class="modal-body">
                     <div class="row">
                         @if($model->media)
-                            @foreach($model->media->pathUrls as $url)
-                                <iframe width="750" height="500" style="border:0" loading="lazy" allowfullscreen
-                                        src="https://maps.google.com/maps?q=7.53744,60.08929&z=15&output=embed">
-                                </iframe>
-                            @endforeach
+                            <div id="map"></div>
+                            <div id="capture"></div>
                         @else
                             <img src="{{ asset('assets/img/no-items.gif') }}" alt="">
                         @endif
@@ -26,5 +23,33 @@
                 </div>
             </div>
         </div>
+
+{{--        <script>--}}
+{{--            var map;--}}
+{{--            var src = '{{ $model->media->pathUrls[0] }}';--}}
+
+{{--            function initMap() {--}}
+{{--                map = new google.maps.Map(document.getElementById('map'), {--}}
+{{--                    center: new google.maps.LatLng(-19.257753, 146.823688),--}}
+{{--                    zoom: 2,--}}
+{{--                    mapTypeId: 'terrain'--}}
+{{--                });--}}
+
+{{--                var kmlLayer = new google.maps.KmlLayer(src, {--}}
+{{--                    suppressInfoWindows: true,--}}
+{{--                    preserveViewport: false,--}}
+{{--                    map: map--}}
+{{--                });--}}
+{{--                kmlLayer.addListener('click', function (event) {--}}
+{{--                    var content = event.featureData.infoWindowHtml;--}}
+{{--                    var testimonial = document.getElementById('capture');--}}
+{{--                    testimonial.innerHTML = content;--}}
+{{--                });--}}
+{{--            }--}}
+{{--            initMap();--}}
+{{--        </script>--}}
+{{--        <script async--}}
+{{--                src="https://maps.googleapis.com/maps/api/js?key='.{{ env('GOOGLE_MAP_API') }}.'&callback=initMap">--}}
+{{--        </script>--}}
     </div>
 </div>

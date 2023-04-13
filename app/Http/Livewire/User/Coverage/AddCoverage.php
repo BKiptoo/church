@@ -43,7 +43,7 @@ class AddCoverage extends Component
             'country_id' => ['required', 'string', 'max:255'],
             'name' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
-            'mapFile' => ['file', 'max:10096', 'required', 'mimes:json'] // 10MB Max
+            'mapFile' => ['file', 'max:10096', 'required'] // 10MB Max
         ];
     }
 
@@ -80,13 +80,9 @@ class AddCoverage extends Component
             SystemController::singleMediaUploadsJob(
                 $ad->id,
                 Coverage::class,
-                $this->mapFile
+                $this->mapFile,
+                true
             );
-
-        // update co-ordinates
-        $ad->update([
-            'data' => json_decode(SystemController::getMedia($ad->media->pathNames[0]))
-        ]);
 
         Note::createSystemNotification(
             User::class,

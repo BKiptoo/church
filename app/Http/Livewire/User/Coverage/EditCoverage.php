@@ -11,11 +11,12 @@ use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 use Note\Note;
 
 class EditCoverage extends Component
 {
-    use FindGuard, LivewireAlert, SharedProcess;
+    use FindGuard, LivewireAlert, SharedProcess, WithFileUploads;
 
     public $model;
     public $mapFile;
@@ -97,7 +98,8 @@ class EditCoverage extends Component
             SystemController::singleMediaUploadsJob(
                 $this->model->id,
                 Coverage::class,
-                $this->mapFile
+                $this->mapFile,
+                true
             );
 
         Note::createSystemNotification(
