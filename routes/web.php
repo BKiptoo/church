@@ -65,6 +65,7 @@ use App\Http\Livewire\User\UserManagement\EditUser;
 use App\Http\Livewire\User\UserManagement\ListUsers;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -89,6 +90,9 @@ Route::group([
     Route::group([
         'prefix' => 'google'
     ], static function () {
+        Route::get('/', function () {
+            return Socialite::driver('google')->redirect();
+        })->name('google.redirect');
         Route::get('callback', GoogleAuth::class)->name('google.authentication');
     });
 

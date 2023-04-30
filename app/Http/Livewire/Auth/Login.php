@@ -72,11 +72,6 @@ class Login extends Component
 
     }
 
-    public function googleAuthRedirect(): RedirectResponse
-    {
-        return Socialite::driver('google')->redirect();
-    }
-
     public function render()
     {
         return view('livewire.auth.login')->layout('layouts.auth');

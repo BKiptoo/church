@@ -54,8 +54,8 @@
         </div>
     </form>
     <div class="text-center">
-        <button wire:click="googleAuthRedirect" type="button" class="btn btn-icon btn-outline-secondary">
+        <a href="{{ route('google.redirect') }}" type="button" class="btn btn-icon btn-outline-secondary">
             <span class="bx bxl-google mb-2"></span>
-        </button>
+        </a>
     </div>
 </div>
