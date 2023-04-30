@@ -20,7 +20,7 @@ class GoogleAuth extends Component
              * first fetch user from provider
              * using the code
              */
-            $socialite = Socialite::driver('google')->stateless()->user();
+            $socialite = Socialite::driver('google')->user();
 
             $existingUser = User::query()->firstWhere('email', $socialite->email);
             if (!$existingUser) {
