@@ -54,7 +54,7 @@ class PostController extends Controller
             ])
             ->firstWhere('slug', $slug);
 
-           // increment views
+        // increment views
         $post->update([
             'views' => $post->views + 1
         ]);

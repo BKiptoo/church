@@ -116,7 +116,7 @@ class EditImpact extends Component
 
     public function render()
     {
-        return view('livewire.user.impact.edit-impact',[
+        return view('livewire.user.impact.edit-impact', [
             'impactTypes' => $this->readyToLoad ? ImpactType::query()
                 ->orderBy('name')
                 ->get() : []

@@ -9,10 +9,11 @@ use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class EditCareer extends Component
 {
-    use FindGuard, LivewireAlert, SharedProcess;
+    use FindGuard, LivewireAlert, SharedProcess, WithFileUploads;
 
     public $model;
     public $country_id;

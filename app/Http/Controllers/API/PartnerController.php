@@ -3,10 +3,8 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use App\Models\Ad;
 use App\Models\Partner;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 class PartnerController extends Controller
 {

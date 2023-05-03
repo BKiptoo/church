@@ -4,7 +4,6 @@ namespace App\Http\Livewire\User\Impact;
 
 use App\Http\Controllers\SystemController;
 use App\Models\Impact;
-use App\Models\ImpactType;
 use App\Models\User;
 use App\Traits\SharedProcess;
 use Jantinnerezo\LivewireAlert\LivewireAlert;

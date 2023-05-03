@@ -8,7 +8,6 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
-use Laravel\Socialite\Facades\Socialite;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
 

@@ -8,11 +8,12 @@ use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 use Note\Note;
 
 class EditImpactType extends Component
 {
-    use FindGuard, LivewireAlert;
+    use FindGuard, LivewireAlert, WithFileUploads;
 
     public $model;
     public $name;

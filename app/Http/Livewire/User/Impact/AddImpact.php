@@ -3,7 +3,6 @@
 namespace App\Http\Livewire\User\Impact;
 
 use App\Http\Controllers\SystemController;
-use App\Models\Country;
 use App\Models\Impact;
 use App\Models\ImpactType;
 use App\Models\User;
@@ -99,7 +98,7 @@ class AddImpact extends Component
 
     public function render()
     {
-        return view('livewire.user.impact.add-impact',[
+        return view('livewire.user.impact.add-impact', [
             'impactTypes' => $this->readyToLoad ? ImpactType::query()
                 ->orderBy('name')
                 ->get() : []

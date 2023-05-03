@@ -11,11 +11,12 @@ use Illuminate\Validation\ValidationException;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 use Note\Note;
 
 class AddUser extends Component
 {
-    use FindGuard, LivewireAlert, SysPermissions;
+    use FindGuard, LivewireAlert, SysPermissions, WithFileUploads;
 
     public $name;
     public $country_id;
