@@ -23,7 +23,7 @@ class ImpactController extends Controller
                     'impactType',
                     'media'
                 ])
-                ->latest()
+                ->inRandomOrder()
                 ->where(function ($query) use ($impactTypeSlug) {
                     $query->whereRelation('impactType', 'slug', 'ilike', '%' . $impactTypeSlug . '%');
                 })
