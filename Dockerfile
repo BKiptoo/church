@@ -1,7 +1,6 @@
 FROM php:8.2-fpm-alpine
 RUN docker-php-ext-install pcntl
-RUN docker-php-ext-install zip
-RUN docker-php-ext-install mysqli pdo pdo_mysql pdo_pgsql
+RUN docker-php-ext-install pgsql pdo pdo_pgsql
 RUN apk add --no-cache nginx wget
 
 RUN mkdir -p /run/nginx
