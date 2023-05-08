@@ -1,6 +1,5 @@
 FROM php:8.2-fpm-alpine
 RUN docker-php-ext-install pcntl
-RUN docker-php-ext-install pgsql
 RUN apk add --no-cache nginx wget
 
 RUN mkdir -p /run/nginx
