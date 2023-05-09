@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install -y \
     sudo \
     unzip \
     redis \
+    nginx \
+    wget \
     libpq-dev \
     libicu-dev \
     libbz2-dev \
@@ -29,7 +31,7 @@ RUN docker-php-ext-install \
     calendar \
     pdo_pgsql
 
-RUN apk add --no-cache nginx wget
+#RUN apk add --no-cache nginx wget
 
 RUN mkdir -p /run/nginx
 
