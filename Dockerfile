@@ -1,7 +1,37 @@
-FROM php:8.2-fpm-alpine
-RUN docker-php-ext-install pcntl
-RUN docker-php-ext-install pdo
-RUN docker-php-ext-install pdo_pgsql
+FROM php:8.0-fpm
+
+# Install packages
+RUN apt-get update && apt-get install -y \
+    git \
+    zip \
+    curl \
+    sudo \
+    unzip \
+    redis \
+    libpq-dev \
+    libicu-dev \
+    libbz2-dev \
+    libpng-dev \
+    libjpeg-dev \
+    libmcrypt-dev \
+    libreadline-dev \
+    libfreetype6-dev \
+    g++
+
+# Common PHP Extensions
+RUN docker-php-ext-install \
+    bz2 \
+    pcntl \
+    intl \
+    iconv \
+    bcmath \
+    opcache \
+    calendar \
+    pdo_pgsql
+
+# Install Redis
+RUN pecl install redis && docker-php-ext-enable redis
+
 RUN apk add --no-cache nginx wget
 
 RUN mkdir -p /run/nginx
