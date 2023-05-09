@@ -50,5 +50,4 @@ RUN cd /app && \
 
 RUN chown -R www-data: /app
 
-CMD sh /app/docker/startup.sh
-CMD ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
+CMD sh /app/docker/startup.sh && ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
