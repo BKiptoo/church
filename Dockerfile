@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     redis \
     nginx \
     wget \
+    supervisor \
     libpq-dev \
     libicu-dev \
     libbz2-dev \
@@ -34,8 +35,10 @@ RUN docker-php-ext-install \
 #RUN apk add --no-cache nginx wget
 
 RUN mkdir -p /run/nginx
+RUN mkdir -p /etc/supervisor/logs
 
 COPY docker/nginx.conf /etc/nginx/nginx.conf
+COPY docker/supervisord.conf /etc/supervisor/supervisord.conf
 
 RUN mkdir -p /app
 COPY . /app
@@ -48,3 +51,4 @@ RUN cd /app && \
 RUN chown -R www-data: /app
 
 CMD sh /app/docker/startup.sh
+CMD ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
