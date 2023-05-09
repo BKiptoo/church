@@ -29,9 +29,6 @@ RUN docker-php-ext-install \
     calendar \
     pdo_pgsql
 
-# Install Redis
-RUN pecl install redis && docker-php-ext-enable redis
-
 RUN apk add --no-cache nginx wget
 
 RUN mkdir -p /run/nginx
