@@ -1,4 +1,4 @@
-FROM php:8.0-fpm
+FROM php:8.2-fpm
 
 # Install packages
 RUN apt-get update && apt-get install -y \
@@ -42,9 +42,9 @@ COPY . /app
 COPY .env.example /app/.env
 
 RUN sh -c "wget http://getcomposer.org/composer.phar && chmod a+x composer.phar && mv composer.phar /usr/local/bin/composer"
-RUN cd /app
-WORKDIR /app
-RUN /usr/local/bin/composer update --no-dev
+RUN cd /app && \
+    /usr/local/bin/composer install --no-dev
+
 RUN chown -R www-data: /app
 
 CMD sh /app/docker/startup.sh
