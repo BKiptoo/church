@@ -15,7 +15,7 @@ class ProductController extends Controller
      * @param int $limit
      * @return JsonResponse
      */
-    public function __invoke(int $limit = 10, string $countryId = null): JsonResponse
+    public function __invoke(int $limit = 100, string $countryId = null): JsonResponse
     {
         return $this->successResponse(
             Product::query()

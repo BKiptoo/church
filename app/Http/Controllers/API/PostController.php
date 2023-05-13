@@ -15,7 +15,7 @@ class PostController extends Controller
      * @param int $limit
      * @return JsonResponse
      */
-    public function index(int $limit = 10, string $countryId = null): JsonResponse
+    public function index(int $limit = 100, string $countryId = null): JsonResponse
     {
         return $this->successResponse(
             Post::query()

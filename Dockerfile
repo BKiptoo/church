@@ -38,7 +38,7 @@ RUN mkdir -p /run/nginx
 RUN mkdir -p /etc/supervisor/logs
 
 COPY docker/nginx.conf /etc/nginx/nginx.conf
-COPY docker/supervisord.conf /etc/supervisor/supervisord.conf
+COPY --chown=root:root docker/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 RUN mkdir -p /app
 COPY . /app
@@ -50,4 +50,4 @@ RUN cd /app && \
 
 RUN chown -R www-data: /app
 
-CMD sh /app/docker/startup.sh && ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
+CMD ["sh /app/docker/startup.sh", "/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]

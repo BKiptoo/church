@@ -5,6 +5,6 @@ services:
         volumes:
             - .:/var/www
         ports:
-            - "8080:8080"
+            - "8082:8082"
         environment:
             - APP_ENV=local
