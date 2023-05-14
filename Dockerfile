@@ -59,7 +59,9 @@ RUN sh -c "wget http://getcomposer.org/composer.phar && chmod a+x composer.phar 
 RUN cd /app && \
     /usr/local/bin/composer install --no-dev
 
-RUN chown -R www-data:www-data /app
+RUN sudo chown -R www-data:www-data /app \
+    && sudo chmod -R 775 /app/storage \
+    && sudo chmod -R 775 /app/bootstrap/cache
 
 CMD sh /app/docker/startup.sh
 #CMD ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
