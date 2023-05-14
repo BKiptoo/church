@@ -1,5 +1,7 @@
 FROM php:8.2-fpm
 
+LABEL maintainer="SHIFTECH AFRICA (support@shiftech.co.ke)"
+
 # make sure apt is up to date
 RUN apt-get update --fix-missing
 
