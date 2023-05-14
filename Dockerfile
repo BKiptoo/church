@@ -1,5 +1,8 @@
 FROM php:8.2-fpm
 
+# make sure apt is up to date
+RUN apt-get update --fix-missing
+
 # Install packages
 RUN apt-get update && apt-get install -y \
     git \
@@ -10,6 +13,9 @@ RUN apt-get update && apt-get install -y \
     redis \
     nginx \
     wget \
+    build-essential \
+    libssl-dev \
+    zlib1g-dev \
     supervisor \
     libpq-dev \
     libicu-dev \
@@ -20,6 +26,9 @@ RUN apt-get update && apt-get install -y \
     libreadline-dev \
     libfreetype6-dev \
     g++
+
+RUN docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ \
+    && docker-php-ext-install gd
 
 # Common PHP Extensions
 RUN docker-php-ext-install \
@@ -33,6 +42,8 @@ RUN docker-php-ext-install \
     pdo_pgsql
 
 #RUN apk add --no-cache nginx wget
+# Install Redis
+RUN pecl install redis && docker-php-ext-enable redis
 
 RUN mkdir -p /run/nginx
 RUN mkdir -p /etc/supervisor/logs
@@ -48,7 +59,9 @@ RUN sh -c "wget http://getcomposer.org/composer.phar && chmod a+x composer.phar 
 RUN cd /app && \
     /usr/local/bin/composer install --no-dev
 
-RUN chown -R www-data: /app
+RUN chown -R www-data:www-data /app \
+    && chmod -R 775 /app/storage \
+    && chmod -R 775 /app/bootstrap/cache
 
 CMD sh /app/docker/startup.sh
-CMD ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
+#CMD ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
