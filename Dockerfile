@@ -18,13 +18,17 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     supervisor \
     libpq-dev \
+    libzip-dev \
     libicu-dev \
     libbz2-dev \
     libpng-dev \
     libjpeg-dev \
+    libjpeg62-turbo-dev \
+    libwebp-dev libjpeg62-turbo-dev libpng-dev libxpm-dev \
     libmcrypt-dev \
     libreadline-dev \
     libfreetype6-dev \
+    libfreetype6 \
     g++
 
 RUN docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ \
