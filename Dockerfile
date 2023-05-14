@@ -23,6 +23,7 @@ RUN apt-get update && apt-get install -y \
     libbz2-dev \
     libpng-dev \
     libjpeg-dev \
+    libmcrypt-dev \
     libjpeg62-turbo-dev \
     libwebp-dev libjpeg62-turbo-dev libpng-dev libxpm-dev \
     libmcrypt-dev \
@@ -63,9 +64,14 @@ RUN sh -c "wget http://getcomposer.org/composer.phar && chmod a+x composer.phar 
 RUN cd /app && \
     /usr/local/bin/composer install --no-dev
 
-RUN sudo chown -R www-data:www-data /app \
-    && sudo chmod -R 775 /app/storage \
-    && sudo chmod -R 775 /app/bootstrap/cache
+# Add user for laravel application
+RUN groupadd -g 1000 laravel
+RUN useradd -u 1000 -ms /bin/bash -g laravel laravel
+
+RUN sudo chown -R laravel:www-data /app/storage \
+    && sudo chown -R laravel:www-data /app/bootstrap/cache \
+    && chmod -R 775 /app/storage \
+    && chmod -R 775 /app/bootstrap/cache
 
 CMD sh /app/docker/startup.sh
 #CMD ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
