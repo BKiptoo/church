@@ -92,6 +92,8 @@ class EditOrder extends Component
             return redirect()->back();
         }
 
+        $this->model->save();
+
         Note::createSystemNotification(
             User::class,
             'Updated Order ' . $this->model->orderNumber,
