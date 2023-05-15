@@ -60,17 +60,21 @@ class ListOrders extends Component
         $model = Order::query()
             ->findOrFail($this->model_id);
 
-        // then delete
-        $model->update([
-            'isClosed' => true
-        ]);
+        if (is_null($model->summary)) {
+            $this->alert('warning', 'An order has to have a summery to be closed.');
+        } else {
+            // then delete
+            $model->update([
+                'isClosed' => true
+            ]);
 
-        Note::createSystemNotification(
-            User::class,
-            'Order Marked As Closed',
-            'You have successfully closed the order.'
-        );
-        $this->alert('success', 'You have successfully closed the order.');
+            Note::createSystemNotification(
+                User::class,
+                'Order Marked As Closed',
+                'You have successfully closed the order.'
+            );
+            $this->alert('success', 'You have successfully closed the order.');
+        }
     }
 
     public function cancelled()
@@ -80,7 +84,7 @@ class ListOrders extends Component
 
     public function render()
     {
-        return view('livewire.user.orders.list-orders',[
+        return view('livewire.user.orders.list-orders', [
             'models' => $this->readyToLoad
                 ? Order::query()
                     ->with([
