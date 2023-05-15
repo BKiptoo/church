@@ -93,7 +93,6 @@ class ListOrders extends Component
                     )
                     ->where(function ($query) {
                         $query->orWhere('email', 'ilike', '%' . $this->search . '%')
-                            ->orWhere('amount', 'ilike', '%' . $this->search . '%')
                             ->orWhere('summary', 'ilike', '%' . $this->search . '%')
                             ->whereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
                             ->whereRelation('product', 'name', 'ilike', '%' . $this->search . '%');
