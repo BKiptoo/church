@@ -6,6 +6,7 @@ use App\Charts\BlogReportChart;
 use App\Charts\GeneralChart;
 use App\Charts\OrderReportChart;
 use App\Charts\PieChart;
+use App\Jobs\SyncAnalyticDataJob;
 use App\Models\Analytic;
 use LaravelMultipleGuards\Traits\FindGuard;
 use Livewire\Component;
@@ -24,6 +25,7 @@ class UserDashboard extends Component
     public function loadData()
     {
         $this->readyToLoad = true;
+        dispatch(new SyncAnalyticDataJob())->onQueue('default')->delay(now()->addMinute());
     }
 
     public function charts(): array
