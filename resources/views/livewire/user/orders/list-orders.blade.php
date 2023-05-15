@@ -49,7 +49,7 @@
                                     @endif
                                 </td>
                                 <td>{{ \App\Http\Controllers\SystemController::elapsedTime($model->created_at) }}</td>
-                                <td>{{ \App\Http\Controllers\SystemController::elapsedTime($model->updated_on) }}</td>
+                                <td>{{ \App\Http\Controllers\SystemController::elapsedTime($model->updated_at) }}</td>
                                 <td>
                                     <div class="dropdown">
                                         <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
