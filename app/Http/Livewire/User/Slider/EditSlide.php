@@ -104,6 +104,8 @@ class EditSlide extends Component
                 $this->photo
             );
 
+        $this->model->save();
+
         Note::createSystemNotification(
             User::class,
             'Updated Slide',

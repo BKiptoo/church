@@ -102,6 +102,8 @@ class EditCoverage extends Component
                 true
             );
 
+        $this->model->save();
+
         Note::createSystemNotification(
             User::class,
             'Updated Coverage',

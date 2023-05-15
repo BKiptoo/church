@@ -108,6 +108,8 @@ class EditEvent extends Component
                 $this->photo
             );
 
+        $this->model->save();
+
         Note::createSystemNotification(
             User::class,
             'Updated Event',

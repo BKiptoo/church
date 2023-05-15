@@ -91,6 +91,8 @@ class EditCareer extends Component
             return redirect()->back();
         }
 
+        $this->model->save();
+
         $this->alert('success', 'Successfully updated career.');
         $this->loadData();
     }

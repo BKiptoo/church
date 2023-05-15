@@ -104,6 +104,8 @@ class EditTenders extends Component
                 $this->tenderFiles
             );
 
+        $this->model->save();
+
         Note::createSystemNotification(
             User::class,
             'Updated Tender',

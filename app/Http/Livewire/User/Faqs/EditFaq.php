@@ -90,6 +90,8 @@ class EditFaq extends Component
             return redirect()->back();
         }
 
+        $this->model->save();
+
         Note::createSystemNotification(
             User::class,
             'Updated Faq',

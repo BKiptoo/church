@@ -82,6 +82,8 @@ class EditImpactType extends Component
             return redirect()->back();
         }
 
+        $this->model->save();
+
         Note::createSystemNotification(
             User::class,
             'Updated Impact Type',
