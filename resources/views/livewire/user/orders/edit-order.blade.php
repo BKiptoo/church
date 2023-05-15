@@ -93,11 +93,15 @@
                                     @enderror
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary me-2" wire:loading.class="disabled"
-                                    wire:offline.attr="disabled"><span wire:target="submit"
-                                                                       wire:loading.class="spinner-border text-secondary"></span>
-                                Update Summary
-                            </button>
+                            @if(!$model->isClosed)
+                                <button type="submit" class="btn btn-primary me-2" wire:loading.class="disabled"
+                                        wire:offline.attr="disabled"><span wire:target="submit"
+                                                                           wire:loading.class="spinner-border text-secondary"></span>
+                                    Update Summary
+                                </button>
+                            @else
+                                <button disabled class="btn btn-danger me-2">Closed</button>
+                            @endif
                         </form>
                     </div>
                 </div>

@@ -27,6 +27,8 @@
                             <th scope="col">Order</th>
                             <th scope="col">Email</th>
                             <th scope="col">Status</th>
+                            <th scope="col">Ordered On</th>
+                            <th scope="col">Reached On</th>
                             <th scope="col">Actions</th>
                         </tr>
                         </thead>
@@ -46,6 +48,8 @@
                                         <span class="badge bg-label-success me-1">OPEN</span>
                                     @endif
                                 </td>
+                                <td>{{ \App\Http\Controllers\SystemController::elapsedTime($model->created_at) }}</td>
+                                <td>{{ \App\Http\Controllers\SystemController::elapsedTime($model->updated_on) }}</td>
                                 <td>
                                     <div class="dropdown">
                                         <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
