@@ -32,6 +32,7 @@ class Order extends Model
     protected $fillable = [
         'country_id',
         'product_id',
+        'orderNumber',
         'email',
         'amount',
         'summary',

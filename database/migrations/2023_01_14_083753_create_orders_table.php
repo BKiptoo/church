@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->uuid('country_id');
             $table->uuid('product_id');
             $table->string('email');
+            $table->string('orderNumber')->unique();
             $table->text('summary')->nullable();
             $table->double('orders')->default(0.00);
             $table->boolean('isClosed')->default(false);

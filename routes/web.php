@@ -42,6 +42,7 @@ use App\Http\Livewire\User\ListMedia;
 use App\Http\Livewire\User\Office\AddOffice;
 use App\Http\Livewire\User\Office\EditOffice;
 use App\Http\Livewire\User\Office\ListOffices;
+use App\Http\Livewire\User\Orders\EditOrder;
 use App\Http\Livewire\User\Orders\ListOrders;
 use App\Http\Livewire\User\Products\AddProduct;
 use App\Http\Livewire\User\Products\EditProduct;
@@ -230,6 +231,7 @@ Route::group([
             'middleware' => ['permission:' . Str::slug('Orders Management')],
             'prefix' => 'orders'
         ], static function () {
+            Route::get('edit/{id}', EditOrder::class)->name('edit.order');
             Route::get('/', ListOrders::class)->name('list.orders');
         });
 

@@ -23,6 +23,7 @@
         "livewire/livewire": "^2.12",
         "propaganistas/laravel-phone": "^4.4",
         "rap2hpoutre/laravel-log-viewer": "^2.3",
+        "shiftechafrica/shift-code-generator": "^1.5",
         "shiftechafrica/smsales-php-sdk": "^1.0",
         "spatie/laravel-permission": "^5.10",
         "spatie/laravel-sluggable": "^3.4",

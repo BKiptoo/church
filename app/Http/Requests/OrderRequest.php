@@ -4,6 +4,11 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * @property mixed $country_id
+ * @property mixed $product_id
+ * @property mixed $email
+ */
 class OrderRequest extends FormRequest
 {
     /**

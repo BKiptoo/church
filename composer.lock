@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79b021c785254e916d254a5d8a533672",
+    "content-hash": "54025ea5ccb375dd29bf40f1d1a77003",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4185,6 +4185,61 @@
                 "source": "https://github.com/rap2hpoutre/laravel-log-viewer/tree/v2.3.0"
             },
             "time": "2023-02-15T07:36:34+00:00"
+        },
+        {
+            "name": "shiftechafrica/shift-code-generator",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SHIFTECH-AFRICA/shift-code-generator.git",
+                "reference": "b15d473671e1d5e10e025eaa5af964f0f711c6f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SHIFTECH-AFRICA/shift-code-generator/zipball/b15d473671e1d5e10e025eaa5af964f0f711c6f9",
+                "reference": "b15d473671e1d5e10e025eaa5af964f0f711c6f9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.8|^6.0|^7.0|^8.0|^9.0|^10",
+                "webpatser/laravel-uuid": "^3.0|^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ShiftechAfrica\\CodeGenerator\\ShiftCodeGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ShiftechAfrica\\CodeGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "shiftechafrica",
+                    "email": "info@shiftechafrica.com"
+                }
+            ],
+            "description": "This package generates code in relation to year, date and month. For instance, it uses A - Z letters for months.",
+            "keywords": [
+                "code-generator",
+                "laravel",
+                "mpesa",
+                "mpesa-like-code",
+                "transactionId"
+            ],
+            "support": {
+                "issues": "https://github.com/SHIFTECH-AFRICA/shift-code-generator/issues",
+                "source": "https://github.com/SHIFTECH-AFRICA/shift-code-generator/tree/v1.5.0"
+            },
+            "time": "2023-02-24T16:08:38+00:00"
         },
         {
             "name": "shiftechafrica/smsales-php-sdk",

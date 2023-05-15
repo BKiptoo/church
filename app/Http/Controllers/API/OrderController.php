@@ -7,6 +7,7 @@ use App\Http\Requests\OrderRequest;
 use App\Models\Order;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Response;
+use ShiftechAfrica\CodeGenerator\ShiftCodeGenerator;
 
 class OrderController extends Controller
 {
@@ -19,7 +20,12 @@ class OrderController extends Controller
     public function __invoke(OrderRequest $request): JsonResponse
     {
         return $this->successResponse(
-            Order::query()->create($request->validated()),
+            Order::query()->create([
+                'orderNumber' => (new ShiftCodeGenerator())->generate(),
+                'country_id' => $request->country_id,
+                'product_id' => $request->product_id,
+                'email' => $request->email,
+            ]),
             Response::HTTP_CREATED
         );
     }

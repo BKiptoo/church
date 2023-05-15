@@ -1,7 +1,7 @@
 <div wire:poll.visible>
     <div class="container-xxl flex-grow-1 container-p-y" wire:init="loadData">
         <div class="row">
-            <div class="col-md-3 mb-4">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
@@ -72,30 +72,30 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                                <button disabled class="btn btn-warning"><span class="bx bxs-file-pdf"></span>
-                                </button>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                    <a class="dropdown-item" href="{{ route('list.tenders') }}">View
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <span class="fw-semibold d-block mb-1">Tenders</span>
-                        <h3 class="card-title mb-2">{{ isset($analytics) ? number_format($analytics->data['tenders']) : 0 }}</h3>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="col-md-3 mb-4">--}}
+{{--                <div class="card">--}}
+{{--                    <div class="card-body">--}}
+{{--                        <div class="card-title d-flex align-items-start justify-content-between">--}}
+{{--                            <div class="avatar flex-shrink-0">--}}
+{{--                                <button disabled class="btn btn-warning"><span class="bx bxs-file-pdf"></span>--}}
+{{--                                </button>--}}
+{{--                            </div>--}}
+{{--                            <div class="dropdown">--}}
+{{--                                <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown"--}}
+{{--                                        aria-haspopup="true" aria-expanded="false">--}}
+{{--                                    <i class="bx bx-dots-vertical-rounded"></i>--}}
+{{--                                </button>--}}
+{{--                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">--}}
+{{--                                    <a class="dropdown-item" href="{{ route('list.tenders') }}">View--}}
+{{--                                        More</a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <span class="fw-semibold d-block mb-1">Tenders</span>--}}
+{{--                        <h3 class="card-title mb-2">{{ isset($analytics) ? number_format($analytics->data['tenders']) : 0 }}</h3>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
         <div class="row">
             <div class="col-md-6 mb-4">
