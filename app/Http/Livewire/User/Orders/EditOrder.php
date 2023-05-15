@@ -23,7 +23,6 @@ class EditOrder extends Component
     public $product_id;
     public $email;
     public $summary;
-    public $validatedData;
 
     protected $listeners = [
         'confirmed',
@@ -71,7 +70,7 @@ class EditOrder extends Component
      */
     public function submit()
     {
-        $this->validatedData = $this->validate();
+        $this->validate();
         $this->confirm('Are you sure you want to proceed?', [
             'toast' => false,
             'position' => 'center',
@@ -85,7 +84,9 @@ class EditOrder extends Component
 
     public function confirmed()
     {
-        $this->model->fill($this->validatedData);
+        $this->model->fill([
+            'summary' => $this->summary
+        ]);
         if ($this->model->isClean()) {
             $this->alert('warning', 'At least one value must change.');
             return redirect()->back();
