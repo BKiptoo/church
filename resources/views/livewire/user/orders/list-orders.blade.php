@@ -59,9 +59,12 @@
                                             <a class="dropdown-item"
                                                href="{{ route('edit.order',['id'=>$model->id]) }}"><i
                                                     class="bx bx-edit-alt me-1"></i> Summary</a>
-                                            <a class="dropdown-item text-danger" wire:click="delete('{{ $model->id }}')"
-                                               href="javascript:void(0);"><i
-                                                    class="bx bx-window-close me-1"></i> Close</a>
+                                            @if(!$model->isClosed)
+                                                <a class="dropdown-item text-danger"
+                                                   wire:click="delete('{{ $model->id }}')"
+                                                   href="javascript:void(0);"><i
+                                                        class="bx bx-window-close me-1"></i> Close</a>
+                                            @endif
                                         </div>
                                     </div>
                                 </td>
