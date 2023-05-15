@@ -41,9 +41,9 @@
                                 <td>{{ $model->email }}</td>
                                 <td>
                                     @if($model->isClosed)
-                                        <span class="badge bg-label-success me-1">Active</span>
+                                        <span class="badge bg-label-success me-1">OPEN</span>
                                     @else
-                                        <span class="badge bg-label-danger me-1">In-Active</span>
+                                        <span class="badge bg-label-danger me-1">CLOSED</span>
                                     @endif
                                 </td>
                                 <td>
