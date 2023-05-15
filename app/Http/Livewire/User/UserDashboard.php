@@ -25,7 +25,7 @@ class UserDashboard extends Component
     public function loadData()
     {
         $this->readyToLoad = true;
-        dispatch(new SyncAnalyticDataJob())->onQueue('default')->delay(now()->addMinute());
+//        dispatch(new SyncAnalyticDataJob())->onQueue('default')->delay(now()->addMinute());
     }
 
     public function charts(): array

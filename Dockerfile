@@ -76,4 +76,4 @@ RUN sudo chown -R laravel:www-data /app/storage \
     && chmod -R 775 /app/bootstrap/cache
 
 CMD ["sh","/app/docker/startup.sh"]
-CMD ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
+#CMD ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
