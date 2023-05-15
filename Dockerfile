@@ -56,7 +56,7 @@ RUN mkdir -p /run/nginx
 RUN mkdir -p /etc/supervisor/logs
 
 COPY docker/nginx.conf /etc/nginx/nginx.conf
-COPY docker/supervisord.conf /etc/supervisor/supervisord.conf
+COPY docker/supervisord.conf /etc/supervisor/conf.d/worker.conf
 
 RUN mkdir -p /app
 COPY . /app
@@ -75,5 +75,7 @@ RUN sudo chown -R laravel:www-data /app/storage \
     && chmod -R 775 /app/storage \
     && chmod -R 775 /app/bootstrap/cache
 
-CMD ["sh","/app/docker/startup.sh"]
-#CMD ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/supervisord.conf"]
+RUN ["chmod", "+x", "/app/docker/startup.sh"]
+
+#CMD ["sh","/app/docker/startup.sh"]
+CMD ["/usr/bin/supervisord", "-n", "-c",  "/etc/supervisor/conf.d/worker.conf"]
