@@ -25,7 +25,7 @@
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                             class="bx bx-world"></i></span>
-                                        <select id="country_id" wire:model="country_id" readonly
+                                        <select id="country_id" wire:model="country_id" disabled
                                                 class="select2 form-select @error('country_id') is-invalid @enderror"
                                                 required>
                                             <option value="">Select</option>
@@ -45,7 +45,7 @@
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                             class="bx bx-world"></i></span>
-                                        <select id="product_id" wire:model="product_id" readonly
+                                        <select id="product_id" wire:model="product_id" disabled
                                                 class="select2 form-select @error('product_id') is-invalid @enderror"
                                                 required>
                                             <option value="">Select</option>
@@ -60,7 +60,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="mb-3 col-6">
+                                <div class="mb-3 col-12">
                                     <label class="form-label" for="email">Customer Email</label>
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
