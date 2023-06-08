@@ -30,7 +30,9 @@
                             <th scope="col">Author</th>
                             <th scope="col">Category</th>
                             <th scope="col">Sub Category</th>
-                            <th scope="col">Comments</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Feature</th>
+                            {{--                            <th scope="col">Comments</th>--}}
                             <th scope="col">Actions</th>
                         </tr>
                         </thead>
@@ -39,15 +41,23 @@
                         @foreach($models as $model)
                             <tr>
                                 <th scope="row">{{ $count++ }}</th>
-                                <td>{{ $model->name }}</td>
+                                <td>{{ $model->country->name }}</td>
                                 <td>{{ $model->user->name }}</td>
                                 <td>{{ $model->category->name }}</td>
                                 <td>{{ $model->subCategory->name }}</td>
+                                <td>{{ \Illuminate\Support\Str::limit($model->name,50) }}</td>
                                 <td>
-                                    <a href="#" class="btn btn-outline-primary"><span
-                                            class="bx bx-chat"></span> {{ number_format(count($model->comments)) }}
-                                    </a>
+                                    @if($model->isFeatured)
+                                        <span class="bx bx-check text-success"></span>
+                                    @else
+                                        <span class="bx bx-x text-danger"></span>
+                                    @endif
                                 </td>
+                                {{--                                <td>--}}
+                                {{--                                    <a href="#" class="btn btn-outline-primary"><span--}}
+                                {{--                                            class="bx bx-chat"></span> {{ number_format(count($model->comments)) }}--}}
+                                {{--                                    </a>--}}
+                                {{--                                </td>--}}
                                 <td>
                                     <div class="dropdown">
                                         <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
@@ -61,6 +71,15 @@
                                                href="javascript:void(0);" data-bs-toggle="modal"
                                                data-bs-target="#cs-{{ $model->id }}"><i
                                                     class="bx bx-images me-1"></i> Media</a>
+                                            <a class="dropdown-item text-success"
+                                               wire:click="featured('{{ $model->id }}')"
+                                               href="javascript:void(0);"><i
+                                                    class="bx bx-like me-1"></i>
+                                                @if($model->isFeatured)
+                                                    Un-Feature
+                                                @else
+                                                    Feature
+                                                @endif</a>
                                             <a class="dropdown-item text-danger" wire:click="delete('{{ $model->id }}')"
                                                href="javascript:void(0);"><i
                                                     class="bx bx-trash me-1"></i> Delete</a>

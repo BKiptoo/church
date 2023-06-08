@@ -75,6 +75,27 @@ class ListPosts extends Component
         $this->alert('success', 'You have successfully deleted post');
     }
 
+    public function featured(string $id)
+    {
+        $model = Post::query()
+            ->with(['media'])
+            ->findOrFail($id);
+
+        if ($model) {
+            // check if its featured
+            if ($model->isFeatured) {
+                $model->isFeatured = false;
+                $message = 'Un-Featured';
+            } else {
+                $model->isFeatured = true;
+                $message = 'Featured';
+            }
+
+            $this->alert('success', 'You have successfully ' . $message . ' post');
+            $model->save();
+        }
+    }
+
     public function cancelled()
     {
         $this->alert('error', 'You have canceled.');

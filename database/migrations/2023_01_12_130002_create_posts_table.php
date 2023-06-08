@@ -23,6 +23,7 @@ return new class extends Migration {
             $table->text('description');
             $table->integer('views')->default(0);
             $table->integer('likes')->default(0);
+            $table->boolean('isFeatured')->default(false);
             $table->softDeletes();
             $table->timestamps();
         });

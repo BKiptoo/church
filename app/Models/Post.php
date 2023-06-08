@@ -42,7 +42,8 @@ class Post extends Model
         'slug',
         'description',
         'views',
-        'likes'
+        'likes',
+        'isFeatured'
     ];
 
     /**
