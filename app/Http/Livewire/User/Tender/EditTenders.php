@@ -20,7 +20,7 @@ class EditTenders extends Component
 
     public $model;
     public $country_id;
-    public $tenderFiles;
+    public $tenderFiles = [];
     public $name;
     public $description;
     public $closingDate;

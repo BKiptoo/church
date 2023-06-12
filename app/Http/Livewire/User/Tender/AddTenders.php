@@ -19,7 +19,7 @@ class AddTenders extends Component
     use FindGuard, LivewireAlert, SharedProcess, WithFileUploads;
 
     public $country_id;
-    public $tenderFiles;
+    public $tenderFiles = [];
     public $name;
     public $description;
     public $closingDate;
@@ -92,6 +92,7 @@ class AddTenders extends Component
         $this->alert('success', 'Successfully added tender.');
         $this->reset();
         $this->loadData();
+        $this->tenderFiles = [];
     }
 
     public function cancelled()

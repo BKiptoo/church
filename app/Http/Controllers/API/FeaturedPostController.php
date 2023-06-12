@@ -15,7 +15,7 @@ class FeaturedPostController extends Controller
      * @param string|null $countryId
      * @return JsonResponse
      */
-    public function __invoke(int $limit = 10, string $countryId = null): JsonResponse
+    public function __invoke(int $limit = 3, string $countryId = null): JsonResponse
     {
         return $this->successResponse(
             Post::query()
