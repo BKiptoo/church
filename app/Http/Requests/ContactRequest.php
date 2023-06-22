@@ -27,6 +27,8 @@ class ContactRequest extends FormRequest
             'country_id' => ['string', 'required', 'exists:countries,id'],
             'firstName' => ['string', 'required', 'max:255'],
             'description' => ['string', 'required'],
+            'company' => ['string', 'nullable'],
+            'jobTitle' => ['string', 'nullable'],
             'subject' => ['string', 'required', 'max:255'],
             'lastName' => ['string', 'required', 'max:255'],
             'email' => ['string', 'email', 'required', 'max:255'],

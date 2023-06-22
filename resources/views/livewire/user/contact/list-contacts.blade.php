@@ -25,6 +25,8 @@
                             <th scope="col">Country</th>
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
+                            <th scope="col">Job Title</th>
+                            <th scope="col">Company</th>
                             <th scope="col">PhoneNumber</th>
                             <th scope="col">Actions</th>
                         </tr>

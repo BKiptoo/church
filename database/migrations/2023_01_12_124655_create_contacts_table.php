@@ -19,6 +19,8 @@ return new class extends Migration {
             $table->string('lastName');
             $table->string('email');
             $table->string('phoneNumber');
+            $table->string('jobTitle')->nullable();
+            $table->string('company')->nullable();
             $table->string('subject');
             $table->text('description');
             $table->boolean('isClosed')->default(false);

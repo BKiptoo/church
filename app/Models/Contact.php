@@ -35,6 +35,8 @@ class Contact extends Model
         'lastName',
         'email',
         'phoneNumber',
+        'company',
+        'jobTitle',
         'subject',
         'description',
         'isClosed'
