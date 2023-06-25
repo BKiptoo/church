@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Analytic;
 use App\Models\Media;
 use App\Models\Order;
 use App\Models\Post;
@@ -13,7 +14,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Arr;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Analytic>
+ * @extends Factory<Analytic>
  */
 class AnalyticFactory extends Factory
 {
