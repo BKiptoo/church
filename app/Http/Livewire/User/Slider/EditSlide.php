@@ -55,7 +55,7 @@ class EditSlide extends Component
     {
         return [
             'country_id' => ['required', 'string', 'max:255'],
-            'buttonUrl' => ['required', 'string', 'max:255'],
+//            'buttonUrl' => ['required', 'string', 'max:255'],
             'buttonName' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
             'photo' => ['file', 'image', 'max:5096', 'nullable'] // 5MB Max

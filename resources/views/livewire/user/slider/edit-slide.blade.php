@@ -39,7 +39,7 @@
                                     </div>
                                 </div>
                                 <div class="mb-3 col-6">
-                                    <label class="form-label" for="buttonName">Button Name</label>
+                                    <label class="form-label" for="buttonName">Slide Title</label>
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                             class="bx bxs-mouse-alt"></i></span>
@@ -56,24 +56,24 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="mb-3 col-12">
-                                    <label class="form-label" for="buttonUrl">Button Link</label>
-                                    <div class="input-group input-group-merge">
-                                    <span id="basic-icon-default-fullname2" class="input-group-text"><i
-                                            class="bx bx-link"></i></span>
-                                        <input type="url" id="buttonUrl"
-                                               class="form-control @error('buttonUrl') is-invalid @enderror"
-                                               required
-                                               name="buttonUrl" placeholder="Enter button link address"
-                                               wire:model="buttonUrl"
-                                               aria-describedby="buttonUrl"/>
-                                        @error('buttonUrl')
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                        @enderror
-                                    </div>
-                                </div>
+{{--                                <div class="mb-3 col-12">--}}
+{{--                                    <label class="form-label" for="buttonUrl">Button Link</label>--}}
+{{--                                    <div class="input-group input-group-merge">--}}
+{{--                                    <span id="basic-icon-default-fullname2" class="input-group-text"><i--}}
+{{--                                            class="bx bx-link"></i></span>--}}
+{{--                                        <input type="url" id="buttonUrl"--}}
+{{--                                               class="form-control @error('buttonUrl') is-invalid @enderror"--}}
+{{--                                               required--}}
+{{--                                               name="buttonUrl" placeholder="Enter button link address"--}}
+{{--                                               wire:model="buttonUrl"--}}
+{{--                                               aria-describedby="buttonUrl"/>--}}
+{{--                                        @error('buttonUrl')--}}
+{{--                                        <span class="invalid-feedback" role="alert">--}}
+{{--                                        <strong>{{ $message }}</strong>--}}
+{{--                                    </span>--}}
+{{--                                        @enderror--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                                 <div class="mb-3 col-12" wire:model.debounce.365ms="description" wire:ignore>
                                     <label class="form-label" for="description">Slide Description</label>
                                     <input id="description"

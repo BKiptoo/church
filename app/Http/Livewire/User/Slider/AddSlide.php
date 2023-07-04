@@ -41,7 +41,7 @@ class AddSlide extends Component
     {
         return [
             'country_id' => ['required', 'string', 'max:255'],
-            'buttonUrl' => ['required', 'string', 'max:255'],
+//            'buttonUrl' => ['required', 'string', 'max:255'],
             'buttonName' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
             'photo' => ['file', 'image', 'max:5096', 'required'] // 5MB Max
@@ -74,7 +74,12 @@ class AddSlide extends Component
     public function confirmed()
     {
         // create the ad here
-        $ad = Slide::query()->create($this->validatedData);
+        $ad = Slide::query()->create([
+            'country_id' => $this->country_id,
+            'buttonName' => $this->buttonName,
+            'buttonUrl' => 'https://www.csquared.com/',
+            'description' => $this->description
+        ]);
 
         // upload photo
         if ($this->photo)
