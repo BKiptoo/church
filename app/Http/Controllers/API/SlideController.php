@@ -23,10 +23,10 @@ class SlideController extends Controller
                     'country',
                     'media'
                 ])
-                ->inRandomOrder()
                 ->where(function ($query) use ($countryId) {
                     $query->orWhere('country_id', 'ilike', '%' . $countryId . '%');
                 })
+                ->inRandomOrder()
                 ->limit($limit)
                 ->get()
         );
