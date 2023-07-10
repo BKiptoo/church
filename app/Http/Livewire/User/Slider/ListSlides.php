@@ -98,6 +98,7 @@ class ListSlides extends Component
                         $query->orWhere('buttonUrl', 'ilike', '%' . $this->search . '%')
                             ->orWhere('buttonName', 'ilike', '%' . $this->search . '%')
                             ->orWhere('description', 'ilike', '%' . $this->search . '%')
+                            ->whereRelation('country', 'slug', 'ilike', '%' . $this->search . '%')
                             ->whereRelation('country', 'name', 'ilike', '%' . $this->search . '%');
                     })
                     ->paginate(10)
