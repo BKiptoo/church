@@ -102,6 +102,9 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                            <div class="col-md-8" id="orderChart" wire:ignore>
+                                {!! $orderChart->container() !!}
+                            </div>
                             <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
                                 <div class="card-title">
                                     <h5 class="text-nowrap mb-2">Orders Insights</h5>
@@ -112,9 +115,6 @@
                                     <h3 class="mb-0">{{ isset($analytics) ? number_format($analytics->data['orders']) : 0 }}</h3>
                                 </div>
                             </div>
-                            <div id="orderChart" wire:ignore>
-                                {!! $orderChart->container() !!}
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,6 +123,9 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                            <div class="col-md-8" id="blogChart" wire:ignore>
+                                {!! $blogChart->container() !!}
+                            </div>
                             <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
                                 <div class="card-title">
                                     <h5 class="text-nowrap mb-2">Blogs Insights</h5>
@@ -132,9 +135,6 @@
                                 <div class="mt-sm-auto">
                                     <h3 class="mb-0">{{ isset($analytics) ? number_format($analytics->data['blogs']) : 0 }}</h3>
                                 </div>
-                            </div>
-                            <div id="blogChart" wire:ignore>
-                                {!! $blogChart->container() !!}
                             </div>
                         </div>
                     </div>
