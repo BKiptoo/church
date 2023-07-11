@@ -47,7 +47,7 @@ class AddAd extends Component
             'linkUrl' => ['required', 'string', 'max:255'],
             'buttonName' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
-            'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:5096', 'nullable'] // 5MB Max
+            'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:15000', 'nullable'] // 5MB Max
         ];
     }
 

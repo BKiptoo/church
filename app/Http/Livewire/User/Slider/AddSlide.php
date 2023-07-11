@@ -44,7 +44,7 @@ class AddSlide extends Component
 //            'buttonUrl' => ['required', 'string', 'max:255'],
             'buttonName' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
-            'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:5096', 'required'] // 5MB Max
+            'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:15000', 'required'] // 5MB Max
         ];
     }
 

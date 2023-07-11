@@ -54,7 +54,7 @@ class EditImpact extends Component
             'impact_type_id' => ['required', 'string', 'max:255'],
             'name' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
-            'photo' => ['file', 'image', 'max:5096', 'nullable'] // 5MB Max
+            'photo' => ['file', 'image', 'max:15000', 'nullable'] // 5MB Max
         ];
     }
 

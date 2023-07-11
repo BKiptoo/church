@@ -41,7 +41,7 @@ class Profile extends Component
         'name' => ['required', 'string', 'max:255'],
         'position' => ['required', 'string', 'max:255'],
         'email' => ['required', 'string', 'email', 'max:255'],
-        'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:4096', 'nullable'], // 4MB Max
+        'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:15000', 'nullable'], // 4MB Max
         'phoneNumber' => ['required', 'string']
     ];
 

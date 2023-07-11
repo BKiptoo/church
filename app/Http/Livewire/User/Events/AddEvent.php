@@ -46,7 +46,7 @@ class AddEvent extends Component
             'startDate' => ['date', 'required', 'after:today'],
             'endDate' => ['date', 'required', 'after:startDate'],
             'description' => ['required', 'string'],
-            'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:5096', 'nullable'] // 5MB Max
+            'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:15000', 'nullable'] // 5MB Max
         ];
     }
 
