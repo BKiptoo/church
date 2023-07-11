@@ -92,7 +92,7 @@ class ListUsers extends Component
                             ->orWhere('phoneNumber', 'ilike', '%' . $this->search . '%')
                             ->orWhere('email', 'ilike', '%' . $this->search . '%')
                             ->orWhere('position', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
                             ->orWhere('slug', 'ilike', '%' . $this->search . '%');
                     })
                     ->paginate(10)

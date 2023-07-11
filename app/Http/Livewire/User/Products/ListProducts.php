@@ -95,12 +95,12 @@ class ListProducts extends Component
                     ->latest('updated_at')
                     ->where(function ($query) {
                         $query->orWhere('name', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('category', 'name', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('category', 'slug', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('subCategory', 'name', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('subCategory', 'slug', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('country', 'slug', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('category', 'name', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('category', 'slug', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('subCategory', 'name', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('subCategory', 'slug', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('country', 'slug', 'ilike', '%' . $this->search . '%')
                             ->orWhere('slug', 'ilike', '%' . $this->search . '%');
                     })
                     ->paginate(10)

@@ -98,8 +98,8 @@ class ListOrders extends Component
                     ->where(function ($query) {
                         $query->orWhere('email', 'ilike', '%' . $this->search . '%')
                             ->orWhere('summary', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('product', 'name', 'ilike', '%' . $this->search . '%');
+                            ->orWhereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('product', 'name', 'ilike', '%' . $this->search . '%');
                     })
                     ->paginate(10)
                 : []

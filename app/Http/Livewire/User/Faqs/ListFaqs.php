@@ -92,7 +92,7 @@ class ListFaqs extends Component
                     ->where(function ($query) {
                         $query->orWhere('question', 'ilike', '%' . $this->search . '%')
                             ->orWhere('answer', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('country', 'name', 'ilike', '%' . $this->search . '%');
+                            ->orWhereRelation('country', 'name', 'ilike', '%' . $this->search . '%');
                     })
                     ->paginate(10)
                 : []

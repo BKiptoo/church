@@ -93,8 +93,8 @@ class ListImpact extends Component
                     ->where(function ($query) {
                         $query->orWhere('name', 'ilike', '%' . $this->search . '%')
                             ->orWhere('description', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('impactType', 'name', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('impactType', 'slug', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('impactType', 'name', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('impactType', 'slug', 'ilike', '%' . $this->search . '%')
                             ->orWhere('slug', 'ilike', '%' . $this->search . '%');
                     })
                     ->paginate(10)

@@ -103,7 +103,7 @@ class ListAds extends Component
                             ->orWhere('linkUrl', 'ilike', '%' . $this->search . '%')
                             ->orWhere('buttonName', 'ilike', '%' . $this->search . '%')
                             ->orWhere('description', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
+                            ->orWhereRelation('country', 'name', 'ilike', '%' . $this->search . '%')
                             ->orWhere('slug', 'ilike', '%' . $this->search . '%');
                     })
                     ->paginate(10)

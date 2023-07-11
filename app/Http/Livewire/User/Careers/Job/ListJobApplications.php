@@ -105,7 +105,7 @@ class ListJobApplications extends Component
                             ->orWhere('email', 'ilike', '%' . $this->search . '%')
                             ->orWhere('firstName', 'ilike', '%' . $this->search . '%')
                             ->orWhere('lastName', 'ilike', '%' . $this->search . '%')
-                            ->whereRelation('career', 'name', 'ilike', '%' . $this->search . '%');
+                            ->orWhereRelation('career', 'name', 'ilike', '%' . $this->search . '%');
                     })
                     ->paginate(10)
                 : []

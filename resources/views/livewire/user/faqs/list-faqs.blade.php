@@ -29,6 +29,7 @@
                             <th scope="col">Country</th>
                             <th scope="col">Question</th>
                             <th scope="col">Actions</th>
+                            <th scope="col">Date/Time</th>
                         </tr>
                         </thead>
                         @php($count = 1)
@@ -53,6 +54,7 @@
                                         </div>
                                     </div>
                                 </td>
+                                <td>{{ date('F d, Y h:i a', strtotime($model->created_at)) }}</td>
                             </tr>
                         @endforeach
                         </tbody>

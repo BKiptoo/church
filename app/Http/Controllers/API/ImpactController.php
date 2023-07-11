@@ -25,7 +25,7 @@ class ImpactController extends Controller
                 ])
                 ->inRandomOrder()
                 ->where(function ($query) use ($impactTypeSlug) {
-                    $query->whereRelation('impactType', 'slug', 'ilike', '%' . $impactTypeSlug . '%');
+                    $query->orWhereRelation('impactType', 'slug', 'ilike', '%' . $impactTypeSlug . '%');
                 })
                 ->limit($limit)
                 ->get()

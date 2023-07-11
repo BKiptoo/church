@@ -29,6 +29,7 @@
                             <th scope="col">Company</th>
                             <th scope="col">PhoneNumber</th>
                             <th scope="col">Actions</th>
+                            <th scope="col">Date/Time</th>
                         </tr>
                         </thead>
                         @php($count = 1)
@@ -56,6 +57,7 @@
                                         </div>
                                     </div>
                                 </td>
+                                <td>{{ date('F d, Y h:i a', strtotime($model->created_at)) }}</td>
                             </tr>
                             <livewire:user.modal.message-pop-up :model="$model" :wire:key="$model->id">
                         @endforeach
