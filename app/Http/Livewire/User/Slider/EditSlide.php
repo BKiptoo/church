@@ -58,7 +58,7 @@ class EditSlide extends Component
 //            'buttonUrl' => ['required', 'string', 'max:255'],
             'buttonName' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
-            'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:15000', 'nullable'] // 5MB Max
+            'photo' => ['image', 'max:15000', 'nullable'] // 5MB Max
         ];
     }
 

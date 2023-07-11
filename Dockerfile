@@ -58,6 +58,9 @@ RUN mkdir -p /etc/supervisor/logs
 COPY docker/nginx.conf /etc/nginx/nginx.conf
 COPY docker/supervisord.conf /etc/supervisor/conf.d/worker.conf
 
+# Give us an easy way to modify php.ini without crazy hacks
+ADD docker/custom-php.ini /usr/local/etc/php/conf.d/custom-php.ini
+
 RUN mkdir -p /app
 COPY . /app
 COPY .env.example /app/.env

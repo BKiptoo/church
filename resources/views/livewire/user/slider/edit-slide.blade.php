@@ -95,7 +95,7 @@
                                             class="bx bxs-image-add"></i></span>
                                         <input type="file" id="photo"
                                                class="form-control @error('photo') is-invalid @enderror"
-                                               name="photo" placeholder="Ad banner"
+                                               name="photo" placeholder="Slide banner"
                                                wire:model="photo"
                                                accept="image/png, image/jpeg, image/gif"
                                                aria-describedby="photo"/>

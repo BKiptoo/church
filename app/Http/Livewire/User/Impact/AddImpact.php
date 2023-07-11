@@ -41,7 +41,7 @@ class AddImpact extends Component
             'impact_type_id' => ['required', 'string', 'max:255'],
             'name' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
-            'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:15000', 'nullable'] // 5MB Max
+            'photo' => ['image', 'max:15000', 'nullable'] // 5MB Max
         ];
     }
 
