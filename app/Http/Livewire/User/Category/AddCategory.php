@@ -36,7 +36,7 @@ class AddCategory extends Component
     {
         return [
             'name' => ['required', 'string', 'max:255'],
-            'photo' => ['file', 'image', 'max:5096', 'nullable'] // 5MB Max
+            'photo' => ['mimes:jpg,jpeg,png,bmp,gif,svg,webp', 'max:5096', 'nullable'] // 5MB Max
         ];
     }
 
