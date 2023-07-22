@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\Post;
 use App\Models\Product;
 use Illuminate\Http\JsonResponse;
 
@@ -15,7 +16,7 @@ class ProductController extends Controller
      * @param int $limit
      * @return JsonResponse
      */
-    public function __invoke(int $limit = 100, string $countryId = null): JsonResponse
+    public function index(int $limit = 100, string $countryId = null): JsonResponse
     {
         return $this->successResponse(
             Product::query()
@@ -32,5 +33,24 @@ class ProductController extends Controller
                 ->limit($limit)
                 ->get()
         );
+    }
+
+    /**
+     * fetch specific product
+     * @param string $slug
+     * @return JsonResponse
+     */
+    public function show(string $slug): JsonResponse
+    {
+        $product = Post::query()
+            ->with([
+                'country',
+                'media',
+                'category',
+                'subCategory'
+            ])
+            ->firstWhere('slug', $slug);
+
+        return $this->successResponse($product);
     }
 }
