@@ -94,6 +94,24 @@
                                         @enderror
                                     </div>
                                 </div>
+                                <div class="mb-3 col-12">
+                                    <label class="form-label" for="cost">Product Cost</label>
+                                    <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-fullname2" class="input-group-text"><i
+                                            class="bx bxl-product-hunt"></i></span>
+                                        <input type="number" id="cost"
+                                               class="form-control @error('cost') is-invalid @enderror"
+                                               required
+                                               name="cost" placeholder="Enter cost..."
+                                               wire:model="cost"
+                                               aria-describedby="cost"/>
+                                        @error('cost')
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                        @enderror
+                                    </div>
+                                </div>
                                 <div class="mb-3 col-12" wire:model.debounce.365ms="description" wire:ignore>
                                     <label class="form-label" for="description">Product Description</label>
                                     <input id="description"

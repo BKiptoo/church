@@ -39,6 +39,7 @@ class Product extends Model
         'sub_category_id',
         'name',
         'slug',
+        'cost',
         'description'
     ];
 

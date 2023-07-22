@@ -8,6 +8,8 @@ use Illuminate\Foundation\Http\FormRequest;
  * @property mixed $country_id
  * @property mixed $product_id
  * @property mixed $email
+ * @property mixed $quantity
+ * @property mixed $amount
  */
 class OrderRequest extends FormRequest
 {
@@ -32,6 +34,8 @@ class OrderRequest extends FormRequest
             'country_id' => ['string', 'required', 'exists:countries,id'],
             'product_id' => ['string', 'required', 'exists:products,id'],
             'email' => ['string', 'required'],
+            'quantity' => ['integer', 'required'],
+            'amount' => ['numeric', 'required']
         ];
     }
 }

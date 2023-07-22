@@ -26,6 +26,7 @@ class EditProduct extends Component
     public $sub_category_id;
     public $name;
     public $photo;
+    public $cost;
     public $description;
     public $validatedData;
 
@@ -51,6 +52,7 @@ class EditProduct extends Component
             $this->sub_category_id = $this->model->sub_category_id;
             $this->country_id = $this->model->country_id;
             $this->name = $this->model->name;
+            $this->cost = $this->model->cost;
             $this->description = $this->model->description;
         }
     }
@@ -63,6 +65,7 @@ class EditProduct extends Component
             'sub_category_id' => ['required', 'string', 'max:255'],
             'name' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
+            'cost' => ['required', 'numeric'],
             'photo' => ['file', 'image', 'max:15000', 'nullable'] // 5MB Max
         ];
     }

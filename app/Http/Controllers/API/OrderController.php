@@ -25,6 +25,8 @@ class OrderController extends Controller
                 'country_id' => $request->country_id,
                 'product_id' => $request->product_id,
                 'email' => $request->email,
+                'quantity' => $request->quantity,
+                'amount' => $request->amount,
             ]),
             Response::HTTP_CREATED
         );

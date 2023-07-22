@@ -34,6 +34,7 @@ class Order extends Model
         'product_id',
         'orderNumber',
         'email',
+        'quantity',
         'amount',
         'summary',
         'isClosed'

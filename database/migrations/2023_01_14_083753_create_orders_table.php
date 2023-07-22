@@ -19,7 +19,8 @@ return new class extends Migration {
             $table->string('email');
             $table->string('orderNumber')->unique();
             $table->text('summary')->nullable();
-            $table->double('orders')->default(0.00);
+            $table->integer('quantity')->default(0);
+            $table->double('amount')->default(0.00);
             $table->boolean('isClosed')->default(false);
             $table->softDeletes();
             $table->timestamps();

@@ -20,6 +20,7 @@ return new class extends Migration {
             $table->string('name');
             $table->string('slug')->unique();
             $table->text('description');
+            $table->double('cost')->default(0.00);
             $table->softDeletes();
             $table->timestamps();
         });
