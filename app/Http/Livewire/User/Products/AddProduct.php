@@ -25,6 +25,7 @@ class AddProduct extends Component
     public $sub_category_id;
     public $name;
     public $photo;
+    public $cost;
     public $description;
     public $validatedData;
 
