@@ -42,7 +42,7 @@ class ProductController extends Controller
      */
     public function show(string $slug): JsonResponse
     {
-        $product = Post::query()
+        $product = Product::query()
             ->with([
                 'country',
                 'media',
