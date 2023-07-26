@@ -97,7 +97,7 @@
                                     </div>
                                 </div>
                                 <div class="mb-3 col-12">
-                                    <label class="form-label" for="cost">Product Cost</label>
+                                    <label class="form-label" for="cost">Product Cost <i><b>(USD)</b></i></label>
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                             class="bx bxl-product-hunt"></i></span>
