@@ -89,12 +89,13 @@ position:relative;">{{ $buttonName }}</a>
                                 <td style="padding:0;width:50%;" align="center">
                                     <p style="margin:0;font-size:14px;line-height:16px;font-family:Arial,sans-serif;color:#ffffff;">
                                         Please do not reply directly to this email | Contact us via <a
-                                            style="color:#ffffff;" href="maito:support@shiftech.co.ke">support@shiftech.co.ke</a>
-                                        OR +254748653542
+                                            style="color:#ffffff;"
+                                            href="maito:{{ env('CSQUARED_EMAIL') }}">{{ env('CSQUARED_EMAIL') }}</a>
+                                        OR {{ env('CSQUARED_NUMBER') }}
                                     </p>
                                     <p style="margin:0;font-size:14px;line-height:16px;font-family:Arial,sans-serif;color:#ffffff;">
-                                        &copy; {{ date('Y') }} <a href="{{ config('app.url') }}"
-                                                                  style="color:#ffffff;">{{ config('app.name') }}</a>
+                                        &copy; {{ date('Y') }} <a href="https://www.csquared.com/"
+                                                                  style="color:#ffffff;">Csquared</a>
                                     </p>
                                 </td>
                             </tr>
