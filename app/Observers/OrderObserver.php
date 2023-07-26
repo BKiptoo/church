@@ -45,7 +45,7 @@ class OrderObserver
      */
     public function deleted(Order $order)
     {
-        //
+        dispatch(new SyncAnalyticDataJob())->onQueue('default')->delay(now()->addMinute());
     }
 
     /**
@@ -67,6 +67,6 @@ class OrderObserver
      */
     public function forceDeleted(Order $order)
     {
-        //
+        dispatch(new SyncAnalyticDataJob())->onQueue('default')->delay(now()->addMinute());
     }
 }
