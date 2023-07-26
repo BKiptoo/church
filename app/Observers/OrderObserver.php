@@ -3,6 +3,7 @@
 namespace App\Observers;
 
 use App\Jobs\MailJob;
+use App\Jobs\SyncAnalyticDataJob;
 use App\Models\Order;
 
 class OrderObserver
@@ -21,6 +22,8 @@ class OrderObserver
             'Order For Product ' . $order->product->name,
             'Your order ' . $order->orderNumber . ' has been received. Our team will reach you for more enquiry.'
         ))->onQueue('emails')->delay(now()->addSeconds(30));
+
+        dispatch(new SyncAnalyticDataJob())->onQueue('default')->delay(now()->addMinute());
     }
 
     /**
@@ -31,7 +34,7 @@ class OrderObserver
      */
     public function updated(Order $order)
     {
-        //
+        dispatch(new SyncAnalyticDataJob())->onQueue('default')->delay(now()->addMinute());
     }
 
     /**
