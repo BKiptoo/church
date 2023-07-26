@@ -26,6 +26,8 @@
                             <th scope="col">Product</th>
                             <th scope="col">Order</th>
                             <th scope="col">Email</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Amount (USD)</th>
                             <th scope="col">Status</th>
                             <th scope="col">Ordered On</th>
                             <th scope="col">Reached On</th>
@@ -42,6 +44,8 @@
                                 <td>{{ $model->product->name }}</td>
                                 <td>{{ $model->orderNumber }}</td>
                                 <td>{{ $model->email }}</td>
+                                <td>{{ $model->quantity }}</td>
+                                <td>{{ number_format($model->amount,2) }}</td>
                                 <td>
                                     @if($model->isClosed)
                                         <span class="badge bg-label-danger me-1">CLOSED</span>

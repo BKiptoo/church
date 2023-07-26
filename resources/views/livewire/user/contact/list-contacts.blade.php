@@ -25,9 +25,9 @@
                             <th scope="col">Country</th>
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
+                            <th scope="col">PhoneNumber</th>
                             <th scope="col">Job Title</th>
                             <th scope="col">Company</th>
-                            <th scope="col">PhoneNumber</th>
                             <th scope="col">Actions</th>
                             <th scope="col">Date/Time</th>
                         </tr>
@@ -41,6 +41,8 @@
                                 <td>{{ $model->firstName }} {{ $model->lastName }}</td>
                                 <td>{{ $model->email }}</td>
                                 <td>{{ $model->phoneNumber }}</td>
+                                <td>{{ $model->jobTitle }}</td>
+                                <td>{{ $model->company }}</td>
                                 <td>
                                     <div class="dropdown">
                                         <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
