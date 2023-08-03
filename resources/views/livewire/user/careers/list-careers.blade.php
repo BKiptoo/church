@@ -7,7 +7,7 @@
         </h4>
 
         <!-- Basic Bootstrap Table -->
-        <div class="card" wire:poll.6000ms.visible>
+        <div class="card" wire:poll.60000ms.visible>
             <div class="card-body">
                 <div class="row">
                     <div class="col-10">

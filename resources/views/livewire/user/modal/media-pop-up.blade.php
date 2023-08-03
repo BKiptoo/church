@@ -5,7 +5,9 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="cs-{{ $model->id }}-label">{{ $model->name }} Images/Files</h5>
+                    <h5 class="modal-title"
+                        id="cs-{{ $model->id }}-label">{{ \Illuminate\Support\Str::limit($model->name,150) }}
+                        Images/Files</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
