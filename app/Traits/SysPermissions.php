@@ -10,6 +10,7 @@ trait SysPermissions
     public string $impactTypesManagement = 'Impact Type Management';
     public string $impactsManagement = 'Impacts Management';
     public string $adsManagement = 'Ads Management';
+    public string $esgReportsManagement = 'Esg Reports Management';
     public string $contactsManagement = 'Contacts Management';
     public string $careersManagement = 'Careers Management';
     public string $subscribersManagement = 'Subscribers Management';
@@ -51,6 +52,7 @@ trait SysPermissions
             $this->blogsManagement,
             $this->slideManagement,
             $this->teamManagement,
+            $this->esgReportsManagement,
             $this->tendersManagement,
             $this->mediaFileManagement
         ];

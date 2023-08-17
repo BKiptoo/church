@@ -129,6 +129,13 @@ class SystemController extends Controller
     {
         // check if feature_image exists
         $path ??= 'csquared';
+
+        // The environment is either local OR staging...
+        if (App::environment(['local', 'staging'])) {
+            $path = $path . '_' . App::environment();
+        }
+
+        // validate
         if (isset($fileRequest)) {
             // unlink media here
             self::unLinkMedia($fileName);
@@ -169,6 +176,13 @@ class SystemController extends Controller
     {
         // check if feature_image exists
         $path ??= 'csquared';
+
+        // The environment is either local OR staging...
+        if (App::environment(['local', 'staging'])) {
+            $path = $path . '_' . App::environment();
+        }
+
+        // validate
         if (isset($fileRequest)) {
             // unlink media here
             self::unLinkMedia($fileName);
@@ -223,9 +237,34 @@ class SystemController extends Controller
      */
     public static function getMedia(string|null $fileName, string|null $path = null): ?string
     {
+        // check if feature_image exists
         $path ??= 'csquared';
 
+        // The environment is either local OR staging...
+        if (App::environment(['local', 'staging'])) {
+            $path = $path . '_' . App::environment();
+        }
+
         return Storage::disk('do_space_cdn')->get($path . '/' . $fileName);
+    }
+
+    /**
+     * unlink media here
+     * @param string|null $fileName
+     * @param string|null $path
+     * @return string|null
+     */
+    public static function downloadMedia(string|null $fileName, string|null $path = null): ?string
+    {
+        // check if feature_image exists
+        $path ??= 'csquared';
+
+        // The environment is either local OR staging...
+        if (App::environment(['local', 'staging'])) {
+            $path = $path . '_' . App::environment();
+        }
+
+        return Storage::disk('do_space_cdn')->download($path . '/' . $fileName);
     }
 
     /**

@@ -26,6 +26,9 @@ use App\Http\Livewire\User\Contact\ListContacts;
 use App\Http\Livewire\User\Coverage\AddCoverage;
 use App\Http\Livewire\User\Coverage\EditCoverage;
 use App\Http\Livewire\User\Coverage\ListCoverages;
+use App\Http\Livewire\User\Esg\AddEsgReport;
+use App\Http\Livewire\User\Esg\EditEsgReport;
+use App\Http\Livewire\User\Esg\ListEsgReports;
 use App\Http\Livewire\User\Events\AddEvent;
 use App\Http\Livewire\User\Events\EditEvent;
 use App\Http\Livewire\User\Events\ListEvents;
@@ -290,6 +293,15 @@ Route::group([
             Route::get('add', AddImpactType::class)->name('add.impact.type');
             Route::get('edit/{slug}', EditImpactType::class)->name('edit.impact.type');
             Route::get('/', ListImpactType::class)->name('list.impact.types');
+        });
+
+        Route::group([
+            'middleware' => ['permission:' . Str::slug('Esg Reports Management')],
+            'prefix' => 'esg'
+        ], static function () {
+            Route::get('add', AddEsgReport::class)->name('add.esg.report');
+            Route::get('edit/{slug}', EditEsgReport::class)->name('edit.esg.report');
+            Route::get('/', ListEsgReports::class)->name('list.esg.reports');
         });
 
         Route::group([
