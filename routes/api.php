@@ -7,6 +7,7 @@ use App\Http\Controllers\API\CommentController;
 use App\Http\Controllers\API\ContactController;
 use App\Http\Controllers\API\CountryController;
 use App\Http\Controllers\API\CoverageController;
+use App\Http\Controllers\API\EsgReportsController;
 use App\Http\Controllers\API\EventController;
 use App\Http\Controllers\API\FaqController;
 use App\Http\Controllers\API\FeaturedPostController;
@@ -66,6 +67,7 @@ Route::group([
     Route::get('teams/{limit?}/{countryId?}', TeamController::class);
     Route::get('tenders/{limit?}/{countryId?}', TenderController::class);
     Route::get('impact-types', ImpactTypeController::class);
+    Route::get('esg-reports', EsgReportsController::class);
     Route::get('featured-posts/{limit?}/{countryId?}', FeaturedPostController::class);
 
     // products
