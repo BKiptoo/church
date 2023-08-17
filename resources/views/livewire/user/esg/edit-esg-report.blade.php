@@ -51,7 +51,7 @@
                                     @enderror
                                 </div>
                                 <div class="mb-3 col-12">
-                                    <label class="form-label" for="report">Attach Report</label>
+                                    <label class="form-label" for="report">Attach Report <i class="text-info"><b>optional</b></i></label>
                                     <div class="input-group input-group-merge">
                                     <span id="basic-icon-default-fullname2" class="input-group-text"><i
                                             class="bx bxs-image-add"></i></span>

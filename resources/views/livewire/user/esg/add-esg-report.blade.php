@@ -55,7 +55,7 @@
                                             class="bx bxs-image-add"></i></span>
                                         <input type="file" id="report"
                                                class="form-control @error('report') is-invalid @enderror"
-                                               name="report" placeholder="Report..."
+                                               name="report" placeholder="Report..." required
                                                wire:model="report"
                                                aria-describedby="report"/>
                                         @error('report')
