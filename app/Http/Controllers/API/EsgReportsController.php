@@ -21,7 +21,6 @@ class EsgReportsController extends Controller
         return $this->successResponse(
             Esg::query()
                 ->with([
-                    'country',
                     'media'
                 ])
                 ->latest()
