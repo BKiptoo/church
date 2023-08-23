@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\APIFireWall;
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\EncryptCookies;
 use App\Http\Middleware\HorizonBasicAuthMiddleware;
@@ -67,6 +68,7 @@ class Kernel extends HttpKernel
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
             'throttle:api',
             SubstituteBindings::class,
+            APIFireWall::class,
         ],
     ];
 
