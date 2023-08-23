@@ -22,7 +22,10 @@ class APIFireWall
      */
     public function handle(Request $request, Closure $next): Response|JsonResponse|RedirectResponse
     {
-        if (!in_array($request->getHost(), ['104.196.71.7', '172.217.170.211'])) {
+        if (!in_array($request->ip(), [
+            '104.196.71.7',
+            '172.217.170.211'
+        ])) {
             return $this->errorResponse(
                 $request->getHost() . ' un-known host.',
                 Response::HTTP_BAD_REQUEST
