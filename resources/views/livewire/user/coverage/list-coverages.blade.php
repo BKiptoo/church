@@ -28,7 +28,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Country</th>
                             <th scope="col">Coverage</th>
-                            <th scope="col">View</th>
+{{--                            <th scope="col">View</th>--}}
                             <th scope="col">Actions</th>
                             <th scope="col">Date/Time</th>
                         </tr>
@@ -40,11 +40,11 @@
                                 <th scope="row">{{ $count++ }}</th>
                                 <td>{{ $model->country->name }}</td>
                                 <td>{{ $model->name }}</td>
-                                <td>
-                                    <a href="#" class="btn btn-link" data-bs-toggle="modal"
-                                       data-bs-target="#mp-{{ $model->id }}"><span
-                                            class="bx bx-map-alt"></span></a>
-                                </td>
+{{--                                <td>--}}
+{{--                                    <a href="#" class="btn btn-link" data-bs-toggle="modal"--}}
+{{--                                       data-bs-target="#mp-{{ $model->id }}"><span--}}
+{{--                                            class="bx bx-map-alt"></span></a>--}}
+{{--                                </td>--}}
                                 <td>
                                     <div class="dropdown">
                                         <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
