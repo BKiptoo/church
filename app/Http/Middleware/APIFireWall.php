@@ -27,7 +27,7 @@ class APIFireWall
             '172.217.170.211'
         ])) {
             return $this->errorResponse(
-                $request->getHost() . ' un-known host.',
+                $request->ip() . ' un-known host.',
                 Response::HTTP_BAD_REQUEST
             );
         }
