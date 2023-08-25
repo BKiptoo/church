@@ -23,7 +23,7 @@ class CoverageController extends Controller
                     'country',
                     'media'
                 ])
-                ->latest()
+                ->latest('updated_at')
                 ->where(function ($query) use ($countryId) {
                     $query->orWhere('country_id', 'ilike', '%' . $countryId . '%');
                 })
