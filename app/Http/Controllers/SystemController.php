@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Media;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Support\Facades\App;
