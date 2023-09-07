@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Media;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Support\Facades\App;
@@ -317,8 +318,9 @@ class SystemController extends Controller
             }
 
             // forceDelete
-            if ($deleteMedia)
+            if ($deleteMedia){
                 $model->forceDelete();
+            }
         }
     }
 
