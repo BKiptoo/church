@@ -77,7 +77,6 @@
                                             class="bx bxs-calendar"></i></span>
                                         <input type="date" id="deadLine"
                                                class="form-control @error('deadLine') is-invalid @enderror"
-                                               required
                                                name="deadLine" placeholder="Select deadline"
                                                wire:model="deadLine"
                                                aria-describedby="deadLine"/>

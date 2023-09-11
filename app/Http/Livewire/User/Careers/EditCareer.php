@@ -52,7 +52,7 @@ class EditCareer extends Component
         return [
             'country_id' => ['required', 'string', 'max:255'],
             'name' => ['required', 'string', 'max:255'],
-            'deadLine' => ['date', 'required', 'after:today'],
+            'deadLine' => ['date', 'nullable', 'after:today'],
             'description' => ['required', 'string']
         ];
     }
