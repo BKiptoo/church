@@ -94,13 +94,14 @@ class EditCoverage extends Component
         }
 
         // upload photo
-        if ($this->mapFile)
+        if ($this->mapFile){
             SystemController::singleMediaUploadsJob(
                 $this->model->id,
                 Coverage::class,
                 $this->mapFile,
                 true
             );
+        }
 
         $this->model->save();
 

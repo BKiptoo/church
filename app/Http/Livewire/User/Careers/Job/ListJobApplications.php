@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\User\Careers\Job;
 
+use App\Http\Controllers\SystemController;
 use App\Models\JobApplication;
 use App\Models\User;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -56,7 +57,12 @@ class ListJobApplications extends Component
 
     public function confirmed()
     {
-        JobApplication::query()->findOrFail($this->model_id)->forceDelete();
+        $model = JobApplication::query()->findOrFail($this->model_id);
+        SystemController::removeExistingFiles(
+            $model->id,
+            true
+        );
+        $model->forceDelete();
         Note::createSystemNotification(
             User::class,
             'Job Application Deletion',
