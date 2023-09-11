@@ -100,31 +100,12 @@ class SystemController extends Controller
             self::unLinkMedia($fileName, $path);
         }
 
-        //The base64 encoded image data
-        $image_64 = $mediaBase64;
+        // Get the base 64 file contents
+        $mediaBase64 = str_replace(';base64,', '', $mediaBase64);
+        $mediaBase64 = str_replace(' ', '+', $mediaBase64);
 
-        // exploed the image to get the extension
-        $extension = explode(';base64', $image_64);
-
-        //from the first element
-        $extension = explode('/', $extension[0]);
-
-        // from the 2nd element
-        $extension = $extension[1];
-
-        $replace = substr($image_64, 0, strpos($image_64, ',') + 1);
-
-        // finding the substring from replace here for example in our case: data:image/png;base64,
-        $image = str_replace($replace, '', $image_64);
-
-        // replace
-        $image = str_replace(' ', '+', $image);
-
-        // set the image name using the time and a random string plus an extension
-        $newFileName = time() . '_' . Str::random(20) . '.' . $extension;
-
-        // save the image in the image path we passed from the
-        Storage::disk('do_space')->put($path . '/' . $newFileName, base64_decode($image), 'public');
+        $newFileName = Str::lower(Str::random()) . '.pdf';
+        Storage::disk('do_space')->put($path . '/' . $newFileName, base64_decode($mediaBase64), 'public');
         $url = Storage::disk('do_space_cdn')->url($path . '/' . $newFileName);
         $size = Storage::disk('do_space')->size($path . '/' . $newFileName);
         $mimeType = Storage::disk('do_space')->mimeType($path . '/' . $newFileName);
