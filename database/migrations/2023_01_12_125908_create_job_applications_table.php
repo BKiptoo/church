@@ -15,11 +15,12 @@ return new class extends Migration {
         Schema::create('job_applications', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->uuid('career_id');
-            $table->string('linkedInUrl');
+            $table->string('linkedInUrl')->nullable();
             $table->string('phoneNumber');
             $table->string('email');
             $table->string('firstName');
             $table->string('lastName');
+            $table->string('cv');
             $table->text('coverLetter');
             $table->boolean('isPassed')->default(false);
             $table->boolean('isClosed')->default(false);

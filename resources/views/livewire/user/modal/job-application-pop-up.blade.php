@@ -33,9 +33,9 @@
                             <div class="form-group">
                                 <label for="cv">CV</label>
                                 <div class="input-group mb-2">
-                                    <input type="text" class="form-control" id="cv" placeholder="{{ $model->media->pathNames[0] }}" readonly>
+                                    <input type="text" class="form-control" id="cv" placeholder="{{ $model->firstName }}" readonly>
                                     <div class="input-group-prepend">
-                                        <div class="input-group-text"><a href="{{ $model->media->pathUrls[0] }}"
+                                        <div class="input-group-text"><a href="{{ $model->cv }}"
                                                                          target="_blank"><i
                                                     class="bx bx-download me-1"></i></a></div>
                                     </div>

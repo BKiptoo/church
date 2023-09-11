@@ -95,8 +95,7 @@ class ListJobApplications extends Component
             'models' => $this->readyToLoad
                 ? JobApplication::query()
                     ->with([
-                        'career.country',
-                        'media'
+                        'career.country'
                     ])
                     ->latest()
                     ->where(function ($query) {

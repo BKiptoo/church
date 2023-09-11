@@ -37,6 +37,7 @@ class JobApplication extends Model
         'email',
         'firstName',
         'lastName',
+        'cv',
         'coverLetter',
         'isPassed',
         'isClosed',
