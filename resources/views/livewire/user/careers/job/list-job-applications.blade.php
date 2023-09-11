@@ -3,14 +3,19 @@
 
 
         <h4 class="fw-bold py-3 mb-4">
-            <span class="text-muted fw-light">Careers /</span> List
+            <span class="text-muted fw-light">Job Application /</span> List
         </h4>
 
         <!-- Basic Bootstrap Table -->
         <div class="card" wire:poll.60000ms.visible>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-1">
+                        <a href="{{ route('list.careers') }}"
+                           class="btn btn-link"><span
+                                class="bx bx-left-arrow"></span></a>
+                    </div>
+                    <div class="col-11">
                         <input type="search" wire:model="search" placeholder="Search..." title="Search..."
                                class="form-control">
                     </div>
