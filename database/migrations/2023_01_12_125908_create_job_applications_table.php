@@ -20,7 +20,6 @@ return new class extends Migration {
             $table->string('email');
             $table->string('firstName');
             $table->string('lastName');
-            $table->string('cv');
             $table->text('coverLetter');
             $table->boolean('isPassed')->default(false);
             $table->boolean('isClosed')->default(false);

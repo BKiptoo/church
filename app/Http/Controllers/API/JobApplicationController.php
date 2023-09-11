@@ -20,17 +20,17 @@ class JobApplicationController extends Controller
     public function __invoke(JobApplicationRequest $request): JsonResponse
     {
         // create the application here
-//        $model = JobApplication::query()->create($request->validated());
+        $model = JobApplication::query()->create($request->validated());
 
         // upload cv here
-//        SystemController::singleMediaUploadsJob(
-//            $model->id,
-//            JobApplication::class,
-//            $request->file('cv')
-//        );
+        SystemController::singleMediaUploadsBase64(
+            $model->id,
+            JobApplication::class,
+            $request->cv,
+        );
 
         return $this->successResponse(
-            JobApplication::query()->create($request->validated()),
+            $model,
             Response::HTTP_CREATED
         );
     }

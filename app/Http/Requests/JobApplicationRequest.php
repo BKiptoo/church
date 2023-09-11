@@ -4,6 +4,9 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * @property mixed $cv
+ */
 class JobApplicationRequest extends FormRequest
 {
     /**
@@ -32,7 +35,7 @@ class JobApplicationRequest extends FormRequest
             'coverLetter' => ['string', 'required'],
             'phoneNumber' => ['numeric', 'required'],
 //            'cv' => ['file', 'max:10192', 'required'] // 10MB Max
-            'cv' => ['string', 'required', 'url']
+            'cv' => ['string', 'required']
         ];
     }
 }
