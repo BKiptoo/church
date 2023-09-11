@@ -28,7 +28,7 @@ class FeaturedPostController extends Controller
                     'subCategory'
                 ])
                 ->where('isFeatured', true)
-                ->latest()
+                ->inRandomOrder()
                 ->where(function ($query) use ($countryId) {
                     $query->orWhere('country_id', 'ilike', '%' . $countryId . '%');
                 })
