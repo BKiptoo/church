@@ -15,7 +15,7 @@ class ImpactController extends Controller
      * @param string|null $impactTypeSlug
      * @return JsonResponse
      */
-    public function index(int $limit = 100, string $impactTypeSlug = null): JsonResponse
+    public function index(int $limit = 500, string $impactTypeSlug = null): JsonResponse
     {
         return $this->successResponse(
             Impact::query()
