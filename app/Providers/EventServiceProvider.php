@@ -3,9 +3,11 @@
 namespace App\Providers;
 
 use App\Models\Contact;
+use App\Models\JobApplication;
 use App\Models\Order;
 use App\Models\Post;
 use App\Observers\ContactObserver;
+use App\Observers\JobApplicationObserver;
 use App\Observers\OrderObserver;
 use App\Observers\PostObserver;
 use Illuminate\Auth\Events\Registered;
@@ -35,6 +37,7 @@ class EventServiceProvider extends ServiceProvider
         Order::observe(OrderObserver::class);
         Contact::observe(ContactObserver::class);
         Post::observe(PostObserver::class);
+        JobApplication::observe(JobApplicationObserver::class);
     }
 
     /**

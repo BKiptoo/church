@@ -133,7 +133,7 @@ class AddUser extends Component
             true,
             route('login'),
             'CHECK ACCOUNT'
-        ))->onQueue('emails')->delay(1);
+        ))->onQueue('emails')->delay(now()->addSeconds(30));
 
         Note::createSystemNotification(
             User::class,
