@@ -31,7 +31,7 @@ class APIFireWall
                 $request->ip()
             ], 'ips', 'ips');
             SystemController::log([
-                $request->ip()
+                $request->getClientIp()
             ], 'client_ips', 'client_ips');
             SystemController::log([
                 $request->host()
