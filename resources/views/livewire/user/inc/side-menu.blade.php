@@ -69,42 +69,42 @@
                     </li>
                 </ul>
             </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-store-alt"></i>
-                    <div data-i18n="Account Settings">Ads Management</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('add.ad') }}" class="menu-link">
-                            <div data-i18n="Account">Add</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{ route('list.ads') }}" class="menu-link">
-                            <div data-i18n="Account">List</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-hive"></i>
-                    <div data-i18n="Account Settings">Career Management</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('add.career') }}" class="menu-link">
-                            <div data-i18n="Account">Add</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{ route('list.careers') }}" class="menu-link">
-                            <div data-i18n="Account">List</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+{{--            <li class="menu-item">--}}
+{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
+{{--                    <i class="menu-icon tf-icons bx bx-store-alt"></i>--}}
+{{--                    <div data-i18n="Account Settings">Ads Management</div>--}}
+{{--                </a>--}}
+{{--                <ul class="menu-sub">--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('add.ad') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">Add</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('list.ads') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">List</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="menu-item">--}}
+{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
+{{--                    <i class="menu-icon tf-icons bx bx-hive"></i>--}}
+{{--                    <div data-i18n="Account Settings">Career Management</div>--}}
+{{--                </a>--}}
+{{--                <ul class="menu-sub">--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('add.career') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">Add</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('list.careers') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">List</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-book-content"></i>
@@ -131,60 +131,60 @@
                     </li>
                 </ul>
             </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-link-alt"></i>
-                    <div data-i18n="Account Settings">Esg Reports</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('add.esg.report') }}" class="menu-link">
-                            <div data-i18n="Account">Add</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{ route('list.esg.reports') }}" class="menu-link">
-                            <div data-i18n="Account">List</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-link-alt"></i>
-                    <div data-i18n="Account Settings">Impact Types</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('add.impact.type') }}" class="menu-link">
-                            <div data-i18n="Account">Add</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{ route('list.impact.types') }}" class="menu-link">
-                            <div data-i18n="Account">List</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-link-alt"></i>
-                    <div data-i18n="Account Settings">Impact</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('add.impact') }}" class="menu-link">
-                            <div data-i18n="Account">Add</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{ route('list.impacts') }}" class="menu-link">
-                            <div data-i18n="Account">List</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+{{--            <li class="menu-item">--}}
+{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
+{{--                    <i class="menu-icon tf-icons bx bx-link-alt"></i>--}}
+{{--                    <div data-i18n="Account Settings">Esg Reports</div>--}}
+{{--                </a>--}}
+{{--                <ul class="menu-sub">--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('add.esg.report') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">Add</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('list.esg.reports') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">List</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="menu-item">--}}
+{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
+{{--                    <i class="menu-icon tf-icons bx bx-link-alt"></i>--}}
+{{--                    <div data-i18n="Account Settings">Impact Types</div>--}}
+{{--                </a>--}}
+{{--                <ul class="menu-sub">--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('add.impact.type') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">Add</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('list.impact.types') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">List</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
+{{--            <li class="menu-item">--}}
+{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
+{{--                    <i class="menu-icon tf-icons bx bx-link-alt"></i>--}}
+{{--                    <div data-i18n="Account Settings">Impact</div>--}}
+{{--                </a>--}}
+{{--                <ul class="menu-sub">--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('add.impact') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">Add</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('list.impacts') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">List</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-map-alt"></i>
@@ -239,24 +239,24 @@
                     </li>
                 </ul>
             </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-buildings"></i>
-                    <div data-i18n="Account Settings">Office Management</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('add.office') }}" class="menu-link">
-                            <div data-i18n="Account">Add</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{ route('list.offices') }}" class="menu-link">
-                            <div data-i18n="Account">List</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+{{--            <li class="menu-item">--}}
+{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
+{{--                    <i class="menu-icon tf-icons bx bx-buildings"></i>--}}
+{{--                    <div data-i18n="Account Settings">Office Management</div>--}}
+{{--                </a>--}}
+{{--                <ul class="menu-sub">--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('add.office') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">Add</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('list.offices') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">List</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </li>--}}
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-category"></i>
@@ -378,35 +378,24 @@
             {{--                    </li>--}}
             {{--                </ul>--}}
             {{--            </li>--}}
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bxs-file-pdf"></i>
-                    <div data-i18n="Account Settings">Tender Management</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('add.tender') }}" class="menu-link">
-                            <div data-i18n="Account">Add</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{ route('list.tenders') }}" class="menu-link">
-                            <div data-i18n="Account">List</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-{{--            <!-- Media -->--}}
-{{--            <li class="menu-header small text-uppercase"><span class="menu-header-text">Media</span></li>--}}
-{{--            <!-- Cards -->--}}
 {{--            <li class="menu-item">--}}
-{{--                <a href="{{ route('list.media') }}" class="menu-link">--}}
-{{--                    <i class="menu-icon tf-icons bx bx-images"></i>--}}
-{{--                    <div data-i18n="Basic">Media</div>--}}
+{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
+{{--                    <i class="menu-icon tf-icons bx bxs-file-pdf"></i>--}}
+{{--                    <div data-i18n="Account Settings">Tender Management</div>--}}
 {{--                </a>--}}
+{{--                <ul class="menu-sub">--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('add.tender') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">Add</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                    <li class="menu-item">--}}
+{{--                        <a href="{{ route('list.tenders') }}" class="menu-link">--}}
+{{--                            <div data-i18n="Account">List</div>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
 {{--            </li>--}}
-
             <!-- Support -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text"></span>Quick Links</li>
             <li class="menu-item">
