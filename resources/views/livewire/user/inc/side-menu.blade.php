@@ -53,8 +53,8 @@
             </li>
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bxs-user-account"></i>
-                    <div data-i18n="Account Settings">User Management</div>
+                    <i class="menu-icon tf-icons bx bxs-shield"></i>
+                    <div data-i18n="Account Settings">Admins</div>
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
@@ -69,59 +69,11 @@
                     </li>
                 </ul>
             </li>
-{{--            <li class="menu-item">--}}
-{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
-{{--                    <i class="menu-icon tf-icons bx bx-store-alt"></i>--}}
-{{--                    <div data-i18n="Account Settings">Ads Management</div>--}}
-{{--                </a>--}}
-{{--                <ul class="menu-sub">--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('add.ad') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">Add</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('list.ads') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">List</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
-{{--            <li class="menu-item">--}}
-{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
-{{--                    <i class="menu-icon tf-icons bx bx-hive"></i>--}}
-{{--                    <div data-i18n="Account Settings">Career Management</div>--}}
-{{--                </a>--}}
-{{--                <ul class="menu-sub">--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('add.career') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">Add</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('list.careers') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">List</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
+
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-book-content"></i>
-                    <div data-i18n="Account Settings">Contacts Management</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('list.contacts') }}" class="menu-link">
-                            <div data-i18n="Account">List</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-link-alt"></i>
-                    <div data-i18n="Account Settings">Subscribers Management</div>
+                    <i class="menu-icon tf-icons bx bxs-user-badge"></i>
+                    <div data-i18n="Account Settings">Subscribers</div>
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
@@ -131,82 +83,10 @@
                     </li>
                 </ul>
             </li>
-{{--            <li class="menu-item">--}}
-{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
-{{--                    <i class="menu-icon tf-icons bx bx-link-alt"></i>--}}
-{{--                    <div data-i18n="Account Settings">Esg Reports</div>--}}
-{{--                </a>--}}
-{{--                <ul class="menu-sub">--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('add.esg.report') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">Add</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('list.esg.reports') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">List</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
-{{--            <li class="menu-item">--}}
-{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
-{{--                    <i class="menu-icon tf-icons bx bx-link-alt"></i>--}}
-{{--                    <div data-i18n="Account Settings">Impact Types</div>--}}
-{{--                </a>--}}
-{{--                <ul class="menu-sub">--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('add.impact.type') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">Add</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('list.impact.types') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">List</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
-{{--            <li class="menu-item">--}}
-{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
-{{--                    <i class="menu-icon tf-icons bx bx-link-alt"></i>--}}
-{{--                    <div data-i18n="Account Settings">Impact</div>--}}
-{{--                </a>--}}
-{{--                <ul class="menu-sub">--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('add.impact') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">Add</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('list.impacts') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">List</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-map-alt"></i>
-                    <div data-i18n="Account Settings">Coverages Management</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('add.coverage') }}" class="menu-link">
-                            <div data-i18n="Account">Add</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{ route('list.coverages') }}" class="menu-link">
-                            <div data-i18n="Account">List</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-calendar-event"></i>
-                    <div data-i18n="Account Settings">Events Management</div>
+                    <i class="menu-icon tf-icons bx bxs-calendar-event"></i>
+                    <div data-i18n="Account Settings">Events</div>
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
@@ -223,44 +103,8 @@
             </li>
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-question-mark"></i>
-                    <div data-i18n="Account Settings">Faq's Management</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('add.faq') }}" class="menu-link">
-                            <div data-i18n="Account">Add</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{ route('list.faqs') }}" class="menu-link">
-                            <div data-i18n="Account">List</div>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-{{--            <li class="menu-item">--}}
-{{--                <a href="javascript:void(0);" class="menu-link menu-toggle">--}}
-{{--                    <i class="menu-icon tf-icons bx bx-buildings"></i>--}}
-{{--                    <div data-i18n="Account Settings">Office Management</div>--}}
-{{--                </a>--}}
-{{--                <ul class="menu-sub">--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('add.office') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">Add</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                    <li class="menu-item">--}}
-{{--                        <a href="{{ route('list.offices') }}" class="menu-link">--}}
-{{--                            <div data-i18n="Account">List</div>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
-            <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-category"></i>
-                    <div data-i18n="Account Settings">Category Management</div>
+                    <div data-i18n="Account Settings">Category</div>
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
@@ -278,7 +122,7 @@
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bxs-category-alt"></i>
-                    <div data-i18n="Account Settings">Sub-Category Management</div>
+                    <div data-i18n="Account Settings">Sub-Category </div>
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
@@ -295,8 +139,8 @@
             </li>
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bxl-product-hunt"></i>
-                    <div data-i18n="Account Settings">Products Management</div>
+                    <i class="menu-icon tf-icons bx bxs-shopping-bag"></i>
+                    <div data-i18n="Account Settings">Shop Products</div>
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
@@ -313,8 +157,8 @@
             </li>
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
-                    <i class="menu-icon tf-icons bx bx-cart-alt"></i>
-                    <div data-i18n="Account Settings">Orders Management</div>
+                    <i class="menu-icon tf-icons bx bx-cart"></i>
+                    <div data-i18n="Account Settings">Shop Orders</div>
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
@@ -327,7 +171,7 @@
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bxl-blogger"></i>
-                    <div data-i18n="Account Settings">Blogs Management</div>
+                    <div data-i18n="Account Settings">Blogs</div>
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
@@ -345,7 +189,7 @@
             <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class="menu-icon tf-icons bx bx-slider-alt"></i>
-                    <div data-i18n="Account Settings">Slide Management</div>
+                    <div data-i18n="Account Settings">Slides</div>
                 </a>
                 <ul class="menu-sub">
                     <li class="menu-item">
@@ -360,8 +204,57 @@
                     </li>
                 </ul>
             </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-question-mark"></i>
+                    <div data-i18n="Account Settings">Faq's</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="{{ route('add.faq') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.faqs') }}" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <!-- Support -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text"></span>Quick Links</li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bxs-map-alt"></i>
+                    <div data-i18n="Account Settings">Coverages</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="{{ route('add.coverage') }}" class="menu-link">
+                            <div data-i18n="Account">Add</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('list.coverages') }}" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bxs-message"></i>
+                    <div data-i18n="Account Settings">Contacts</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item">
+                        <a href="{{ route('list.contacts') }}" class="menu-link">
+                            <div data-i18n="Account">List</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li class="menu-item">
                 <a href="#" target="_blank"
                    class="menu-link">
