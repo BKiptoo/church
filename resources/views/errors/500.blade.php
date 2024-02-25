@@ -10,7 +10,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'SHIFTECH AFRICA') }}</title>
+    <title>Messianic Assembly of Yahweh</title>
 
     <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon">
