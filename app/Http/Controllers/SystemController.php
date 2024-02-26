@@ -88,7 +88,7 @@ class SystemController extends Controller
         string|null $path = null
     ): array
     {
-        $path ??= 'csquared';
+        $path ??= 'mayministries.org';
 
         // The environment is either local OR staging...
         if (App::environment(['local', 'staging'])) {
@@ -132,7 +132,7 @@ class SystemController extends Controller
     ): array
     {
         // check if feature_image exists
-        $path ??= 'csquared';
+        $path ??= 'mayministries.org';
 
         // The environment is either local OR staging...
         if (App::environment(['local', 'staging'])) {
@@ -179,7 +179,7 @@ class SystemController extends Controller
     ): array
     {
         // check if feature_image exists
-        $path ??= 'csquared';
+        $path ??= 'mayministries.org';
 
         // The environment is either local OR staging...
         if (App::environment(['local', 'staging'])) {
@@ -219,7 +219,7 @@ class SystemController extends Controller
      */
     public static function unLinkMedia(string|null $fileName = null, string|null $path = null)
     {
-        $path ??= 'csquared';
+        $path ??= 'mayministries.org';
 
         // The environment is either local OR staging...
         if (App::environment(['local', 'staging'])) {
@@ -242,7 +242,7 @@ class SystemController extends Controller
     public static function getMedia(string|null $fileName, string|null $path = null): ?string
     {
         // check if feature_image exists
-        $path ??= 'csquared';
+        $path ??= 'mayministries.org';
 
         // The environment is either local OR staging...
         if (App::environment(['local', 'staging'])) {
@@ -261,7 +261,7 @@ class SystemController extends Controller
     public static function downloadMedia(string|null $fileName, string|null $path = null): ?string
     {
         // check if feature_image exists
-        $path ??= 'csquared';
+        $path ??= 'mayministries.org';
 
         // The environment is either local OR staging...
         if (App::environment(['local', 'staging'])) {
